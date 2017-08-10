@@ -1,0 +1,75 @@
+//
+//  icaixun-prefix.pch
+//  icaixun
+//
+//  Created by 冯聪智 on 15/7/15.
+//  Copyright (c) 2015年 赣州珍平投资咨询. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIImageView+WebCache.h"
+#import <ShareSDK/ShareSDK.h>
+
+#define MR_SHORTHAND
+#import "AppStatus.h"
+#import "JSONModel.h"
+#import "JSONKit.h"
+#import "OpenUDID.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "ASIDownloadCache.h"
+#import "Reachability.h"
+#import "Constant.h"
+#import "NSStringUtils.h"
+#import "HttpRequestFacade.h"
+#import "ExceptionMsg.h"
+#import "SVProgressHUD.h"
+#import "ColorUtils.h"
+#import "HeaderView.h"
+#import "DeviceUtils.h"
+#import "MobClick.h"
+#import "ImageUtils.h"
+#import "UIViewController+Custom.h"
+#import "DateUtils.h"
+#import "MJRefresh.h"
+#import "Toast+UIView.h"
+#import "UIView+Custom.h"
+#import "Page.h"
+
+
+#endif
+
+#ifdef LLDEBUG
+#define LLLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define LLLog(format, ...)
+#endif
+
+#define LL_IS_IOS_6_OR_EARLIER [[UIDevice currentDevice] systemVersion].floatValue < 7.0
+
+#ifdef DEBUG_MODE
+#define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DLog( s, ... )
+#endif
+
+#define debugMethod() NSLog(@"%s", __func__)
+
+#define DEFINE_SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+static className *shared##className = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+shared##className = [[self alloc] init]; \
+}); \
+return shared##className; \
+}
+//如果对于macro有问题的话强烈建议去脑补下猫神的文章http://onevcat.com/2014/01/black-magic-in-macro/
+//另外猫神的很多文章都是很深入的建议有时间多去细细品味

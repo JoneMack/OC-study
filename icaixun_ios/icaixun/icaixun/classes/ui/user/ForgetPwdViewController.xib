@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgetPwdViewController">
+            <connections>
+                <outlet property="bodyView" destination="EQR-He-fjg" id="bRJ-Yw-nWe"/>
+                <outlet property="mobileNoField" destination="oTd-tM-akU" id="ZHK-Zf-saJ"/>
+                <outlet property="nextBtn" destination="FYL-O6-M4c" id="fJz-iI-p1B"/>
+                <outlet property="promptLabel" destination="Ue0-V3-Gug" id="QiO-9P-2kQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQR-He-fjg" userLabel="body">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oTd-tM-akU">
+                            <rect key="frame" x="30" y="50" width="540" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="zWz-GS-0Oa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="临时密码将通过短信发送到您的手机上，点击 下一步 设置新密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue0-V3-Gug">
+                            <rect key="frame" x="40" y="110" width="520" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYL-O6-M4c">
+                            <rect key="frame" x="30" y="174.5" width="540" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Luf-2K-0bg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="下一步">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="nextStep:" destination="-1" eventType="touchUpInside" id="kNt-zp-6Qj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FYL-O6-M4c" firstAttribute="top" secondItem="Ue0-V3-Gug" secondAttribute="bottom" constant="50" id="1Xx-pw-rMR"/>
+                        <constraint firstItem="Ue0-V3-Gug" firstAttribute="leading" secondItem="EQR-He-fjg" secondAttribute="leading" constant="40" id="CTM-0E-2Wp"/>
+                        <constraint firstAttribute="trailing" secondItem="Ue0-V3-Gug" secondAttribute="trailing" constant="40" id="F9O-Sz-FJp"/>
+                        <constraint firstAttribute="trailing" secondItem="oTd-tM-akU" secondAttribute="trailing" constant="30" id="FJE-6W-ikI"/>
+                        <constraint firstItem="oTd-tM-akU" firstAttribute="top" secondItem="EQR-He-fjg" secondAttribute="top" constant="50" id="HpT-wR-bcK"/>
+                        <constraint firstItem="FYL-O6-M4c" firstAttribute="leading" secondItem="EQR-He-fjg" secondAttribute="leading" constant="30" id="UbF-go-Ttj"/>
+                        <constraint firstItem="oTd-tM-akU" firstAttribute="leading" secondItem="EQR-He-fjg" secondAttribute="leading" constant="30" id="c0Z-6D-hIb"/>
+                        <constraint firstItem="Ue0-V3-Gug" firstAttribute="top" secondItem="oTd-tM-akU" secondAttribute="bottom" constant="20" id="f6W-4S-Ysa"/>
+                        <constraint firstAttribute="trailing" secondItem="FYL-O6-M4c" secondAttribute="trailing" constant="30" id="hlp-4q-l7X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EQR-He-fjg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bzq-E7-dsU"/>
+                <constraint firstItem="EQR-He-fjg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="VYb-Gc-GaM"/>
+                <constraint firstItem="EQR-He-fjg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Wrw-zu-Zid"/>
+                <constraint firstAttribute="bottom" secondItem="EQR-He-fjg" secondAttribute="bottom" id="guv-nC-uqT"/>
+                <constraint firstAttribute="trailing" secondItem="EQR-He-fjg" secondAttribute="trailing" id="mPf-Bs-3pl"/>
+                <constraint firstItem="EQR-He-fjg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="yRZ-Bm-7Kt"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="VYb-Gc-GaM"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="300" y="340"/>
+        </view>
+    </objects>
+</document>

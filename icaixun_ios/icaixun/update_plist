@@ -1,0 +1,52 @@
+#!/bin/bash
+# $1 = Golf
+# $2 = test
+
+targetName=$1
+env=$2
+
+projectHome=`pwd`
+
+buildPlist=$projectHome/$targetName/Info.plist
+plistBuddy=/usr/libexec/PlistBuddy
+
+#app param
+product_appName="爱财讯"
+product_apiUrl="http://api.icaixun.me"
+product_paymentUrl="http://pay.icaixun.me"
+product_env="product"
+product_umeng_app_key="55c462f5e0f55abdf8001e06"
+
+test_appName="爱财讯(测试)"
+test_apiUrl="http://test.icaixun.me/api"
+test_paymentUrl="http://test.icaixun.me/payment"
+test_env="test"
+test_umeng_app_key="55dd64f6e0f55a9147001f2e"
+
+
+if [ $env = 'test' ]; then
+echo '进if了 '
+$plistBuddy -c "Set :apiUrl $test_apiUrl" $buildPlist
+$plistBuddy -c "Set :paymentUrl $test_paymentUrl" $buildPlist
+$plistBuddy -c "Set :CFBundleDisplayName $test_appName" $buildPlist
+#$plistBuddy -c "Set :env $test_env" $buildPlist
+$plistBuddy -c "Set :umengAppKey $test_umeng_app_key" $buildPlist
+
+# elif [ $env = 'stage' ]; then
+# $plistBuddy -c "Set :apiUrl $stage_apiUrl" $buildPlist
+# $plistBuddy -c "Set :searcherUrl $stage_searcherUrl" $buildPlist
+# $plistBuddy -c "Set :webPageUrl $stage_siteUrl" $buildPlist
+# $plistBuddy -c "Set :CFBundleDisplayName $stage_appName" $buildPlist
+# $plistBuddy -c "Set :env $stage_env" $buildPlist
+# $plistBuddy -c "Set :easemobApnsCertName $stage_easemobApnsCertName" $buildPlist
+# $plistBuddy -c "Set :easemobAppKey $stage_easemobAppKey" $buildPlist
+# $plistBuddy -c "Set :minimumPaymentAmount $stage_minimumPaymentAmount" $buildPlist
+# $plistBuddy -c "Set :umengAppKey $stage_umeng_app_key" $buildPlist
+else
+echo '进else了 '
+$plistBuddy -c "Set :apiUrl $product_apiUrl" $buildPlist
+$plistBuddy -c "Set :paymentUrl $product_paymentUrl" $buildPlist
+$plistBuddy -c "Set :CFBundleDisplayName $product_appName" $buildPlist
+#$plistBuddy -c "Set :env $product_env" $buildPlist
+$plistBuddy -c "Set :umengAppKey $product_umeng_app_key" $buildPlist
+fi

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAttentionExpertViewController">
+            <connections>
+                <outlet property="bodyView" destination="Bfp-JO-DDN" id="GUt-qB-SUo"/>
+                <outlet property="finishBtn" destination="GHa-zN-pvH" id="uSt-nY-P5g"/>
+                <outlet property="inputInviteCodeField" destination="avj-9p-t3V" id="rfQ-FW-X4q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfp-JO-DDN" userLabel="body view">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="avj-9p-t3V">
+                            <rect key="frame" x="45" y="60" width="510" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="kF6-P3-Sko"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHa-zN-pvH">
+                            <rect key="frame" x="45" y="150" width="510" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="koh-8f-Wbn"/>
+                            </constraints>
+                            <state key="normal" title="添加">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addExpert:" destination="-1" eventType="touchUpInside" id="dxb-6g-f5U"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94337910353535359" green="0.94337910353535359" blue="0.94337910353535359" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="avj-9p-t3V" secondAttribute="trailing" constant="45" id="23V-TX-K4C"/>
+                        <constraint firstItem="GHa-zN-pvH" firstAttribute="top" secondItem="avj-9p-t3V" secondAttribute="bottom" constant="45" id="CKD-Lt-WLT"/>
+                        <constraint firstAttribute="trailing" secondItem="GHa-zN-pvH" secondAttribute="trailing" constant="45" id="O6g-JW-R4w"/>
+                        <constraint firstItem="avj-9p-t3V" firstAttribute="top" secondItem="Bfp-JO-DDN" secondAttribute="top" constant="60" id="hc7-IH-ZR6"/>
+                        <constraint firstItem="avj-9p-t3V" firstAttribute="leading" secondItem="Bfp-JO-DDN" secondAttribute="leading" constant="45" id="vwF-w7-cKI"/>
+                        <constraint firstItem="GHa-zN-pvH" firstAttribute="leading" secondItem="Bfp-JO-DDN" secondAttribute="leading" constant="45" id="z3W-On-hPq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bfp-JO-DDN" secondAttribute="bottom" id="RbU-xf-OUO"/>
+                <constraint firstItem="Bfp-JO-DDN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Szw-IX-od0"/>
+                <constraint firstItem="Bfp-JO-DDN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kHZ-RR-aaF"/>
+                <constraint firstAttribute="trailing" secondItem="Bfp-JO-DDN" secondAttribute="trailing" id="wVe-TS-Y3i"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

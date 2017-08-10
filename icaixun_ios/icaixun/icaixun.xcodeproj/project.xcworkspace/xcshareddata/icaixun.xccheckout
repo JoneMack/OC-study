@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F1DA338-8214-474E-93EB-231EFCB80F04</string>
+	<key>IDESourceControlProjectName</key>
+	<string>icaixun</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0ACE3C9616571993460E85A4D1952329EA89F605</key>
+		<string>test2.golfd.cn:icaixun_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>icaixun/icaixun.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0ACE3C9616571993460E85A4D1952329EA89F605</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>test2.golfd.cn:icaixun_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0ACE3C9616571993460E85A4D1952329EA89F605</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0ACE3C9616571993460E85A4D1952329EA89F605</string>
+			<key>IDESourceControlWCCName</key>
+			<string>icaixun_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# $1 = icaixun  项目名
+# $2 = test  环境名
+# $3 = ios的版本号
+
+targetName=$1
+projectHome=`pwd`
+configuration=$2
+sdkVersion=$3
+#env=$3
+
+currentTime=`date '+%Y-%m-%d-%H-%M'`
+
+#app param
+test_serviceUrl="http://test.icaixun.me/api"
+
+#xcodebuild clean -configuration $configuration #clean project
+#rm -rf target/*.ipa
+
+#auto increase build no
+buildPlist=$projectHome/$targetName/Info.plist
+plistBuddy=/usr/libexec/PlistBuddy
+CFBundleVersion=$($plistBuddy -c "Print CFBundleVersion" $buildPlist)
+CFBundleVersion=$(($CFBundleVersion+1))
+$plistBuddy -c "Set :CFBundleVersion $CFBundleVersion" $buildPlist
+
+#定义app和ipa文件的路径
+appFilePath=build/Release-iphoneos/$targetName.app
+ipaFilePath=$projectHome/target/"$targetName"_build_"$CFBundleVersion".ipa
+
+#清理环境
+xcodebuild clean -configuration $configuration #clean project
+rm -rf target/*.ipa
+rm -rf build/$configuration-iphoneos/*.app
+
+#更新plist中的属性值
+./update_plist $targetName test
+#编译并打包ipa文件
+xcodebuild -target "$targetName" -configuration $configuration 	-sdk iphoneos$sdkVersion build 
+xcrun -sdk iphoneos$sdkVersion PackageApplication -v "$appFilePath" -o "$ipaFilePath"
+#scp "$ipaFilePath" root@test.icaixun.cn:/opt/app/download/icaixun_test_lastest.ipa
+#上传到蒲公英
+curl -F "file=@$ipaFilePath" -F "uKey=59700203a36bba7c7da91df976ac6c20" -F "_api_key=680a679ddedf92409d032541110764cc" -F "publishRange=2" http://www.pgyer.com/apiv1/app/upload
+
+#清理环境
+#xcodebuild clean -configuration $configuration #clean project
+#rm -rf target/*.ipa
+#rm -rf build/$configuration-iphoneos/*.app
+
+#打包其它环境
+#./update_plist $targetName product
+#xcodebuild -target "$targetName" -configuration $configuration 	-sdk iphoneos$sdkVersion build 
+#xcrun -sdk iphoneos$sdkVersion PackageApplication -v "$appFilePath" -o "$ipaFilePath"
+# scp "$ipaFilePath" root@test.icaixun.cn:/opt/app/download/icaixun_lastest.ipa
+
+
+
+#清理环境
+#xcodebuild clean -configuration $configuration #clean project
+#rm -rf target/*.ipa
+#rm -rf build/$configuration-iphoneos/*.app
+# scp "$ipaFilePath" root@test.icaixun.cn:/opt/app/ios/icaixun_lastest.ipa
+
+
+# #清理环境
+ #xcodebuild clean -configuration $configuration #clean project
+ #rm -rf target/*.ipa
+ #rm -rf build/$configuration-iphoneos/*.app
+
+#./update_plist $targetName test
