@@ -1,0 +1,71 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - JSONModel (1.7.0)
+  - MJRefresh (3.1.12)
+  - MOBFoundation (2.2.19)
+  - OpenUDID (1.0.0)
+  - PinYin4Objc (1.1.1)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - ShareSDK3 (3.6.3):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 3.6.3)
+  - ShareSDK3/ShareSDK (3.6.3):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.3):
+    - MOBFoundation
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - JSONModel (~> 1.7.0)
+  - MJRefresh (~> 3.1.12)
+  - MOBFoundation
+  - OpenUDID (~> 1.0.0)
+  - PinYin4Objc (~> 1.1.1)
+  - SDCycleScrollView (~> 1.65)
+  - ShareSDK3 (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
+  - SVProgressHUD (~> 2.1.2)
+
+EXTERNAL SOURCES:
+  ShareSDK3:
+    :git: https://git.oschina.net/MobClub/ShareSDK-for-iOS.git
+
+CHECKOUT OPTIONS:
+  ShareSDK3:
+    :commit: 3b8c723a9d3af20e0318a53101696de0850716e9
+    :git: https://git.oschina.net/MobClub/ShareSDK-for-iOS.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MOBFoundation: e962b2aee79e2b8f626e2d30c2f23e9f13e5331e
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 78f31073ad329892eb1dca6cdf5db1b6e69580f0
+
+COCOAPODS: 1.1.1
