@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolIntroDuceController">
+            <connections>
+                <outlet property="bannerImageView" destination="Sdz-Lb-WOQ" id="Ejn-qp-RM3"/>
+                <outlet property="clubBigImage" destination="Sdz-Lb-WOQ" id="1J2-an-afj"/>
+                <outlet property="textView" destination="qrj-f3-ihD" id="gDe-vd-UMu"/>
+                <outlet property="titleLabel" destination="P2z-2u-GkN" id="cBd-AB-YCA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sdz-Lb-WOQ">
+                    <rect key="frame" x="0.0" y="20" width="320" height="150"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.59999999999999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="5ZQ-3Q-mvi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学院介绍:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2z-2u-GkN">
+                    <rect key="frame" x="8" y="190" width="302" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-f3-ihD">
+                    <rect key="frame" x="0.0" y="221" width="320" height="249"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P2z-2u-GkN" firstAttribute="top" secondItem="Sdz-Lb-WOQ" secondAttribute="bottom" constant="20" id="356-kS-1hv"/>
+                <constraint firstItem="qrj-f3-ihD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dc2-vU-Qu8"/>
+                <constraint firstItem="Sdz-Lb-WOQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PUu-rm-90D"/>
+                <constraint firstItem="qrj-f3-ihD" firstAttribute="top" secondItem="P2z-2u-GkN" secondAttribute="bottom" constant="10" id="QL4-ur-bBj"/>
+                <constraint firstAttribute="trailing" secondItem="P2z-2u-GkN" secondAttribute="trailing" constant="10" id="Wsl-YI-20L"/>
+                <constraint firstAttribute="bottom" secondItem="qrj-f3-ihD" secondAttribute="bottom" constant="10" id="YRg-Rz-WTI"/>
+                <constraint firstItem="Sdz-Lb-WOQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="aZM-yG-txI"/>
+                <constraint firstAttribute="trailing" secondItem="Sdz-Lb-WOQ" secondAttribute="trailing" id="c85-9t-6J9"/>
+                <constraint firstAttribute="trailing" secondItem="qrj-f3-ihD" secondAttribute="trailing" id="hc2-Vq-V3c"/>
+                <constraint firstItem="P2z-2u-GkN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="yQv-4P-SPG"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="411" y="262"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JieZhenViewController">
+            <connections>
+                <outlet property="tableView" destination="nHt-FW-NeW" id="f2G-vW-vCO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ODS-DB-X59"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nHt-FW-NeW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="29N-ra-EL2"/>
+                        <outlet property="delegate" destination="-1" id="7kE-Xw-h1Y"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nHt-FW-NeW" secondAttribute="bottom" id="Ktr-8a-4M1"/>
+                <constraint firstAttribute="trailing" secondItem="nHt-FW-NeW" secondAttribute="trailing" id="MOU-Dt-inW"/>
+                <constraint firstItem="nHt-FW-NeW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XyH-Ow-Peh"/>
+                <constraint firstItem="nHt-FW-NeW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bHi-FB-44d"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="405" y="299"/>
+        </view>
+    </objects>
+</document>

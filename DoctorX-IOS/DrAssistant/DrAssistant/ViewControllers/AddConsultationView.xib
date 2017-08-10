@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddConsultationView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYP-He-v4y">
+                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击选择会诊患者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFZ-C4-Zcd">
+                            <rect key="frame" x="8" y="0.0" width="502" height="44"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="zbi-06-bNn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="zbi-06-bNn"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows" translatesAutoresizingMaskIntoConstraints="NO" id="lzG-Zv-j8r">
+                            <rect key="frame" x="561" y="11" width="16" height="22"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="W9z-Zk-fYe"/>
+                                <constraint firstAttribute="width" constant="16" id="ekS-1U-iHX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SFZ-C4-Zcd" firstAttribute="top" secondItem="oYP-He-v4y" secondAttribute="top" id="7zs-EC-K9b"/>
+                        <constraint firstItem="lzG-Zv-j8r" firstAttribute="top" secondItem="oYP-He-v4y" secondAttribute="top" constant="11" id="Td5-gb-tfY"/>
+                        <constraint firstItem="lzG-Zv-j8r" firstAttribute="leading" secondItem="SFZ-C4-Zcd" secondAttribute="trailing" constant="51" id="XY2-t8-qnn"/>
+                        <constraint firstAttribute="bottom" secondItem="SFZ-C4-Zcd" secondAttribute="bottom" id="a8e-2a-IvZ"/>
+                        <constraint firstAttribute="bottom" secondItem="lzG-Zv-j8r" secondAttribute="bottom" constant="11" id="agc-Lo-crU"/>
+                        <constraint firstAttribute="trailing" secondItem="lzG-Zv-j8r" secondAttribute="trailing" constant="23" id="iHi-Hn-6DY"/>
+                        <constraint firstAttribute="height" constant="44" id="lKw-hW-hxQ"/>
+                        <constraint firstItem="SFZ-C4-Zcd" firstAttribute="leading" secondItem="oYP-He-v4y" secondAttribute="leading" constant="8" id="raD-Y2-yVU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9g-1t-gZN">
+                    <rect key="frame" x="0.0" y="135" width="600" height="128"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="病情描述" translatesAutoresizingMaskIntoConstraints="NO" id="NYK-eX-Cds">
+                            <rect key="frame" x="8" y="0.0" width="584" height="128"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NYK-eX-Cds" secondAttribute="bottom" id="4nd-cU-5xx"/>
+                        <constraint firstAttribute="height" constant="128" id="7Jb-yb-eAm"/>
+                        <constraint firstItem="NYK-eX-Cds" firstAttribute="leading" secondItem="P9g-1t-gZN" secondAttribute="leading" constant="8" id="Gdr-8z-6eE"/>
+                        <constraint firstItem="NYK-eX-Cds" firstAttribute="top" secondItem="P9g-1t-gZN" secondAttribute="top" id="jzP-cg-r63"/>
+                        <constraint firstAttribute="trailing" secondItem="NYK-eX-Cds" secondAttribute="trailing" constant="8" id="k7r-u9-e9a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P9g-1t-gZN" firstAttribute="top" secondItem="oYP-He-v4y" secondAttribute="bottom" constant="27" id="Bwl-4w-98T"/>
+                <constraint firstAttribute="trailing" secondItem="P9g-1t-gZN" secondAttribute="trailing" id="bQx-79-x16"/>
+                <constraint firstItem="oYP-He-v4y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fD6-8j-gtY"/>
+                <constraint firstItem="oYP-He-v4y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="g4G-Hm-fcm"/>
+                <constraint firstAttribute="trailing" secondItem="oYP-He-v4y" secondAttribute="trailing" id="h70-UC-bAE"/>
+                <constraint firstItem="P9g-1t-gZN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r3D-nf-SpO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrows_image" destination="lzG-Zv-j8r" id="eyJ-dP-Dg5"/>
+                <outlet property="discribe_tv" destination="NYK-eX-Cds" id="LhL-gX-kw2"/>
+                <outlet property="hopView" destination="oYP-He-v4y" id="LOY-Iu-8RD"/>
+                <outlet property="patName_lab" destination="SFZ-C4-Zcd" id="Zh7-Hn-egt"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrows" width="20" height="30"/>
+    </resources>
+</document>

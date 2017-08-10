@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyAsNullHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有申请过助理，快去申请助理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufV-pD-kkX">
+                    <rect key="frame" x="183" y="51" width="272" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5on-GH-2sF"/>
+                        <constraint firstAttribute="width" constant="272" id="ZUP-af-G5n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5on-GH-2sF"/>
+                            <exclude reference="ZUP-af-G5n"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-CU-mnc">
+                    <rect key="frame" x="495" y="42" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="添加助理"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tongtong" translatesAutoresizingMaskIntoConstraints="NO" id="mx8-1D-MD1">
+                    <rect key="frame" x="50" y="17" width="60" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Rrz-QH-5hD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fqG-zA-AOr"/>
+                        <constraint firstAttribute="width" constant="100" id="gT1-BR-uJJ"/>
+                        <constraint firstAttribute="height" constant="91" id="n5a-Wq-A2O"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fqG-zA-AOr"/>
+                            <exclude reference="gT1-BR-uJJ"/>
+                            <exclude reference="n5a-Wq-A2O"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sSv-CU-mnc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="46E-dS-0i6"/>
+                <constraint firstAttribute="trailing" secondItem="sSv-CU-mnc" secondAttribute="trailing" constant="45" id="55f-ng-ZNL"/>
+                <constraint firstItem="ufV-pD-kkX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="51" id="5NS-Np-giD"/>
+                <constraint firstItem="ufV-pD-kkX" firstAttribute="leading" secondItem="mx8-1D-MD1" secondAttribute="trailing" constant="33" id="9db-eC-3l7"/>
+                <constraint firstItem="mx8-1D-MD1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="9h6-4s-1h7"/>
+                <constraint firstAttribute="trailing" secondItem="sSv-CU-mnc" secondAttribute="trailing" constant="45" id="Ald-oI-fWe"/>
+                <constraint firstItem="ufV-pD-kkX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="51" id="DB4-6B-idP"/>
+                <constraint firstItem="ufV-pD-kkX" firstAttribute="leading" secondItem="mx8-1D-MD1" secondAttribute="trailing" constant="33" id="Ouu-0f-KcE"/>
+                <constraint firstItem="sSv-CU-mnc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="Rnd-nA-h1S"/>
+                <constraint firstItem="mx8-1D-MD1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="U1Y-lq-aFs"/>
+                <constraint firstAttribute="bottom" secondItem="mx8-1D-MD1" secondAttribute="bottom" constant="18" id="ZrH-0s-2sg"/>
+                <constraint firstAttribute="bottom" secondItem="sSv-CU-mnc" secondAttribute="bottom" constant="54" id="bwo-Z2-cvs"/>
+                <constraint firstItem="mx8-1D-MD1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="ePa-4s-a01"/>
+                <constraint firstItem="sSv-CU-mnc" firstAttribute="leading" secondItem="ufV-pD-kkX" secondAttribute="trailing" constant="40" id="j1e-NK-bXR"/>
+                <constraint firstItem="mx8-1D-MD1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="kbg-wx-gH6"/>
+                <constraint firstItem="mx8-1D-MD1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="m48-AI-Jn5"/>
+                <constraint firstAttribute="bottom" secondItem="ufV-pD-kkX" secondAttribute="bottom" constant="54" id="vX0-64-mCh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="U1Y-lq-aFs"/>
+                    <exclude reference="ZrH-0s-2sg"/>
+                    <exclude reference="ePa-4s-a01"/>
+                    <exclude reference="5NS-Np-giD"/>
+                    <exclude reference="9db-eC-3l7"/>
+                    <exclude reference="vX0-64-mCh"/>
+                    <exclude reference="Ald-oI-fWe"/>
+                    <exclude reference="Rnd-nA-h1S"/>
+                    <exclude reference="bwo-Z2-cvs"/>
+                    <exclude reference="j1e-NK-bXR"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="328" y="220"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tongtong" width="200" height="200"/>
+    </resources>
+</document>

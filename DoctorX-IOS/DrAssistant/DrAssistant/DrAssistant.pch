@@ -1,0 +1,49 @@
+//
+//  DrAssistant.pch
+//  DrAssistant
+//
+//  Created by hi on 15/8/27.
+//  Copyright (c) 2015年 Doctor. All rights reserved.
+//
+
+#ifndef DrAssistant_DrAssistant_pch
+#define DrAssistant_DrAssistant_pch
+
+#ifndef TARGET_OS_IOS
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+#define TARGET_OS_WATCH 0
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Macros.h"
+#import "URLMacros.h"
+#import "XLog.h"
+#import "Category.h"
+#import "Utils.h"
+#import "UIMacros.h"
+#import "DrConst.h"
+#import "GlobalConst.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
+#import "GRNetworkAgent.h"
+#import "UserEntity.h"
+#import "EMAlertView.h"
+#import "ResponeEntity.h"
+
+//
+//#import "ChatDemoUIDefine.h"
+//#import "EMAlertView.h"
+//#import "TTGlobalUICommon.h"
+//#import "UIViewController+HUD.h"
+//#import "UIViewController+DismissKeyboard.h"
+//#import "NSString+Valid.h"
+//
+#import "EaseMob.h"
+#import "EaseMobHeaders.h"
+#endif
+#endif

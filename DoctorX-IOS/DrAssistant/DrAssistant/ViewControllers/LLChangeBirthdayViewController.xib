@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLChangeBirthdayViewController">
+            <connections>
+                <outlet property="birthday" destination="4mx-Yw-bg8" id="mul-8q-XNq"/>
+                <outlet property="birthdayPickerView" destination="WUY-xm-XUT" id="dXk-Zz-BWI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-Dw-oik">
+                    <rect key="frame" x="0.0" y="74" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-Yw-bg8">
+                            <rect key="frame" x="0.0" y="11" width="0.0" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="L31-Zl-WsY"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="mPb-hs-8Fa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8Yz-o2-17g"/>
+                        <constraint firstAttribute="trailing" secondItem="4mx-Yw-bg8" secondAttribute="trailing" id="QI7-7i-NNA"/>
+                        <constraint firstAttribute="height" constant="44" id="ZZW-P4-DKM"/>
+                        <constraint firstItem="4mx-Yw-bg8" firstAttribute="top" secondItem="jc5-Dw-oik" secondAttribute="top" constant="11" id="ft6-8T-Fyp"/>
+                        <constraint firstAttribute="trailing" secondItem="4mx-Yw-bg8" secondAttribute="trailing" id="iuA-xk-1AU"/>
+                        <constraint firstItem="4mx-Yw-bg8" firstAttribute="leading" secondItem="jc5-Dw-oik" secondAttribute="leading" id="mC8-FY-dLg"/>
+                        <constraint firstItem="4mx-Yw-bg8" firstAttribute="top" secondItem="jc5-Dw-oik" secondAttribute="top" constant="11" id="xWX-DX-0Bj"/>
+                        <constraint firstItem="4mx-Yw-bg8" firstAttribute="leading" secondItem="jc5-Dw-oik" secondAttribute="leading" id="xYV-2J-5fh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8Yz-o2-17g"/>
+                            <exclude reference="QI7-7i-NNA"/>
+                            <exclude reference="ft6-8T-Fyp"/>
+                            <exclude reference="xYV-2J-5fh"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUv-i5-tNa">
+                    <rect key="frame" x="0.0" y="128" width="600" height="180"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WUY-xm-XUT">
+                            <rect key="frame" x="20" y="0.0" width="560" height="180"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="sd0-bQ-tr4"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="440046234.29483199">
+                                <!--2014-12-12 03:03:54 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WUY-xm-XUT" firstAttribute="leading" secondItem="YUv-i5-tNa" secondAttribute="leading" constant="20" id="93u-U1-YH6"/>
+                        <constraint firstAttribute="bottom" secondItem="WUY-xm-XUT" secondAttribute="bottom" id="Ca0-t8-hLA"/>
+                        <constraint firstAttribute="height" constant="180" id="Emo-uQ-HLM"/>
+                        <constraint firstAttribute="height" constant="180" id="JAj-oL-wHg"/>
+                        <constraint firstItem="WUY-xm-XUT" firstAttribute="top" secondItem="YUv-i5-tNa" secondAttribute="top" constant="10" id="Oke-Yf-xEv"/>
+                        <constraint firstItem="WUY-xm-XUT" firstAttribute="leading" secondItem="YUv-i5-tNa" secondAttribute="leading" constant="20" id="Vit-aA-lTr"/>
+                        <constraint firstAttribute="trailing" secondItem="WUY-xm-XUT" secondAttribute="trailing" constant="20" id="XsU-15-ETq"/>
+                        <constraint firstAttribute="trailing" secondItem="WUY-xm-XUT" secondAttribute="trailing" constant="20" id="eMZ-bI-Zsb"/>
+                        <constraint firstItem="WUY-xm-XUT" firstAttribute="top" secondItem="YUv-i5-tNa" secondAttribute="top" id="xTu-1o-cmY"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Emo-uQ-HLM"/>
+                            <exclude reference="93u-U1-YH6"/>
+                            <exclude reference="Oke-Yf-xEv"/>
+                            <exclude reference="eMZ-bI-Zsb"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jc5-Dw-oik" secondAttribute="trailing" id="3L8-U0-pRe"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E0r-tf-hco"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="top" secondItem="jc5-Dw-oik" secondAttribute="bottom" constant="10" id="IJh-r6-GaX"/>
+                <constraint firstAttribute="trailing" secondItem="YUv-i5-tNa" secondAttribute="trailing" id="JCS-qg-yUC"/>
+                <constraint firstItem="jc5-Dw-oik" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="PaP-IW-NBp"/>
+                <constraint firstItem="jc5-Dw-oik" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PiT-32-VwR"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="leading" secondItem="jc5-Dw-oik" secondAttribute="trailing" constant="10" id="aAx-Gt-v0D"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="leading" secondItem="jc5-Dw-oik" secondAttribute="trailing" constant="-600" id="c3s-pM-FGB"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ekA-yZ-bAf"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="top" secondItem="jc5-Dw-oik" secondAttribute="bottom" constant="10" id="mQh-4i-PD9"/>
+                <constraint firstItem="YUv-i5-tNa" firstAttribute="leading" secondItem="jc5-Dw-oik" secondAttribute="trailing" constant="-600" id="yYF-Iv-By0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="E0r-tf-hco"/>
+                    <exclude reference="IJh-r6-GaX"/>
+                    <exclude reference="aAx-Gt-v0D"/>
+                    <exclude reference="c3s-pM-FGB"/>
+                    <exclude reference="yYF-Iv-By0"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

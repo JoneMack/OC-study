@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="MenZhenYuYueCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTZ-3n-Hf2">
+                        <rect key="frame" x="8" y="13" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-9S-3Bu">
+                        <rect key="frame" x="70" y="13" width="218" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvW-Xy-3Mq">
+                        <rect key="frame" x="293" y="10" width="70" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Vdy-5D-h6q"/>
+                            <constraint firstAttribute="height" constant="50" id="c9e-me-dAG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="已预约">
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="rightNowYuYue:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pUW-ol-oob"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odj-mS-f0F">
+                        <rect key="frame" x="8" y="44" width="275" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <rect key="contentStretch" x="1" y="0.34999999999999998" width="1" height="1"/>
+                <constraints>
+                    <constraint firstItem="HTZ-3n-Hf2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0xw-Di-6Pt"/>
+                    <constraint firstItem="HTZ-3n-Hf2" firstAttribute="centerY" secondItem="gfN-9S-3Bu" secondAttribute="centerY" id="8gN-19-5Oq"/>
+                    <constraint firstItem="GvW-Xy-3Mq" firstAttribute="leading" secondItem="gfN-9S-3Bu" secondAttribute="trailing" constant="5" id="IZa-Jx-3WB"/>
+                    <constraint firstItem="GvW-Xy-3Mq" firstAttribute="leading" secondItem="odj-mS-f0F" secondAttribute="trailing" constant="10" id="KfD-Vm-ZTk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GvW-Xy-3Mq" secondAttribute="trailing" id="aiv-Od-2ph"/>
+                    <constraint firstItem="HTZ-3n-Hf2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="dgL-nK-PKS"/>
+                    <constraint firstItem="gfN-9S-3Bu" firstAttribute="leading" secondItem="HTZ-3n-Hf2" secondAttribute="trailing" constant="20" id="gBH-iK-SiK"/>
+                    <constraint firstAttribute="centerY" secondItem="GvW-Xy-3Mq" secondAttribute="centerY" id="jsn-EJ-S7U"/>
+                    <constraint firstItem="odj-mS-f0F" firstAttribute="leading" secondItem="HTZ-3n-Hf2" secondAttribute="leading" id="mmi-ke-Z1K"/>
+                    <constraint firstItem="odj-mS-f0F" firstAttribute="top" secondItem="HTZ-3n-Hf2" secondAttribute="bottom" constant="10" id="wXW-4b-WZK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="hospitalLab" destination="odj-mS-f0F" id="f2S-kS-NcH"/>
+                <outlet property="keShiLab" destination="gfN-9S-3Bu" id="zHl-wc-klK"/>
+                <outlet property="nameLAB" destination="HTZ-3n-Hf2" id="S1U-cw-Xcd"/>
+                <outlet property="yuYueBtn" destination="GvW-Xy-3Mq" id="L5a-oj-3gp"/>
+            </connections>
+            <point key="canvasLocation" x="461.5" y="211"/>
+        </tableViewCell>
+    </objects>
+</document>

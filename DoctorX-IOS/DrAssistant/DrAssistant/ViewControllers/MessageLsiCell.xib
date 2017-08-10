@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="msgCell" rowHeight="233" id="KGk-i7-Jjw" customClass="MessageLsiCell">
+            <rect key="frame" x="0.0" y="1" width="391" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="张三" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umw-D7-gIZ">
+                        <rect key="frame" x="66" y="96" width="236" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ8-Rx-Kpu">
+                        <rect key="frame" x="66" y="121" width="28" height="17"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avtar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="efn-VW-WS2">
+                        <rect key="frame" x="8" y="91" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BFk-jp-ETN"/>
+                            <constraint firstAttribute="width" constant="50" id="BeU-No-vHC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19：00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meJ-KM-dK7">
+                        <rect key="frame" x="332" y="96" width="46" height="17"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="meJ-KM-dK7" secondAttribute="trailing" constant="5" id="4du-Vw-i2P"/>
+                    <constraint firstItem="dJ8-Rx-Kpu" firstAttribute="leading" secondItem="umw-D7-gIZ" secondAttribute="leading" id="ASr-bE-mRK"/>
+                    <constraint firstItem="meJ-KM-dK7" firstAttribute="leading" secondItem="umw-D7-gIZ" secondAttribute="trailing" constant="30" id="Ii6-7T-Aqa"/>
+                    <constraint firstItem="umw-D7-gIZ" firstAttribute="centerY" secondItem="meJ-KM-dK7" secondAttribute="centerY" constant="0.5" id="P0O-En-hFf"/>
+                    <constraint firstItem="umw-D7-gIZ" firstAttribute="leading" secondItem="efn-VW-WS2" secondAttribute="trailing" constant="8" id="ZpW-j3-eJK"/>
+                    <constraint firstAttribute="centerY" secondItem="efn-VW-WS2" secondAttribute="centerY" id="gYA-EG-Mb3"/>
+                    <constraint firstItem="dJ8-Rx-Kpu" firstAttribute="bottom" secondItem="efn-VW-WS2" secondAttribute="bottom" constant="-3" id="h0h-2c-Fl7"/>
+                    <constraint firstItem="umw-D7-gIZ" firstAttribute="top" secondItem="efn-VW-WS2" secondAttribute="top" constant="5" id="kVu-wU-gem"/>
+                    <constraint firstItem="efn-VW-WS2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lVH-dF-6BH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avtarImageView" destination="efn-VW-WS2" id="Fst-ve-c2U"/>
+                <outlet property="dateLabel" destination="meJ-KM-dK7" id="0SX-4z-zGx"/>
+                <outlet property="detailLabel" destination="dJ8-Rx-Kpu" id="0ls-5O-V9y"/>
+                <outlet property="nameLabel" destination="umw-D7-gIZ" id="ruw-t5-gmj"/>
+            </connections>
+            <point key="canvasLocation" x="318.5" y="382.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avtar_placeholder" width="32" height="32"/>
+    </resources>
+</document>

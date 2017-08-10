@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TYy-9N-qrU" customClass="MyDoctorHeader">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2O-sG-RW7" customClass="ButtonPlugin">
+                    <rect key="frame" x="150" y="0.0" width="150" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="FX0-X1-RGs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="17" maxY="0.0"/>
+                    <state key="normal" title="我的预约" image="mydoctor_appointmenta">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FX0-X1-RGs"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="btnAction:" destination="TYy-9N-qrU" eventType="touchUpInside" id="C5Z-V3-Ncp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugJ-f2-nM0" customClass="ButtonPlugin">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="JQ9-vG-Cif"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="13" maxY="0.0"/>
+                    <state key="normal" title="添加医生" image="mydoctor_adddoctora">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JQ9-vG-Cif"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="btnAction:" destination="TYy-9N-qrU" eventType="touchUpInside" id="uSv-A5-tuO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-Sb-w0I" customClass="ButtonPlugin">
+                    <rect key="frame" x="300" y="0.0" width="150" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="lXM-aL-tFS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="免费咨询" image="mydoctor_consultationa">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="lXM-aL-tFS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="btnAction:" destination="TYy-9N-qrU" eventType="touchUpInside" id="vKU-6T-oZ2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  我的医生列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE9-DI-93L">
+                    <rect key="frame" x="0.0" y="130" width="450" height="40"/>
+                    <color key="backgroundColor" red="0.95119160353535348" green="0.95119160353535348" blue="0.95119160353535348" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jYv-rq-3eK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="width" secondItem="ugJ-f2-nM0" secondAttribute="width" id="1Bf-eL-Vz8"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="bottom" secondItem="ugJ-f2-nM0" secondAttribute="bottom" id="2d5-61-kye"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="top" secondItem="RF6-Sb-w0I" secondAttribute="top" id="2ne-3b-m6W"/>
+                <constraint firstAttribute="bottom" secondItem="RF6-Sb-w0I" secondAttribute="bottom" constant="10" id="64X-l6-cvx"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="leading" secondItem="ugJ-f2-nM0" secondAttribute="trailing" id="7s6-cc-RFE"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="top" secondItem="TYy-9N-qrU" secondAttribute="top" id="9Bm-kJ-nsb"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="top" secondItem="ugJ-f2-nM0" secondAttribute="top" id="9as-2B-y35"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="bottom" secondItem="RF6-Sb-w0I" secondAttribute="bottom" id="AH0-dg-Kh7"/>
+                <constraint firstAttribute="bottom" secondItem="wE9-DI-93L" secondAttribute="bottom" id="ATN-dg-Eu1"/>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="top" secondItem="TYy-9N-qrU" secondAttribute="top" id="ETF-0d-QX4"/>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="leading" secondItem="p2O-sG-RW7" secondAttribute="trailing" id="H4K-BF-eto"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="leading" secondItem="ugJ-f2-nM0" secondAttribute="trailing" constant="30" id="IJp-Bg-FhY"/>
+                <constraint firstItem="wE9-DI-93L" firstAttribute="top" secondItem="RF6-Sb-w0I" secondAttribute="bottom" id="JKg-Wu-yey"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="height" secondItem="ugJ-f2-nM0" secondAttribute="height" id="LE9-nd-kEi"/>
+                <constraint firstAttribute="bottom" secondItem="wE9-DI-93L" secondAttribute="bottom" id="M3P-bd-zpW"/>
+                <constraint firstAttribute="bottom" secondItem="RF6-Sb-w0I" secondAttribute="bottom" constant="70" id="Mhx-8f-OZo"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="width" secondItem="ugJ-f2-nM0" secondAttribute="width" id="QZD-An-tS8"/>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="top" secondItem="TYy-9N-qrU" secondAttribute="top" constant="10" id="S03-Kr-BRo"/>
+                <constraint firstItem="wE9-DI-93L" firstAttribute="leading" secondItem="TYy-9N-qrU" secondAttribute="leading" id="TNb-D5-wZd"/>
+                <constraint firstAttribute="trailing" secondItem="wE9-DI-93L" secondAttribute="trailing" id="UAg-yp-RZB"/>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="height" secondItem="ugJ-f2-nM0" secondAttribute="height" id="Vus-KZ-k2H"/>
+                <constraint firstItem="wE9-DI-93L" firstAttribute="leading" secondItem="TYy-9N-qrU" secondAttribute="leading" id="Xlj-Jw-ZeT"/>
+                <constraint firstAttribute="trailing" secondItem="RF6-Sb-w0I" secondAttribute="trailing" constant="20" id="aVg-iL-DU2"/>
+                <constraint firstAttribute="trailing" secondItem="wE9-DI-93L" secondAttribute="trailing" id="agB-xl-0jo"/>
+                <constraint firstItem="ugJ-f2-nM0" firstAttribute="top" secondItem="TYy-9N-qrU" secondAttribute="top" id="asU-SV-ga9"/>
+                <constraint firstAttribute="trailing" secondItem="RF6-Sb-w0I" secondAttribute="trailing" id="gMW-Qp-4Li"/>
+                <constraint firstItem="RF6-Sb-w0I" firstAttribute="leading" secondItem="p2O-sG-RW7" secondAttribute="trailing" constant="30" id="hMf-Ae-yqF"/>
+                <constraint firstAttribute="bottom" secondItem="p2O-sG-RW7" secondAttribute="bottom" constant="70" id="mPI-m8-hvy"/>
+                <constraint firstItem="ugJ-f2-nM0" firstAttribute="leading" secondItem="TYy-9N-qrU" secondAttribute="leading" constant="20" id="mzw-Fg-oD9"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="width" secondItem="RF6-Sb-w0I" secondAttribute="width" id="nzg-qt-ocr"/>
+                <constraint firstItem="ugJ-f2-nM0" firstAttribute="leading" secondItem="TYy-9N-qrU" secondAttribute="leading" id="pBf-aA-Syl"/>
+                <constraint firstAttribute="bottom" secondItem="ugJ-f2-nM0" secondAttribute="bottom" constant="70" id="vkZ-HX-fpP"/>
+                <constraint firstItem="p2O-sG-RW7" firstAttribute="width" secondItem="ugJ-f2-nM0" secondAttribute="width" id="xVA-YI-VdH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="mzw-Fg-oD9"/>
+                    <exclude reference="ATN-dg-Eu1"/>
+                    <exclude reference="JKg-Wu-yey"/>
+                    <exclude reference="TNb-D5-wZd"/>
+                    <exclude reference="UAg-yp-RZB"/>
+                    <exclude reference="2d5-61-kye"/>
+                    <exclude reference="2ne-3b-m6W"/>
+                    <exclude reference="9as-2B-y35"/>
+                    <exclude reference="AH0-dg-Kh7"/>
+                    <exclude reference="IJp-Bg-FhY"/>
+                    <exclude reference="nzg-qt-ocr"/>
+                    <exclude reference="xVA-YI-VdH"/>
+                    <exclude reference="64X-l6-cvx"/>
+                    <exclude reference="S03-Kr-BRo"/>
+                    <exclude reference="aVg-iL-DU2"/>
+                    <exclude reference="hMf-Ae-yqF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="FreeZiXun" destination="RF6-Sb-w0I" id="QKH-Mq-Nvw"/>
+                <outlet property="MyYuYue" destination="p2O-sG-RW7" id="7Re-AT-E74"/>
+                <outlet property="addDoctorBtn" destination="ugJ-f2-nM0" id="U5a-EA-4bz"/>
+            </connections>
+            <point key="canvasLocation" x="-157" y="285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mydoctor_adddoctora" width="80" height="80"/>
+        <image name="mydoctor_appointmenta" width="80" height="80"/>
+        <image name="mydoctor_consultationa" width="80" height="80"/>
+    </resources>
+</document>

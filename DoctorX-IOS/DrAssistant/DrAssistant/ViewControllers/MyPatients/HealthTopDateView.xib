@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pqP-hx-nbs" customClass="HealthTopDateView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-Rx-17z">
+                    <rect key="frame" x="8" y="0.0" width="93" height="44"/>
+                    <animations/>
+                    <state key="normal" title="按次显示">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="typeAndDateSecletBtnClick:" destination="pqP-hx-nbs" eventType="touchUpInside" id="iU3-Co-qx0"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uv-bI-o2c">
+                    <rect key="frame" x="109" y="0.0" width="93" height="44"/>
+                    <animations/>
+                    <state key="normal" title="2015-10-22">
+                        <color key="titleColor" red="0.26648675350413242" green="0.79182760258626961" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="typeAndDateSecletBtnClick:" destination="pqP-hx-nbs" eventType="touchUpInside" id="6Yp-Ot-Y4C"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbv-id-Y8M">
+                    <rect key="frame" x="219" y="0.0" width="93" height="44"/>
+                    <animations/>
+                    <state key="normal" title="2015-10-22">
+                        <color key="titleColor" red="0.26648675350000001" green="0.79182760259999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="typeAndDateSecletBtnClick:" destination="pqP-hx-nbs" eventType="touchUpInside" id="V5v-Pr-nMM"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wR-ox-CQJ" userLabel="toLabel">
+                    <rect key="frame" x="205" y="0.0" width="15" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="96q-gY-t0c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ff-zYK">
+                    <rect key="frame" x="104" y="0.0" width="216" height="44"/>
+                    <animations/>
+                    <color key="tintColor" red="0.12964867770205368" green="0.8290938984871723" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="2015-10-31"/>
+                    <connections>
+                        <action selector="typeAndDateSecletBtnClick:" destination="pqP-hx-nbs" eventType="touchUpInside" id="ZJB-Oy-sCf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5wR-ox-CQJ" firstAttribute="top" secondItem="pqP-hx-nbs" secondAttribute="top" id="1BW-n3-dYf"/>
+                <constraint firstItem="fH1-Rx-17z" firstAttribute="top" secondItem="pqP-hx-nbs" secondAttribute="top" id="62g-g4-gWK"/>
+                <constraint firstAttribute="bottom" secondItem="5wR-ox-CQJ" secondAttribute="bottom" id="6Pn-1J-j68"/>
+                <constraint firstItem="0Uv-bI-o2c" firstAttribute="width" secondItem="fH1-Rx-17z" secondAttribute="width" id="F4O-gu-Kw6"/>
+                <constraint firstItem="0Uv-bI-o2c" firstAttribute="leading" secondItem="fH1-Rx-17z" secondAttribute="trailing" constant="8" id="F5l-wS-HT7"/>
+                <constraint firstItem="Lbv-id-Y8M" firstAttribute="width" secondItem="fH1-Rx-17z" secondAttribute="width" id="G3N-hy-zWT"/>
+                <constraint firstItem="Lbv-id-Y8M" firstAttribute="leading" secondItem="0Uv-bI-o2c" secondAttribute="trailing" constant="17" id="LZ3-gW-7OO"/>
+                <constraint firstItem="Lbv-id-Y8M" firstAttribute="leading" secondItem="0Uv-bI-o2c" secondAttribute="trailing" constant="17" id="Ump-70-B9d"/>
+                <constraint firstItem="0Uv-bI-o2c" firstAttribute="leading" secondItem="fH1-Rx-17z" secondAttribute="trailing" constant="8" id="ZIL-b1-IUV"/>
+                <constraint firstItem="Lbv-id-Y8M" firstAttribute="height" secondItem="fH1-Rx-17z" secondAttribute="height" id="a83-Pl-ftw"/>
+                <constraint firstAttribute="bottom" secondItem="fH1-Rx-17z" secondAttribute="bottom" id="cIx-Ed-WkE"/>
+                <constraint firstItem="5wR-ox-CQJ" firstAttribute="leading" secondItem="0Uv-bI-o2c" secondAttribute="trailing" constant="3" id="dXD-dm-FnV"/>
+                <constraint firstItem="0Uv-bI-o2c" firstAttribute="top" secondItem="pqP-hx-nbs" secondAttribute="top" id="f7j-vw-u4k"/>
+                <constraint firstAttribute="bottom" secondItem="0Uv-bI-o2c" secondAttribute="bottom" id="lgV-Tw-vQR"/>
+                <constraint firstAttribute="bottom" secondItem="Lbv-id-Y8M" secondAttribute="bottom" id="nLG-b7-KYV"/>
+                <constraint firstItem="Lbv-id-Y8M" firstAttribute="top" secondItem="pqP-hx-nbs" secondAttribute="top" id="oFn-Rb-778"/>
+                <constraint firstAttribute="trailing" secondItem="Lbv-id-Y8M" secondAttribute="trailing" constant="8" id="rOt-8c-9QG"/>
+                <constraint firstItem="fH1-Rx-17z" firstAttribute="leading" secondItem="pqP-hx-nbs" secondAttribute="leading" constant="8" id="tuC-09-Bet"/>
+                <constraint firstItem="0Uv-bI-o2c" firstAttribute="height" secondItem="fH1-Rx-17z" secondAttribute="height" id="xho-NQ-kHE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ToLabel" destination="5wR-ox-CQJ" id="8v9-DE-DG3"/>
+                <outlet property="endDateBtn" destination="Lbv-id-Y8M" id="uld-6A-Wul"/>
+                <outlet property="mediumDateBtn" destination="eIl-ff-zYK" id="Qhv-YC-ZSv"/>
+                <outlet property="selectShowDataTypeBtn" destination="fH1-Rx-17z" id="PNB-kx-pNr"/>
+                <outlet property="startDateBtn" destination="0Uv-bI-o2c" id="KwN-MR-G9J"/>
+            </connections>
+            <point key="canvasLocation" x="453" y="264"/>
+        </view>
+    </objects>
+</document>
