@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xoM-sY-5cg" customClass="MainHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUB-sT-VZn">
+                    <rect key="frame" x="10" y="23" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="CBl-E4-lfP"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="zmE-bj-8gT"/>
+                    </constraints>
+                    <state key="normal" image="threeRow"/>
+                    <connections>
+                        <action selector="showLeftMenu:" destination="xoM-sY-5cg" eventType="touchUpInside" id="8OR-FO-Nr8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vk-2X-JVI">
+                    <rect key="frame" x="331" y="22" width="24" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="kvA-2t-Tm0"/>
+                        <constraint firstAttribute="height" constant="20" id="xuQ-9u-7bT"/>
+                    </constraints>
+                    <state key="normal" image="msg.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhB-zB-REs">
+                    <rect key="frame" x="108" y="30" width="159" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="OFR-Vm-XY1"/>
+                    </constraints>
+                    <state key="normal" title="北京" image="downArrow">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XUB-sT-VZn" firstAttribute="leading" secondItem="xoM-sY-5cg" secondAttribute="leading" constant="10" id="3Dv-7v-hsi"/>
+                <constraint firstItem="2Vk-2X-JVI" firstAttribute="leading" secondItem="LhB-zB-REs" secondAttribute="trailing" constant="64" id="6RS-fy-3Ee"/>
+                <constraint firstAttribute="trailing" secondItem="2Vk-2X-JVI" secondAttribute="trailing" constant="20" id="9HE-d7-E8x"/>
+                <constraint firstItem="XUB-sT-VZn" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="25" id="E7b-DT-jNT"/>
+                <constraint firstItem="LhB-zB-REs" firstAttribute="centerX" secondItem="xoM-sY-5cg" secondAttribute="centerX" id="GqC-2R-Hxi"/>
+                <constraint firstItem="XUB-sT-VZn" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="20" id="HDb-5R-8xr"/>
+                <constraint firstItem="LhB-zB-REs" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="30" id="IjV-a5-l6b"/>
+                <constraint firstItem="2Vk-2X-JVI" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="22" id="L03-gO-HFe"/>
+                <constraint firstItem="LhB-zB-REs" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="22" id="MYW-Bb-fIk"/>
+                <constraint firstItem="XUB-sT-VZn" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="23" id="WMj-zd-O2Y"/>
+                <constraint firstItem="XUB-sT-VZn" firstAttribute="top" secondItem="xoM-sY-5cg" secondAttribute="top" constant="30" id="pB9-Bw-z6O"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="E7b-DT-jNT"/>
+                    <exclude reference="HDb-5R-8xr"/>
+                    <exclude reference="pB9-Bw-z6O"/>
+                    <exclude reference="MYW-Bb-fIk"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="currentCity" destination="LhB-zB-REs" id="IqQ-Fm-8Fu"/>
+                <outlet property="leftMenu" destination="XUB-sT-VZn" id="A6r-Uc-hfE"/>
+                <outlet property="systemMsg" destination="2Vk-2X-JVI" id="I41-O1-Le4"/>
+            </connections>
+            <point key="canvasLocation" x="708" y="-194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downArrow" width="16" height="16"/>
+        <image name="msg.png" width="64" height="64"/>
+        <image name="threeRow" width="32" height="32"/>
+    </resources>
+</document>

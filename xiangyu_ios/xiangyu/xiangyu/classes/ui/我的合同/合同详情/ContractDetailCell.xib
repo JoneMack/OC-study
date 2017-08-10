@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="ContractDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="172.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房屋租期 : 2015/06/25-2016/06/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30t-zy-xYt">
+                        <rect key="frame" x="10" y="10" width="419" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="HMz-vg-xSO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结 算 日  :  2016/07/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snh-dP-zRZ">
+                        <rect key="frame" x="10" y="32" width="419" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="OL3-a5-LB1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结算金额 : 15000元/月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LM-Sp-OYq">
+                        <rect key="frame" x="10" y="54" width="419" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="xFK-Ue-ohj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账单状态 : 待结算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyI-7V-Jch">
+                        <rect key="frame" x="10" y="76" width="419" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="bWY-Rx-si5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="30t-zy-xYt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="52N-w1-spo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IyI-7V-Jch" secondAttribute="trailing" constant="2" id="7IH-LK-jpY"/>
+                    <constraint firstItem="30t-zy-xYt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Bcu-in-nCk"/>
+                    <constraint firstItem="snh-dP-zRZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Ikb-eg-CKm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0LM-Sp-OYq" secondAttribute="trailing" constant="2" id="KQP-hq-nWh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="snh-dP-zRZ" secondAttribute="trailing" constant="2" id="OSM-us-C0e"/>
+                    <constraint firstItem="IyI-7V-Jch" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="P1s-19-FsT"/>
+                    <constraint firstItem="0LM-Sp-OYq" firstAttribute="top" secondItem="snh-dP-zRZ" secondAttribute="bottom" constant="10" id="aRq-NU-FzT"/>
+                    <constraint firstItem="snh-dP-zRZ" firstAttribute="top" secondItem="30t-zy-xYt" secondAttribute="bottom" constant="10" id="glx-Ed-nb5"/>
+                    <constraint firstItem="0LM-Sp-OYq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="tVe-uC-vSH"/>
+                    <constraint firstItem="IyI-7V-Jch" firstAttribute="top" secondItem="0LM-Sp-OYq" secondAttribute="bottom" constant="10" id="uu4-hh-uGA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="30t-zy-xYt" secondAttribute="trailing" constant="2" id="xEq-Wf-0DL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="243.5" y="281.5"/>
+        </tableViewCell>
+    </objects>
+</document>

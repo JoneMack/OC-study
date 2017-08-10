@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="SelectUserSexCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0S-Tf-seQ">
+                        <rect key="frame" x="10" y="8" width="42" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="NzR-Lp-jIZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccu-Nm-xY4">
+                        <rect key="frame" x="310" y="8" width="78" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="vtc-d0-mrF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="女士" image="select_yuan">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="womanEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Az-Xi-5xv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pn-ZW-JBb">
+                        <rect key="frame" x="232" y="8" width="78" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="trM-mO-m4D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="先生" image="unselect_yuan">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="manEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0rD-PD-OUp"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-8x-1FH">
+                        <rect key="frame" x="0.0" y="95" width="394" height="0.5"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="rDW-Tr-uid"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="T0S-Tf-seQ" secondAttribute="bottom" id="0Zl-BB-sFh"/>
+                    <constraint firstItem="1Cd-8x-1FH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="4La-bs-JY9"/>
+                    <constraint firstItem="Ccu-Nm-xY4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="2" id="8Dn-7P-Gbl"/>
+                    <constraint firstItem="Ccu-Nm-xY4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8Y1-SL-reU"/>
+                    <constraint firstItem="T0S-Tf-seQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="AoL-zk-LdZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1Cd-8x-1FH" secondAttribute="trailing" constant="-8" id="GY1-eG-FAE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ccu-Nm-xY4" secondAttribute="bottom" id="LjG-b3-ckK"/>
+                    <constraint firstItem="1pn-ZW-JBb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SSR-KH-enA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1pn-ZW-JBb" secondAttribute="bottom" id="aMC-zg-E4q"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Cd-8x-1FH" secondAttribute="bottom" constant="-8" id="acU-JB-BhN"/>
+                    <constraint firstItem="T0S-Tf-seQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="kvS-7h-7ol"/>
+                    <constraint firstItem="Ccu-Nm-xY4" firstAttribute="leading" secondItem="1pn-ZW-JBb" secondAttribute="trailing" id="vWf-Yn-gbV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="1Cd-8x-1FH" id="4Kh-AU-V1y"/>
+                <outlet property="manBtn" destination="1pn-ZW-JBb" id="jRG-v4-Sd7"/>
+                <outlet property="title" destination="T0S-Tf-seQ" id="mki-em-7Xz"/>
+                <outlet property="womanBtn" destination="Ccu-Nm-xY4" id="7e6-Bn-MWu"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="164"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select_yuan" width="16" height="16"/>
+        <image name="unselect_yuan" width="16" height="16"/>
+    </resources>
+</document>

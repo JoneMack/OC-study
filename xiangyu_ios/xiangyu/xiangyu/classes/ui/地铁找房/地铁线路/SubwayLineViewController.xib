@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubwayLineViewController">
+            <connections>
+                <outlet property="headerBlockView" destination="dZ2-GE-ehn" id="AMY-6h-PWx"/>
+                <outlet property="leftTableView" destination="gAf-3N-dDK" id="GYR-Zs-5NE"/>
+                <outlet property="middleLine" destination="PCO-50-cXm" id="Ist-R4-JvS"/>
+                <outlet property="rightTableView" destination="Umt-zw-Os9" id="VIn-qf-DjB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ2-GE-ehn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="P5n-Hn-Xxp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Zc-v4d">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-3N-dDK">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="536"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCO-50-cXm">
+                            <rect key="frame" x="300" y="0.0" width="0.5" height="536"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="ZRV-ZN-o6Z"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Umt-zw-Os9">
+                            <rect key="frame" x="301" y="0.0" width="299" height="536"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gAf-3N-dDK" firstAttribute="top" secondItem="XSC-Zc-v4d" secondAttribute="top" id="7D6-PK-Wye"/>
+                        <constraint firstAttribute="bottom" secondItem="PCO-50-cXm" secondAttribute="bottom" id="8Pu-AY-fsb"/>
+                        <constraint firstItem="PCO-50-cXm" firstAttribute="leading" secondItem="gAf-3N-dDK" secondAttribute="trailing" id="E6i-ml-I0G"/>
+                        <constraint firstItem="Umt-zw-Os9" firstAttribute="top" secondItem="XSC-Zc-v4d" secondAttribute="top" id="GSa-Ye-eA7"/>
+                        <constraint firstItem="PCO-50-cXm" firstAttribute="centerX" secondItem="XSC-Zc-v4d" secondAttribute="centerX" id="Gzy-XQ-n2a"/>
+                        <constraint firstAttribute="bottom" secondItem="Umt-zw-Os9" secondAttribute="bottom" id="Ut6-rd-6iH"/>
+                        <constraint firstAttribute="bottom" secondItem="gAf-3N-dDK" secondAttribute="bottom" id="gy5-At-EKg"/>
+                        <constraint firstAttribute="trailing" secondItem="Umt-zw-Os9" secondAttribute="trailing" id="iM9-ZJ-8bZ"/>
+                        <constraint firstItem="gAf-3N-dDK" firstAttribute="leading" secondItem="XSC-Zc-v4d" secondAttribute="leading" id="m5L-bG-o45"/>
+                        <constraint firstItem="PCO-50-cXm" firstAttribute="top" secondItem="XSC-Zc-v4d" secondAttribute="top" id="tZx-ek-3uK"/>
+                        <constraint firstItem="Umt-zw-Os9" firstAttribute="leading" secondItem="gAf-3N-dDK" secondAttribute="trailing" id="whg-yl-6Ig"/>
+                        <constraint firstItem="Umt-zw-Os9" firstAttribute="leading" secondItem="gAf-3N-dDK" secondAttribute="trailing" constant="1" id="ztH-hI-gNU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="whg-yl-6Ig"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XSC-Zc-v4d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Ky-kK-Nir"/>
+                <constraint firstItem="dZ2-GE-ehn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="81w-YA-za2"/>
+                <constraint firstAttribute="bottom" secondItem="XSC-Zc-v4d" secondAttribute="bottom" id="D9N-0r-HHJ"/>
+                <constraint firstAttribute="trailing" secondItem="dZ2-GE-ehn" secondAttribute="trailing" id="KTo-4e-rIl"/>
+                <constraint firstAttribute="trailing" secondItem="XSC-Zc-v4d" secondAttribute="trailing" id="MxR-pd-IqT"/>
+                <constraint firstItem="XSC-Zc-v4d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Tiv-4d-cKC"/>
+                <constraint firstItem="dZ2-GE-ehn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aLT-9c-8aK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="FindHouseMoreOtherConditionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="215.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueX-Hh-fSk">
+                        <rect key="frame" x="8" y="18" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="4Yp-vU-5AZ"/>
+                            <constraint firstAttribute="height" constant="32" id="dgW-HK-y6g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="独立卫生间"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-Dx-44T">
+                        <rect key="frame" x="177" y="18" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="6GP-CX-Uly"/>
+                            <constraint firstAttribute="width" constant="90" id="FbW-ie-egX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="独立阳台"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC3-xK-ets">
+                        <rect key="frame" x="347" y="18" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="EIK-ZY-kA1"/>
+                            <constraint firstAttribute="width" constant="90" id="Q2Q-tY-WSI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="首次出租"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDx-fv-9uI">
+                        <rect key="frame" x="8" y="70" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="5bI-xB-Eqz"/>
+                            <constraint firstAttribute="height" constant="32" id="ovL-wC-JmN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="学区房"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-v1-kDy">
+                        <rect key="frame" x="177" y="70" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Dwy-TE-CuZ"/>
+                            <constraint firstAttribute="width" constant="90" id="KG2-lK-gGR"/>
+                            <constraint firstAttribute="height" constant="30" id="ifD-fU-jce"/>
+                            <constraint firstAttribute="width" constant="46" id="uIP-ZQ-mi0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="离地铁近"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ifD-fU-jce"/>
+                                <exclude reference="uIP-ZQ-mi0"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-5J-Rds">
+                        <rect key="frame" x="347" y="70" width="90" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="8Vw-Zx-ZRm"/>
+                            <constraint firstAttribute="width" constant="90" id="h97-hm-mlP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="朝南"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mC3-xK-ets" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="1Ya-xL-mW1"/>
+                    <constraint firstItem="ueX-Hh-fSk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="48F-Mw-B0Y"/>
+                    <constraint firstItem="awH-v1-kDy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4GN-zJ-KNE"/>
+                    <constraint firstItem="hMV-5J-Rds" firstAttribute="top" secondItem="mC3-xK-ets" secondAttribute="bottom" constant="20" id="F35-1R-Opj"/>
+                    <constraint firstItem="yWu-Dx-44T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="Gny-8l-dp8"/>
+                    <constraint firstItem="mC3-xK-ets" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="GuM-tD-G9T"/>
+                    <constraint firstItem="ueX-Hh-fSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="KnE-1n-0bu"/>
+                    <constraint firstItem="bDx-fv-9uI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="N9N-xm-RIG"/>
+                    <constraint firstItem="awH-v1-kDy" firstAttribute="top" secondItem="yWu-Dx-44T" secondAttribute="bottom" constant="20" id="Owq-ME-GH9"/>
+                    <constraint firstItem="ueX-Hh-fSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="QUj-kH-ehf"/>
+                    <constraint firstItem="yWu-Dx-44T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="RZb-jC-he2"/>
+                    <constraint firstItem="yWu-Dx-44T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="Uz7-yd-jwx"/>
+                    <constraint firstItem="ueX-Hh-fSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="YVr-KG-ltN"/>
+                    <constraint firstItem="hMV-5J-Rds" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="eod-4c-4fE"/>
+                    <constraint firstItem="mC3-xK-ets" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fAF-rE-fIt"/>
+                    <constraint firstItem="yWu-Dx-44T" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fSy-Np-dTQ"/>
+                    <constraint firstItem="mC3-xK-ets" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="lrt-nf-Xca"/>
+                    <constraint firstItem="bDx-fv-9uI" firstAttribute="top" secondItem="ueX-Hh-fSk" secondAttribute="bottom" constant="20" id="zWm-ew-pln"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QUj-kH-ehf"/>
+                        <exclude reference="YVr-KG-ltN"/>
+                        <exclude reference="Gny-8l-dp8"/>
+                        <exclude reference="Uz7-yd-jwx"/>
+                        <exclude reference="GuM-tD-G9T"/>
+                        <exclude reference="lrt-nf-Xca"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chaonan" destination="hMV-5J-Rds" id="oTh-Vs-cAy"/>
+                <outlet property="duwei" destination="ueX-Hh-fSk" id="wQ2-1m-zhz"/>
+                <outlet property="duyang" destination="yWu-Dx-44T" id="TwL-nr-UIW"/>
+                <outlet property="nearDitie" destination="awH-v1-kDy" id="yHE-a9-pNs"/>
+                <outlet property="shouzu" destination="mC3-xK-ets" id="CDg-uW-OWH"/>
+                <outlet property="xuequfang" destination="bDx-fv-9uI" id="MlX-37-PMC"/>
+            </connections>
+            <point key="canvasLocation" x="260.5" y="186"/>
+        </tableViewCell>
+    </objects>
+</document>

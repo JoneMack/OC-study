@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="360" id="KGk-i7-Jjw" customClass="MainRecommendHouseSourceCell">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="359.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-Ah-SY6">
+                        <rect key="frame" x="10" y="10" width="452" height="349.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="7WX-U3-7z6"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7k6-TH-2ak"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" id="837-Td-qvF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" constant="-6" id="HyK-4v-lss"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="16" id="JIF-BY-0wb"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="L57-Rl-r1p"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" id="LZ9-C1-hxO"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="MpS-hN-eM7"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="OhO-ug-YrS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" constant="-7" id="P1r-4j-RMu"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="cI9-i2-h62"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="-5" id="e52-xO-KoR"/>
+                    <constraint firstItem="ecc-Ah-SY6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="glo-Le-EPK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" constant="-5" id="h3o-ZM-iOB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ecc-Ah-SY6" secondAttribute="trailing" constant="-8" id="o6S-6w-eSC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ecc-Ah-SY6" secondAttribute="trailing" constant="2" id="oiU-Tf-9zS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ecc-Ah-SY6" secondAttribute="bottom" constant="-8" id="pZO-4U-Bep"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ecc-Ah-SY6" secondAttribute="trailing" constant="-3" id="pr8-Lr-wIG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ecc-Ah-SY6" secondAttribute="trailing" constant="-6" id="xgX-6s-pX8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7WX-U3-7z6"/>
+                        <exclude reference="7k6-TH-2ak"/>
+                        <exclude reference="837-Td-qvF"/>
+                        <exclude reference="HyK-4v-lss"/>
+                        <exclude reference="JIF-BY-0wb"/>
+                        <exclude reference="LZ9-C1-hxO"/>
+                        <exclude reference="MpS-hN-eM7"/>
+                        <exclude reference="OhO-ug-YrS"/>
+                        <exclude reference="P1r-4j-RMu"/>
+                        <exclude reference="e52-xO-KoR"/>
+                        <exclude reference="glo-Le-EPK"/>
+                        <exclude reference="h3o-ZM-iOB"/>
+                        <exclude reference="o6S-6w-eSC"/>
+                        <exclude reference="pr8-Lr-wIG"/>
+                        <exclude reference="xgX-6s-pX8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pic" destination="ecc-Ah-SY6" id="sRQ-SE-fxS"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="254"/>
+        </tableViewCell>
+    </objects>
+</document>
