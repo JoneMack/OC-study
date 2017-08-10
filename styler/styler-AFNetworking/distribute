@@ -1,0 +1,54 @@
+#!/bin/bash
+
+targetName=$1
+projectHome=`pwd`
+configuration=$2
+sdkVersion=$3
+#env=$3
+
+currentTime=`date '+%Y-%m-%d-%H-%M'`
+
+#app param
+test_serviceUrl="http://test.shishangmao.cn/api"
+test_siteUrl="http://test.shishangmao.cn/site"
+stage_serviceUrl="http://stageapi.shishangmao.cn"
+stage_siteUrl="http://stage.shishangmao.cn"
+
+#xcodebuild clean -configuration $configuration #clean project
+#rm -rf target/*.ipa
+
+#auto increase build no
+buildPlist=$projectHome/$targetName/$targetName-Info.plist
+plistBuddy=/usr/libexec/PlistBuddy
+CFBundleVersion=$($plistBuddy -c "Print CFBundleVersion" $buildPlist)
+CFBundleVersion=$(($CFBundleVersion+1))
+$plistBuddy -c "Set :CFBundleVersion $CFBundleVersion" $buildPlist
+
+#定义app和ipa文件的路径
+appFilePath=build/$configuration-iphoneos/$targetName.app
+ipaFilePath=$projectHome/target/"$targetName"_build_"$CFBundleVersion".ipa
+
+#清理环境
+xcodebuild clean -configuration $configuration #clean project
+rm -rf target/*.ipa
+rm -rf build/$configuration-iphoneos/*.app
+
+#更新plist中的属性值
+./update_plist $targetName test
+#编译并打包ipa文件
+xcodebuild -target "$targetName" -configuration $configuration 	-sdk iphoneos$sdkVersion build 
+xcrun -sdk iphoneos$sdkVersion PackageApplication -v "$appFilePath" -o "$ipaFilePath"
+scp -P 1001 "$ipaFilePath" root@test.shishangmao.cn:/opt/app/download/styler_test_lastest.ipa
+
+#清理环境
+xcodebuild clean -configuration $configuration #clean project
+rm -rf target/*.ipa
+rm -rf build/$configuration-iphoneos/*.app
+
+./update_plist $targetName stage
+xcodebuild -target "$targetName" -configuration $configuration 	-sdk iphoneos$sdkVersion build 
+xcrun -sdk iphoneos$sdkVersion PackageApplication -v "$appFilePath" -o "$ipaFilePath"
+scp -P 1001 "$ipaFilePath" root@test.shishangmao.cn:/opt/app/download/styler_stage_lastest.ipa
+
+
+./update_plist $targetName test

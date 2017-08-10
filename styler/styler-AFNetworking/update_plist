@@ -1,0 +1,75 @@
+#!/bin/bash
+
+
+targetName=$1
+env=$2
+
+projectHome=`pwd`
+
+buildPlist=$projectHome/$targetName/$targetName-Info.plist
+plistBuddy=/usr/libexec/PlistBuddy
+
+#app param
+product_appName="时尚猫"
+product_serviceUrl="http://api.shishangmao.cn"
+product_searcherUrl="http://api.shishangmao.cn/searcher"
+product_siteUrl="http://styler.shishangmao.cn"
+product_env="product"
+product_easemobApnsCertName="styler_product"
+product_easemobAppKey="shishangmao#esp"
+product_minimumPaymentAmount="1"
+product_umeng_app_key="51f6226a56240b8f80050ba4"
+
+test_appName="时尚猫(测试)"
+test_serviceUrl="http://test.shishangmao.cn/api"
+test_searcherUrl="http://test.shishangmao.cn/searcher"
+test_siteUrl="http://test.shishangmao.cn/site"
+test_env="test"
+test_easemobApnsCertName="styler_dev"
+test_easemobAppKey="shishangmao#test"
+test_minimumPaymentAmount="0.01"
+test_umeng_app_key="5417e6aefd98c530ca074ce5"
+
+stage_appName="时尚猫(预上线)"
+stage_serviceUrl="http://stageapi.shishangmao.cn"
+stage_searcherUrl="http://stageapi.shishangmao.cn/searcher"
+stage_siteUrl="http://stage.shishangmao.cn"
+stage_env="stage"
+stage_easemobApnsCertName="styler_dev"
+stage_easemobAppKey="shishangmao#stage"
+stage_minimumPaymentAmount="0.01"
+stage_umeng_app_key="5417e6aefd98c530ca074ce5"
+
+
+if [ $env = 'test' ]; then 
+$plistBuddy -c "Set :apiUrl $test_serviceUrl" $buildPlist
+$plistBuddy -c "Set :searcherUrl $test_searcherUrl" $buildPlist
+$plistBuddy -c "Set :webPageUrl $test_siteUrl" $buildPlist
+$plistBuddy -c "Set :CFBundleDisplayName $test_appName" $buildPlist
+$plistBuddy -c "Set :env $test_env" $buildPlist
+$plistBuddy -c "Set :easemobApnsCertName $test_easemobApnsCertName" $buildPlist
+$plistBuddy -c "Set :easemobAppKey $test_easemobAppKey" $buildPlist
+$plistBuddy -c "Set :minimumPaymentAmount $test_minimumPaymentAmount" $buildPlist
+$plistBuddy -c "Set :umengAppKey $test_umeng_app_key" $buildPlist
+
+elif [ $env = 'stage' ]; then
+$plistBuddy -c "Set :apiUrl $stage_serviceUrl" $buildPlist
+$plistBuddy -c "Set :searcherUrl $stage_searcherUrl" $buildPlist
+$plistBuddy -c "Set :webPageUrl $stage_siteUrl" $buildPlist
+$plistBuddy -c "Set :CFBundleDisplayName $stage_appName" $buildPlist
+$plistBuddy -c "Set :env $stage_env" $buildPlist
+$plistBuddy -c "Set :easemobApnsCertName $stage_easemobApnsCertName" $buildPlist
+$plistBuddy -c "Set :easemobAppKey $stage_easemobAppKey" $buildPlist
+$plistBuddy -c "Set :minimumPaymentAmount $stage_minimumPaymentAmount" $buildPlist
+$plistBuddy -c "Set :umengAppKey $stage_umeng_app_key" $buildPlist
+else
+$plistBuddy -c "Set :apiUrl $product_serviceUrl" $buildPlist
+$plistBuddy -c "Set :searcherUrl $product_searcherUrl" $buildPlist
+$plistBuddy -c "Set :webPageUrl $product_siteUrl" $buildPlist
+$plistBuddy -c "Set :CFBundleDisplayName $product_appName" $buildPlist
+$plistBuddy -c "Set :env $product_env" $buildPlist
+$plistBuddy -c "Set :easemobApnsCertName $product_easemobApnsCertName" $buildPlist
+$plistBuddy -c "Set :easemobAppKey $product_easemobAppKey" $buildPlist
+$plistBuddy -c "Set :minimumPaymentAmount $product_minimumPaymentAmount" $buildPlist
+$plistBuddy -c "Set :umengAppKey $product_umeng_app_key" $buildPlist
+fi

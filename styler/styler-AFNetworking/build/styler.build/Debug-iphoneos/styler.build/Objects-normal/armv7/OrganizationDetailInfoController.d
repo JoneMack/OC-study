@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/ui/organization/OrganizationDetailInfoController.m \
+  /Users/wangwanggy820/work/project/styler/styler/ui/organization/OrganizationDetailInfoController.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/OrganizationStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/common/Page.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/organization/Organization.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HairDressingCard.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleRule.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleCount.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/redenvelope/RedEnvelope.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeUseConstraint.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/common/RedEnvelopeActivityRemindView.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/RedEnvelopeCardView.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/common/ShareContent.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/ShareContentType.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/RewardActivityResultView.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/UIViewController+Custom.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/ShareSDKProcessor.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/ShareSceneType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/RewardActivity.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeSeed.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/DistributeStrage.h \
+  /Users/wangwanggy820/work/project/styler/RewardActivityProcessor.h

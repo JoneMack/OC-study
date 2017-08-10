@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/store/RewardActivityStore.m \
+  /Users/wangwanggy820/work/project/styler/styler/store/Store.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/jsonkit/JSONKit.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIHTTPRequest.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIHTTPRequestConfig.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIHTTPRequestDelegate.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIProgressDelegate.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASICacheDelegate.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIFormDataRequest.h \
+  /Users/wangwanggy820/work/project/styler/ThirdFramework.framework/Headers/asihttprequest/ASIDownloadCache.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/RewardActivityStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/RewardActivity.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeSeed.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/DistributeStrage.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/ShareSceneType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/ShareContentType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/UserAction.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/RewardObject.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/redenvelope/RedEnvelope.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeUseConstraint.h

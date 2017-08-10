@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/ui/organization/HdcCardView.m \
+  /Users/wangwanggy820/work/project/styler/styler/ui/organization/HdcCardView.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/UILabel+Custom.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HairDressingCard.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleRule.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleCount.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/organization/Organization.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/redenvelope/RedEnvelope.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeUseConstraint.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/common/StylerTabbar.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBarController.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBar.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/TabBarItem.h \
+  /Users/wangwanggy820/work/project/styler/styler/AppDelegate.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/ASIHTTPRequestProcessor.h \
+  /Users/wangwanggy820/work/project/styler/Reminder.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/hdc/ShareEnableWebController.h

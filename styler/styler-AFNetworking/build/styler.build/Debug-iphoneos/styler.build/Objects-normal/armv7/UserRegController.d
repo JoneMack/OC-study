@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserRegController.m \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserRegController.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/UserStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserFirstLoginController.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserLoginController.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBarController.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBar.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/TabBarItem.h \
+  /Users/wangwanggy820/work/project/styler/styler/utils/ImageUtils.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/Toast+UIView.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/PushProcessor.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/system/PushRecord.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/SocialShareStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/UIViewController+Custom.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/common/ShareContent.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/ShareContentType.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/ShareSDKProcessor.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/ShareSceneType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/rewardActivity/RewardActivity.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeSeed.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/DistributeStrage.h

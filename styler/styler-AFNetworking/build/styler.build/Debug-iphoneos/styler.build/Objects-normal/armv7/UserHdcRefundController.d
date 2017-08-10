@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserHdcRefundController.m \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserHdcRefundController.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/UserHdc.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcType.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/HdcPaymentItem.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/redenvelope/RedEnvelope.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/RedEnvelopeUseConstraint.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HairDressingCard.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleRule.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcSaleCount.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/organization/Organization.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/hdc/HdcDigestView.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcDigest.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/HdcStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcQuery.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/common/Page.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/hdc/HdcOrder.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/OrganizationStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserHdcController.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserHdcCell.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/CustomSegmentView.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/UIViewController+Custom.h

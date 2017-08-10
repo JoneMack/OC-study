@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserLoginController.m \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserLoginController.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBarController.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/LeveyTabBar.h \
+  /Users/wangwanggy820/work/project/styler/styler/third/TabBar/TabBarItem.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/UserStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserRegController.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/AccountSessionSpringBoard.h \
+  /Users/wangwanggy820/work/project/styler/styler/utils/ImageUtils.h \
+  /Users/wangwanggy820/work/project/styler/styler/AppDelegate.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/common/StylerTabbar.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/ASIHTTPRequestProcessor.h \
+  /Users/wangwanggy820/work/project/styler/Reminder.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/Toast+UIView.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/user/UserCenterController.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/category/UIViewController+Custom.h \
+  /Users/wangwanggy820/work/project/styler/styler/ui/other/MoreController.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/EvaluationStore.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/evaluation/Evaluation.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/evaluation/EvaluationPicture.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/stylist/Stylist.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/organization/Organization.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/system/ServicePicture.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/service/OrderedTimeRange.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/stylist/StylistCount.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/stylist/CloseDate.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/stylist/HairCutPriceInfo.h \
+  /Users/wangwanggy820/work/project/styler/styler/domain/common/Page.h \
+  /Users/wangwanggy820/work/project/styler/styler/processor/EaseMobProcessor.h \
+  /Users/wangwanggy820/work/project/styler/styler/store/AppClientStore.h
