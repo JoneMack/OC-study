@@ -1,0 +1,9 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "LBXScanNative.h"
+#import "LBXZBarWrapper.h"
+#import "ZXingWrapper.h"
+#import <Foundation/Foundation.h>
+#import "LBXScanView.h"
