@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2C8D631F4BCDA100634858 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D621F4BCDA100634858 /* HomeController.m */; };
+		1C2C8D661F4BCDC600634858 /* MyListenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D651F4BCDC600634858 /* MyListenController.m */; };
+		1C2C8D691F4BCDE300634858 /* DiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D681F4BCDE300634858 /* DiscoveryController.m */; };
+		1C2C8D6C1F4BCDF800634858 /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D6B1F4BCDF800634858 /* UserCenterController.m */; };
+		1C2C8D701F4BCE2500634858 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D6F1F4BCE2500634858 /* BaseViewController.m */; };
+		1C2C8D751F4BD10000634858 /* XMLYFMTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C8D741F4BD10000634858 /* XMLYFMTabbar.m */; };
 		1C37688B1F4AD2D20091B821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37688A1F4AD2D20091B821 /* main.m */; };
 		1C37688E1F4AD2D20091B821 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C37688D1F4AD2D20091B821 /* AppDelegate.m */; };
 		1C3768911F4AD2D20091B821 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3768901F4AD2D20091B821 /* ViewController.m */; };
@@ -17,6 +23,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2C8D611F4BCDA100634858 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		1C2C8D621F4BCDA100634858 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		1C2C8D641F4BCDC600634858 /* MyListenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyListenController.h; sourceTree = "<group>"; };
+		1C2C8D651F4BCDC600634858 /* MyListenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyListenController.m; sourceTree = "<group>"; };
+		1C2C8D671F4BCDE300634858 /* DiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryController.h; sourceTree = "<group>"; };
+		1C2C8D681F4BCDE300634858 /* DiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryController.m; sourceTree = "<group>"; };
+		1C2C8D6A1F4BCDF800634858 /* UserCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterController.h; sourceTree = "<group>"; };
+		1C2C8D6B1F4BCDF800634858 /* UserCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterController.m; sourceTree = "<group>"; };
+		1C2C8D6E1F4BCE2500634858 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1C2C8D6F1F4BCE2500634858 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1C2C8D711F4BCE7800634858 /* XMLYFM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMLYFM-Prefix.pch"; sourceTree = "<group>"; };
+		1C2C8D731F4BD10000634858 /* XMLYFMTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFMTabbar.h; sourceTree = "<group>"; };
+		1C2C8D741F4BD10000634858 /* XMLYFMTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFMTabbar.m; sourceTree = "<group>"; };
 		1C3768861F4AD2D20091B821 /* XMLYFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLYFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C37688A1F4AD2D20091B821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C37688C1F4AD2D20091B821 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +63,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2C8D561F4BCA1800634858 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D6D1F4BCE1200634858 /* base */,
+				1C2C8D571F4BCA6500634858 /* discovery */,
+				1C2C8D581F4BCA6500634858 /* home */,
+				1C2C8D591F4BCA6500634858 /* me */,
+				1C2C8D5A1F4BCA6500634858 /* myListen */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		1C2C8D571F4BCA6500634858 /* discovery */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D671F4BCDE300634858 /* DiscoveryController.h */,
+				1C2C8D681F4BCDE300634858 /* DiscoveryController.m */,
+			);
+			path = discovery;
+			sourceTree = "<group>";
+		};
+		1C2C8D581F4BCA6500634858 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D611F4BCDA100634858 /* HomeController.h */,
+				1C2C8D621F4BCDA100634858 /* HomeController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		1C2C8D591F4BCA6500634858 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D6A1F4BCDF800634858 /* UserCenterController.h */,
+				1C2C8D6B1F4BCDF800634858 /* UserCenterController.m */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		1C2C8D5A1F4BCA6500634858 /* myListen */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D641F4BCDC600634858 /* MyListenController.h */,
+				1C2C8D651F4BCDC600634858 /* MyListenController.m */,
+			);
+			path = myListen;
+			sourceTree = "<group>";
+		};
+		1C2C8D5B1F4BCD4100634858 /* domian */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domian;
+			sourceTree = "<group>";
+		};
+		1C2C8D5C1F4BCD4100634858 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1C2C8D5D1F4BCD4100634858 /* store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		1C2C8D5E1F4BCD4100634858 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1C2C8D5F1F4BCD4100634858 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D721F4BD0E300634858 /* tabbar */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1C2C8D601F4BCD4100634858 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C2C8D6D1F4BCE1200634858 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D6E1F4BCE2500634858 /* BaseViewController.h */,
+				1C2C8D6F1F4BCE2500634858 /* BaseViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		1C2C8D721F4BD0E300634858 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C8D731F4BD10000634858 /* XMLYFMTabbar.h */,
+				1C2C8D741F4BD10000634858 /* XMLYFMTabbar.m */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
 		1C37687D1F4AD2D20091B821 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +193,13 @@
 		1C3768881F4AD2D20091B821 /* XMLYFM */ = {
 			isa = PBXGroup;
 			children = (
+				1C2C8D5B1F4BCD4100634858 /* domian */,
+				1C2C8D5C1F4BCD4100634858 /* Resource */,
+				1C2C8D5D1F4BCD4100634858 /* store */,
+				1C2C8D5E1F4BCD4100634858 /* Tools */,
+				1C2C8D5F1F4BCD4100634858 /* Vendor */,
+				1C2C8D601F4BCD4100634858 /* ViewModel */,
+				1C2C8D561F4BCA1800634858 /* ui */,
 				1C37688C1F4AD2D20091B821 /* AppDelegate.h */,
 				1C37688D1F4AD2D20091B821 /* AppDelegate.m */,
 				1C37688F1F4AD2D20091B821 /* ViewController.h */,
@@ -82,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				1C37688A1F4AD2D20091B821 /* main.m */,
+				1C2C8D711F4BCE7800634858 /* XMLYFM-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -226,9 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2C8D6C1F4BCDF800634858 /* UserCenterController.m in Sources */,
+				1C2C8D701F4BCE2500634858 /* BaseViewController.m in Sources */,
+				1C2C8D631F4BCDA100634858 /* HomeController.m in Sources */,
 				1C3768911F4AD2D20091B821 /* ViewController.m in Sources */,
+				1C2C8D691F4BCDE300634858 /* DiscoveryController.m in Sources */,
+				1C2C8D661F4BCDC600634858 /* MyListenController.m in Sources */,
 				1C37688E1F4AD2D20091B821 /* AppDelegate.m in Sources */,
 				1C37688B1F4AD2D20091B821 /* main.m in Sources */,
+				1C2C8D751F4BD10000634858 /* XMLYFMTabbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 475AM2DC65;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLYFM/XMLYFM-Prefix.pch";
 				INFOPLIST_FILE = XMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.golfd.XMLYFM;
@@ -363,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 475AM2DC65;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLYFM/XMLYFM-Prefix.pch";
 				INFOPLIST_FILE = XMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.golfd.XMLYFM;
@@ -389,6 +533,7 @@
 				1C37689F1F4AD2D20091B821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

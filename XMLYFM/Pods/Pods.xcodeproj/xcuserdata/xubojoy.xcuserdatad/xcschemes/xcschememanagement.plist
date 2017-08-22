@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RDVTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YTKNetwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>79CC46769A99F54F6B93ADAD0351D178</key>
+		<key>04B108B14C832600CCD2DFC5CA35ABA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43E88943EE5AD08F9F17392DD1FCE7B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95F3FD9C59D79B5F165A32C2022DFD47</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FAAA3A87109321B0B6A71CC71270C8C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,17 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - RDVTabBarController (1.1.9)
   - YTKNetwork (2.0.3):
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - RDVTabBarController (~> 1.1.9)
   - YTKNetwork (~> 2.0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
 
-PODFILE CHECKSUM: 5227f091489ad8c9933f07ac5aecef9a22acbc90
+PODFILE CHECKSUM: 845db33cc10c53f338dee7b8df9cda1149f6ef3f
 
 COCOAPODS: 1.1.1

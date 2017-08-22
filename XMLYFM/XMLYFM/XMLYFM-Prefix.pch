@@ -1,0 +1,57 @@
+//
+//  XMLYFM-Prefix.pch
+//  XMLYFM
+//
+//  Created by xubojoy on 2017/8/22.
+//  Copyright © 2017年 xubojoy. All rights reserved.
+//
+
+#ifndef XMLYFM_Prefix_pch
+#define XMLYFM_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* XMLYFM_Prefix_pch */
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#define MR_SHORTHAND
+#import "BaseViewController.h"
+#import "AppDelegate.h"
+
+
+#endif
+
+#ifdef LLDEBUG
+#define LLLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define LLLog(format, ...)
+#endif
+
+#define LL_IS_IOS_6_OR_EARLIER [[UIDevice currentDevice] systemVersion].floatValue < 7.0
+
+#ifdef DEBUG_MODE
+#define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DLog( s, ... )
+#endif
+
+#define debugMethod() NSLog(@"%s", __func__)
+
+#define DEFINE_SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+static className *shared##className = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+shared##className = [[self alloc] init]; \
+}); \
+return shared##className; \
+}
