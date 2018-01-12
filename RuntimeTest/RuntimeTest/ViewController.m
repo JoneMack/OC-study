@@ -342,8 +342,113 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     SingleDog *singleDog = [SingleDog zg_modelFromDic:dict];
     NSLog(@"-----------singleDog---------%@-----%@",singleDog.name,singleDog.gender);
     
+//    const char *result = [@"joy" UTF8String];
+//
+//    NSLog(@"-------class_getInstanceVariable---------%@",class_getInstanceVariable(self.class, result));
     
+//    [self class_getClassVariable:self.class name:"SingleDog"];
+    
+    
+//    objc_property_t property = class_getProperty([SingleDog class],"SingleDog");
+//
+//    NSLog(@"%s%s%s",__func__,property_getName(property),property_getAttributes(property));
+//    [self class_getProperty:SingleDog.class name:"gender"];
+    
+    //获取方法实现
+ //入参:类Class，方法名SEL
+ //返回:方法实现IMP
+// IMP result = class_getMethodImplementation([ViewController class], @selector(test));
+// result();
+//
+//    Method result = class_getClassMethod([SingleDog class], @selector(printDZ));
+//    NSLog(@">>>>>>>>%@", result);
+    
+    //获取方法实现
+    //入参:类Class，方法名SEL
+    //返回:方法实现IMP
+//    IMP result8 = class_getMethodImplementation_stret([ViewController class], @selector(method1));
+//    result8();
 }
+
+//- (void)method1{
+//
+//}
+
+
+- (void)test{
+    NSLog(@"-----------获取方法实现--------");
+}
+
+- (void)class_getProperty:(Class)class name:(const char *)name {
+    unsigned int count = 0;
+    objc_property_t property = class_getProperty(class,name);
+    NSLog(@"%s%s%s",__func__,property_getName(property),property_getAttributes(property));
+    property_copyAttributeList(property, &count);
+}
+
+
+- (void)class_getClassVariable:(Class)class name:(const char *)name {
+    Ivar ivar = class_getClassVariable(class,name);
+    NSLog(@"%s%s%s",__func__,ivar_getTypeEncoding(ivar),ivar_getName(ivar));
+}
+
+
+//获取父类
+//入参:类Class
+//返回:类Class
+//Class class_getSuperclass(Class cls)
+
+//获取实例大小（返回size_t）
+//入参:实例的类Class
+//返回:大小size_t
+//深究请看这篇文章http://www.jianshu.com/p/df6b252fbaae
+//size_t class_getInstanceSize(Class cls)
+
+//获取类中指定名称实例成员变量的信息
+//入参:类Class，变量名
+//返回:变量信息Ivar
+//* 1.实例变量是指变量不是属性.例如某类有个属性为:username 那么它对应的实例变量为_username
+//* 2.这个方法可以获取属性的变量,也可以获取私有变量(这点很重要)
+//* 3.如果获取的变量为空,那么 ivar_getName和 ivar_getTypeEncoding 获取的值为空,那么[NSString stringWithUTF8String:ivar1Name] 执行崩溃
+//Ivar class_getInstanceVariable(Class cls, const char *name)
+
+//类成员变量的信息
+//入参:类Class，变量名char数组
+//返回:Ivar
+//* 1.目前没有找到关于Objective-C中类变量的信息，一般认为Objective-C不支持类变量。注意，返回的列表不包含父类的成员变量和属性。
+//Ivar class_getClassVariable(Class cls, const char *name)
+
+//获取指定的属性
+//入参:类Class，属性名char数组
+//返回:属性objc_property_t
+// *  1.属性不是变量,此方法只能获取属性
+// *  2.如果属性不存在那么返回的结构体为0(可以参考下面的判断)
+// *  3.属性不存在获取property_getName 和 property_getAttributes 会崩溃
+//objc_property_t class_getProperty(Class cls, const char *name)
+
+//获取方法实现
+//入参:类Class，方法名SEL
+//返回:方法实现IMP
+//IMP class_getMethodImplementation(Class cls, SEL name)
+//获取方法实现
+//入参:类Class，方法名SEL
+//返回:方法实现IMP
+//IMP class_getMethodImplementation_stret(Class cls, SEL name)
+
+//获取类方法
+//入参:类Class，方法名SEL
+//返回:方法Method
+//Method class_getClassMethod(Class cls, SEL name)
+
+
+
+
+
+
+
+
+
+
 
 - (NSArray *)ivarArray:(Class)cls {
     unsigned int count = 0;
@@ -558,8 +663,13 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //        NSLog(@"-----------------回传数据--------------%@",str);
 //    };
     
-//    TimeInViewController *timevc = [[TimeInViewController alloc] init];
-//    [self.navigationController pushViewController:timevc animated:YES];
+    TimeInViewController *timevc = [[TimeInViewController alloc] init];
+    [self.navigationController pushViewController:timevc animated:YES];
+    
+    
+    
+    
+    
 }
 
 

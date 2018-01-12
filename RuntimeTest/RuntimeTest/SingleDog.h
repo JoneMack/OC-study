@@ -12,6 +12,8 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *gender;
 
++ (void) printDZ;
+
 + (instancetype)zg_modelFromDic:(NSDictionary *)dataDic;
 
 @end
