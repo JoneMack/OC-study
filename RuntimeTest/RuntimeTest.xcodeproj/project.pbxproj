@@ -46,6 +46,7 @@
 		1C91CAEC1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CADD1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m */; };
 		1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92C3A8201822CD00259CDE /* CountDownLabel.swift */; };
 		1C92C3AB201852F800259CDE /* CHWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92C3AA201852F800259CDE /* CHWButton.swift */; };
+		1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92C3AC2018695700259CDE /* SystemConfiguration.framework */; };
 		1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94FCA21FDFD5F200B70D50 /* PastTextField.m */; };
 		1C9EF54420158AAE004F117B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54320158AAE004F117B /* DrawView.m */; };
 		1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54A2015B5E7004F117B /* PaintView.m */; };
@@ -129,6 +130,7 @@
 		1C91CADD1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
 		1C92C3A8201822CD00259CDE /* CountDownLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownLabel.swift; sourceTree = "<group>"; };
 		1C92C3AA201852F800259CDE /* CHWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHWButton.swift; sourceTree = "<group>"; };
+		1C92C3AC2018695700259CDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1C94FCA11FDFD5F200B70D50 /* PastTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastTextField.h; sourceTree = "<group>"; };
 		1C94FCA21FDFD5F200B70D50 /* PastTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastTextField.m; sourceTree = "<group>"; };
 		1C9EF54220158AAE004F117B /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */,
 				534DDAFF064EC23599C03710 /* libPods-RuntimeTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +317,7 @@
 		DFD364F362DEFE9DE5CA011F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C92C3AC2018695700259CDE /* SystemConfiguration.framework */,
 				1C40026B1FC7EA0000576108 /* Foundation.framework */,
 				1C40026A1FC7E9EA00576108 /* CoreGraphics.framework */,
 				1C4002691FC7E9D100576108 /* UIKit.framework */,

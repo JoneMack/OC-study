@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <JPFPSStatus/JPFPSStatus.h>
+#import <SystemConfiguration/SystemConfiguration.h>
 @interface AppDelegate ()
 
 @end
@@ -32,6 +33,33 @@
 #endif
     return YES;
 }
+
+
+//#pragma mark 获取Wifi信息
+//+ (id)fetchSSIDInfo
+//{
+//    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+//
+//    id info = nil;
+//    for (NSString *ifnam in ifs) {
+//        info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+//
+//        if (info && [info count]) {
+//            break;
+//        }
+//    }
+//    return info;
+//}
+//#pragma mark 获取WIFI名字
+//+ (NSString *)getWifiSSID
+//{
+//    return (NSString *)[self fetchSSIDInfo][@"SSID"];
+//}
+//#pragma mark 获取WIFI的MAC地址
+//+ (NSString *)getWifiBSSID
+//{
+//    return (NSString *)[self fetchSSIDInfo][@"BSSID"];
+//}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

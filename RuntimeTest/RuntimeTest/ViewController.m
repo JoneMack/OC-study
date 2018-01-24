@@ -420,6 +420,13 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self initCountdownLabel];
     [self initCHWButton];
     
+    @try {
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
 }
 
 - (void)initCHWButton{
