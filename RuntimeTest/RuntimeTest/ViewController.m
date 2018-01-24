@@ -417,9 +417,43 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self countDown:5];
     
 //    [self startCycle];
-    [self initCountdownLabel];
+//    [self initCountdownLabel];
+    [self initCHWButton];
     
 }
+
+- (void)initCHWButton{
+    CHWButton *btn = [[CHWButton alloc] initWithCount:5 frame:CGRectMake(50, 100, 100, 50) color:nil];
+    btn.animaType = CountBtnTypeCHWBtnTypeScale;
+    btn.layer.cornerRadius = 5;
+    btn.layer.masksToBounds = YES;
+    [self.view addSubview:btn];
+    
+    CHWButton *btn2 = [[CHWButton alloc] initWithCount:5 frame:CGRectMake(200, 100, 100, 50) color:[UIColor cyanColor]];
+    btn2.animaType = CountBtnTypeCHWBtnTypeRotate;
+    btn2.enabled_bgColor = [UIColor greenColor];
+    btn2.layer.cornerRadius = 5;
+    btn2.layer.masksToBounds = YES;
+    [self.view addSubview:btn2];
+    
+//    let btn = CHWButton(count: 5, frame: CGRect(x: 50,y: 100,width: 100,height: 50), color:nil)
+//    btn.animaType = CountBtnType.CHWBtnTypeScale
+//    btn.layer.masksToBounds = true
+//    btn.layer.cornerRadius = 5
+//    self.view.addSubview(btn)
+//
+//    let btn2 = CHWButton(count: 5, frame: CGRect(x :200,y: 100,width: 100,height: 50), color:UIColor.cyan)
+//    btn2.enabled_bgColor = UIColor.green
+//    btn2.animaType = CountBtnType.CHWBtnTypeRotate
+//    btn2.layer.masksToBounds = true
+//    btn2.layer.cornerRadius = 5
+//    self.view.addSubview(btn2)
+}
+
+
+
+
+
 
 //倒计时动画Swift版本
 - (void)initCountdownLabel{
