@@ -21,7 +21,7 @@ class CHWButton: UIButton {
     private var originNum = 0
     //倒计时Label
     private var timeLabel = UILabel()
-    public var animaType = CountBtnType.CHWBtnTypeScale
+    var animaType = CountBtnType.CHWBtnTypeScale
     
     convenience init(count: Int,frame: CGRect , color: UIColor?) {
         var color = color
