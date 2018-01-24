@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <JPFPSStatus/JPFPSStatus.h>
 @interface AppDelegate ()
 
 @end
@@ -26,6 +26,10 @@
     self.viewController = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController = nav;
+    
+#if defined(DEBUG)||defined(_DEBUG)
+    [[JPFPSStatus sharedInstance] open];
+#endif
     return YES;
 }
 

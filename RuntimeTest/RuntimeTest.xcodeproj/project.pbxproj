@@ -18,6 +18,9 @@
 		1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1C40026C1FC7EC9800576108 /* LottieLogo1.gif */; };
 		1C4002701FC7F81E00576108 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40026F1FC7F81E00576108 /* NextViewController.m */; };
 		1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */; };
+		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
+		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
+		1C50031D201719E300A244E9 /* RedpacketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50031C201719E300A244E9 /* RedpacketController.m */; };
 		1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5536411FF5DE1B00B87D4E /* Plane.m */; };
 		1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */; };
 		1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8055C61FD788EA00A6CCE0 /* XBCoreTextView.m */; };
@@ -41,7 +44,10 @@
 		1C91CAEA1FC2D3DE002B5880 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CAD61FC2D3DE002B5880 /* IQUIView+Hierarchy.m */; };
 		1C91CAEB1FC2D3DE002B5880 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CADB1FC2D3DE002B5880 /* IQUIViewController+Additions.m */; };
 		1C91CAEC1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CADD1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m */; };
+		1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92C3A8201822CD00259CDE /* CountDownLabel.swift */; };
 		1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94FCA21FDFD5F200B70D50 /* PastTextField.m */; };
+		1C9EF54420158AAE004F117B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54320158AAE004F117B /* DrawView.m */; };
+		1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54A2015B5E7004F117B /* PaintView.m */; };
 		534DDAFF064EC23599C03710 /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD0B3F23D5E089EBA3D2D02 /* libPods-RuntimeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +74,11 @@
 		1C40026E1FC7F81E00576108 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		1C40026F1FC7F81E00576108 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mineHeaderBG@2x.png"; sourceTree = "<group>"; };
+		1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		1C5003172016FB6100A244E9 /* ShowRainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRainController.swift; sourceTree = "<group>"; };
+		1C5003192016FFC800A244E9 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		1C50031B201719E300A244E9 /* RedpacketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedpacketController.h; sourceTree = "<group>"; };
+		1C50031C201719E300A244E9 /* RedpacketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedpacketController.m; sourceTree = "<group>"; };
 		1C5536401FF5DE1B00B87D4E /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		1C5536411FF5DE1B00B87D4E /* Plane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
 		1C5536451FFB58C900B87D4E /* RuntimeTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RuntimeTest.entitlements; sourceTree = "<group>"; };
@@ -115,8 +126,13 @@
 		1C91CADB1FC2D3DE002B5880 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		1C91CADC1FC2D3DE002B5880 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		1C91CADD1FC2D3DE002B5880 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		1C92C3A8201822CD00259CDE /* CountDownLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownLabel.swift; sourceTree = "<group>"; };
 		1C94FCA11FDFD5F200B70D50 /* PastTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastTextField.h; sourceTree = "<group>"; };
 		1C94FCA21FDFD5F200B70D50 /* PastTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastTextField.m; sourceTree = "<group>"; };
+		1C9EF54220158AAE004F117B /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		1C9EF54320158AAE004F117B /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		1C9EF5492015B5E7004F117B /* PaintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		1C9EF54A2015B5E7004F117B /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		3AD0B3F23D5E089EBA3D2D02 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,8 +180,17 @@
 				1C8D0EC31FCD32B300D13474 /* logo.jpeg */,
 				1C3DBFF11FBE72B400FD51BD /* ViewController.h */,
 				1C3DBFF21FBE72B400FD51BD /* ViewController.m */,
+				1C5003192016FFC800A244E9 /* x.png */,
+				1C9EF54220158AAE004F117B /* DrawView.h */,
+				1C9EF54320158AAE004F117B /* DrawView.m */,
+				1C9EF5492015B5E7004F117B /* PaintView.h */,
+				1C9EF54A2015B5E7004F117B /* PaintView.m */,
+				1C92C3A8201822CD00259CDE /* CountDownLabel.swift */,
 				1C8D2CAA1FCE9DD10088AB75 /* VWWWaterView.h */,
 				1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */,
+				1C5003172016FB6100A244E9 /* ShowRainController.swift */,
+				1C50031B201719E300A244E9 /* RedpacketController.h */,
+				1C50031C201719E300A244E9 /* RedpacketController.m */,
 				1C40026E1FC7F81E00576108 /* NextViewController.h */,
 				1C40026F1FC7F81E00576108 /* NextViewController.m */,
 				1C569E1D1FFCD6AD0011430D /* TimeInViewController.h */,
@@ -191,6 +216,7 @@
 				1C3DBFF91FBE72B400FD51BD /* LaunchScreen.storyboard */,
 				1C3DBFFC1FBE72B400FD51BD /* Info.plist */,
 				1C3DBFFD1FBE72B400FD51BD /* main.m */,
+				1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */,
 			);
 			path = RuntimeTest;
 			sourceTree = "<group>";
@@ -328,6 +354,7 @@
 				TargetAttributes = {
 					1C3DBFEA1FBE72B400FD51BD = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -360,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C50031A2016FFC800A244E9 /* x.png in Resources */,
 				1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */,
 				1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */,
 				1C3DBFFB1FBE72B400FD51BD /* LaunchScreen.storyboard in Resources */,
@@ -428,12 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */,
+				1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */,
 				1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */,
 				1C91CAE51FC2D3DE002B5880 /* IQKeyboardManager.m in Sources */,
 				1C91CAE91FC2D3DE002B5880 /* IQUIScrollView+Additions.m in Sources */,
 				1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */,
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
+				1C50031D201719E300A244E9 /* RedpacketController.m in Sources */,
 				1C91CAE61FC2D3DE002B5880 /* IQNSArray+Sort.m in Sources */,
 				1C4002701FC7F81E00576108 /* NextViewController.m in Sources */,
 				1C91CAE21FC2D3DE002B5880 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -451,7 +482,9 @@
 				1C91CAE01FC2D3DE002B5880 /* IQTitleBarButtonItem.m in Sources */,
 				1C3DBFF01FBE72B400FD51BD /* AppDelegate.m in Sources */,
 				1C8D2CA31FCE4F870088AB75 /* MovieModel.m in Sources */,
+				1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */,
 				1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */,
+				1C9EF54420158AAE004F117B /* DrawView.m in Sources */,
 				1C3DC0091FBE75FF00FD51BD /* UserModel+cate.m in Sources */,
 				1C91CAEB1FC2D3DE002B5880 /* IQUIViewController+Additions.m in Sources */,
 				1C91CAE11FC2D3DE002B5880 /* IQBarButtonItem.m in Sources */,
@@ -590,6 +623,7 @@
 			baseConfigurationReference = 23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RuntimeTest/RuntimeTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
@@ -598,6 +632,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.RuntimeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -607,6 +644,7 @@
 			baseConfigurationReference = 78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RuntimeTest/RuntimeTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
@@ -615,6 +653,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.RuntimeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

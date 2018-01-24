@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,UISearchControllerDelegate,UISearchResultsUpdating>
 @property (nonatomic, strong) UITableView *tableView;
-
+@property (nonatomic, strong) UISearchController *searchController;
 
 @end
 

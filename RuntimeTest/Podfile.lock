@@ -1,20 +1,26 @@
 PODS:
+  - JPFPSStatus (0.1.1)
   - lottie-ios (2.1.4)
+  - Masonry (1.1.0)
   - SDWebImage (4.2.1):
     - SDWebImage/Core (= 4.2.1)
   - SDWebImage/Core (4.2.1)
   - TYAttributedLabel (2.6.2)
 
 DEPENDENCIES:
+  - JPFPSStatus (~> 0.1.1)
   - lottie-ios (~> 2.1.4)
+  - Masonry (~> 1.1.0)
   - SDWebImage (~> 4.2.1)
   - TYAttributedLabel (~> 2.6.2)
 
 SPEC CHECKSUMS:
+  JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
   lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
   TYAttributedLabel: 1c1f1e7604043ba584e005d4fd3aee8a1a7a2020
 
-PODFILE CHECKSUM: b7844186babe0707fc13ac2e6b9d6e4f19e55f64
+PODFILE CHECKSUM: 89e39cdfc6bd0966de5ad65dad7c1e5d391d7f13
 
 COCOAPODS: 1.3.1

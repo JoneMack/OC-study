@@ -23,7 +23,13 @@
 #import <Security/Security.h>
 #import "NextViewController.h"
 #import "TimeInViewController.h"
+#import "DrawView.h"
+#import <Masonry.h>
+#import "RuntimeTest-Swift.h"
+#import "RedpacketController.h"
 //#import "PastTextField.h"
+#define screen_width          [UIScreen mainScreen].bounds.size.width
+#define screen_height          [UIScreen mainScreen].bounds.size.height
 // 判断是否支持TouchID,只判断手机端，ipad端我们不支持
 #define IS_Phone        (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone
 #define IOS8_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
@@ -36,7 +42,7 @@
 }
 @property (nonatomic, strong) LOTAnimationView *lottieLogo;
 @property (nonatomic, strong) NSArray *tableViewItems;
-
+@property (nonatomic, strong) CADisplayLink *displayLinkTimer;//定时器
 
 @property (nonatomic,strong) CMMotionManager *mManager;
 
@@ -47,17 +53,22 @@
 @property (nonatomic , assign)NSInteger offset;
 @property (nonatomic , assign)int count;
 @property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, strong) NSArray *bigCaddiePrizeLogArray;
+@property (nonatomic, strong) NSMutableArray *bigCaddiePrizeLogArray;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImageView *betslipsView;
 
 @property (nonatomic, strong) CAShapeLayer *shaperLayer;
+@property (nonatomic, strong) CAShapeLayer *shapeLayer;
+@property (nonatomic, strong) CALayer *moveLayer;
+
 
 @property (nonatomic, strong) NSTimer *timer;
 
 
 @property (nonatomic, strong) UIView *bgView;
 @property (nonatomic, strong) UIView *alertView;
+
+@property (nonatomic, strong) UIView *touchView;
 
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayer;
 @property (nonatomic, strong) CAShapeLayer *waveShapeLayerT;
@@ -68,6 +79,8 @@
 @property (nonatomic, assign) float waveHeight;
 @property (nonatomic, assign) BOOL gundong;
  @property (strong, nonatomic) UIScrollView *scrollerView;
+@property (nonatomic, strong) UIButton *rollBackBtn;
+@property (nonatomic, strong)  DrawView *drawView;
 
 @end
 const NSString *associatedKey = @"associate_array_with_string_key";
@@ -119,6 +132,22 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self.view addSubview:field1];
     
     
+//    _drawView = [[DrawView alloc] initWithFrame:CGRectMake(0, 0, screen_width, screen_height)];
+//    _drawView.backgroundColor = [UIColor whiteColor];
+//    _drawView.lineWidth = 5;
+//    _drawView.lineColor = [UIColor blackColor];
+//    [self.view addSubview:_drawView];
+//
+//    _rollBackBtn = [[UIButton alloc] initWithFrame:CGRectMake(0,screen_height-50,screen_width,50)];
+//    _rollBackBtn.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
+//    _rollBackBtn.layer.borderColor = [UIColor colorWithWhite:0.3 alpha:1].CGColor;
+//    _rollBackBtn.layer.borderWidth = 1;
+//    [_rollBackBtn setTitle:@"回退" forState:UIControlStateNormal];
+//    [_rollBackBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [_rollBackBtn addTarget:self action:@selector(rollBackBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:_rollBackBtn];
+    
+    
 //    0123      01234567
 //
 //    int remiand = 400 % 4;
@@ -152,9 +181,10 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    NSArray *array = [self getImageurlFromHtml:str];
 //    NSLog(@"----------------%@",array);
 //
-//
+    
+//     NSString *str = @"请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈请输入xxxxxxxxx哈哈哈哈哈哈哈";
 //    NSAttributedString * attrStr = [[NSAttributedString alloc]initWithData:[str dataUsingEncoding:NSUnicodeStringEncoding] options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType} documentAttributes:nil error:nil];
-////    [container createTextContainerWithTextWidth:CGRectGetWidth(self.view.frame)-30];
+//    [container createTextContainerWithTextWidth:CGRectGetWidth(self.view.frame)-30];
 //    [attrStr enumerateAttribute:NSAttachmentAttributeName inRange:NSMakeRange(0, attrStr.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
 //        if (value) {
 //            NSTextAttachment *ment = value;
@@ -172,8 +202,8 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [label sizeToFit];
 //    CGSize labelSize = [label getSizeWithWidth:self.view.bounds.size.width-30];
 //    NSLog(@"----------%f------%f",labelSize.height,labelSize.width);
-//
-    self.bigCaddiePrizeLogArray = @[@"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5"];
+
+//    self.bigCaddiePrizeLogArray = @[@"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5"];
     
 //    [self createView];
 //    [self setUpUI];
@@ -262,11 +292,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     
     
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(30, 400, 50, 50);
-    btn.backgroundColor = [UIColor cyanColor];
-    [btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn.frame = CGRectMake(30, 400, 50, 50);
+//    btn.backgroundColor = [UIColor cyanColor];
+//    [btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
     
     
    
@@ -296,8 +326,8 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    Plane *plane = [Plane new];
 //    [plane fly];
     
-    Person *person = [Person new];
-    [person performSelector:@selector(fly)];
+//    Person *person = [Person new];
+//    [person performSelector:@selector(fly)];
     
     
     
@@ -368,11 +398,360 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     //返回:方法实现IMP
 //    IMP result8 = class_getMethodImplementation_stret([ViewController class], @selector(method1));
 //    result8();
+//    [self loadData];
+//    [self setUpUI];
+//
+//
+//    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+//    self.searchController.delegate = self;
+//    self.searchController.searchResultsUpdater = self;
+//    self.searchController.searchBar.placeholder = @"搜索";
+//    self.searchController.dimsBackgroundDuringPresentation = NO;
+//    self.searchController.hidesNavigationBarDuringPresentation = YES;
+//    [self.searchController.searchBar sizeToFit];
+////    [self.view addSubview:self.searchController.searchBar];
+//    self.tableView.tableHeaderView = self.searchController.searchBar;
+//    [self startTime];
+//    [self startRedPackerts];
+    
+//    [self countDown:5];
+    
+//    [self startCycle];
+    [self initCountdownLabel];
+    
+}
+
+//倒计时动画Swift版本
+- (void)initCountdownLabel{
+    CountDownLabel *countdownLabel = [[CountDownLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    countdownLabel.textAlignment = NSTextAlignmentCenter;
+    countdownLabel.textColor = [UIColor redColor];
+    countdownLabel.center = self.view.center;
+    countdownLabel.font =  [UIFont systemFontOfSize:25];
+    countdownLabel.count = 5;
+    [self.view addSubview:countdownLabel];
+    //可以在合适的地方 －开始倒计时
+    [countdownLabel startCount];
+}
+
+
+#pragma mark - lazyInstall
+-(CAShapeLayer*)shapeLayer {
+    if (!_shapeLayer) {
+        //创建出CAShapeLayer
+        self.shapeLayer = [CAShapeLayer layer];
+        self.shapeLayer.frame = CGRectMake(0, 100, 57, 80);
+        self.shapeLayer.position = self.view.center;
+        self.shapeLayer.fillColor = [UIColor clearColor].CGColor;
+        
+        //设置线条的宽度和颜色
+        self.shapeLayer.lineWidth = 2.0f;
+        self.shapeLayer.strokeColor = [UIColor greenColor].CGColor;
+        
+        //创建出圆形贝塞尔曲线
+        UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 100, 57, 80) cornerRadius:3];
+        //让贝塞尔曲线与CAShapeLayer产生联系
+        self.shapeLayer.path = circlePath.CGPath;
+    }
+    return _shapeLayer;
+}
+
+#pragma mark - Timer
+-(void)startCycle {//用定时器模拟数值输入的情况
+    [self.view.layer addSublayer:self.shapeLayer];
+    
+    _shapeLayer.strokeStart = 0;
+    _shapeLayer.strokeEnd = 1;
+    
+//    _displayLinkTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(circleAnimationType)];
+//    _displayLinkTimer.frameInterval = 1; //设置刷新60次响应一次
+//    [_displayLinkTimer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    if (!_displayLinkTimer) {
+        _displayLinkTimer = [CADisplayLink displayLinkWithTarget:self         selector:@selector(circleAnimationType)];
+        _displayLinkTimer.frameInterval = 0.25; //设置刷新60次响应一次
+        [_displayLinkTimer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    }
+}
+
+- (void)circleAnimationType {//用定时器调用的方法
+    if (_shapeLayer.strokeStart != 1) {
+        _shapeLayer.strokeStart += 5;
+    }
+}
+
+-(void)endCycle {
+    [_displayLinkTimer invalidate];
+    _displayLinkTimer = nil;
+    
+    _shapeLayer.strokeStart = 1;
+    _shapeLayer.strokeEnd = 0;
+    //    [_timer setFireDate:[NSDate distantFuture]];
+   
+}
+
+
+
+
+
+
+
+- (void)startTime
+{
+    __block int timeout = 5;
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0);
+    dispatch_source_set_event_handler(_timer, ^{
+        if ( timeout <= 0 )
+        {
+            dispatch_source_cancel(_timer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self startRedPackerts];
+            });
+        }
+        else
+        {
+            int seconds = timeout % 6;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self countDown:seconds];
+            });
+            timeout = timeout-1;
+        }
+    });
+    dispatch_resume(_timer);
+}
+
+
+-(void)startTime1{
+    __block int timeout = 59; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+        if(timeout<=0){ //倒计时结束，关闭
+            dispatch_source_cancel(_timer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //设置界面的按钮显示 根据自己需求设置
+                
+            });
+        }else{
+            int seconds = timeout % 60;
+            NSString *strTime = [NSString stringWithFormat:@"%.2d", seconds];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+            });
+            timeout--;
+        }
+    });
+    dispatch_resume(_timer);
+    
+}
+
+
+
+
+-(void)countDown:(int)count{
+    if(count <=0){
+        //倒计时已到，作需要作的事吧。
+        return;
+    }
+    UILabel* lblCountDown = [[UILabel alloc] initWithFrame:CGRectMake(60, 120, 50, 50)];
+    lblCountDown.textColor = [UIColor redColor];
+    lblCountDown.font = [UIFont boldSystemFontOfSize:66];
+    
+    lblCountDown.backgroundColor = [UIColor clearColor];
+    
+    lblCountDown.text = [NSString stringWithFormat:@"%d",count];
+    
+    [self.view addSubview:lblCountDown];
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        lblCountDown.alpha = 0;
+        lblCountDown.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.5, 0.5);
+    } completion:^(BOOL finished) {
+        [lblCountDown removeFromSuperview];
+        //递归调用，直到计时为零
+//        [self countDown:count-1];
+    }];
+}
+
+
+- (void)initTouchView{
+    self.touchView = [[UIView alloc] initWithFrame:self.view.bounds];
+    self.touchView.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:self.touchView];
+}
+
+
+- (void)startRedPackerts
+{
+//    [self initTouchView];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:(1/4.0) target:self selector:@selector(showRain) userInfo:nil repeats:YES];
+    [self.timer invalidate];
+}
+- (void)showRain
+{
+    UIImageView * imageV = [UIImageView new];
+    imageV.image = [UIImage imageNamed:@"logo.jpeg"];
+    imageV.frame = CGRectMake(0, 0, 44 , 62.5 );
+    
+    self.moveLayer = [CALayer new];
+    self.moveLayer.bounds = imageV.frame;
+    self.moveLayer.anchorPoint = CGPointMake(0, 0);
+    self.moveLayer.position = CGPointMake(0, -62.5 );
+    self.moveLayer.contents = (id)imageV.image.CGImage;
+    [self.view.layer addSublayer:self.moveLayer];
+    
+    [self addAnimation];
+}
+
+- (void)addAnimation
+{
+    CAKeyframeAnimation * moveAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    NSValue * A = [NSValue valueWithCGPoint:CGPointMake(arc4random() % 414, 0)];
+    NSValue * B = [NSValue valueWithCGPoint:CGPointMake(arc4random() % 414, screen_height)];
+    moveAnimation.values = @[A,B];
+    moveAnimation.duration = arc4random() % 200 / 100.0 + 3.5;
+    moveAnimation.repeatCount = 1;
+    moveAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [self.moveLayer addAnimation:moveAnimation forKey:nil];
+    
+    CAKeyframeAnimation * tranAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    CATransform3D r0 = CATransform3DMakeRotation(M_PI/180 * (arc4random() % 360 ) , 0, 0, -1);
+    CATransform3D r1 = CATransform3DMakeRotation(M_PI/180 * (arc4random() % 360 ) , 0, 0, -1);
+    tranAnimation.values = @[[NSValue valueWithCATransform3D:r0],[NSValue valueWithCATransform3D:r1]];
+    tranAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    tranAnimation.duration = arc4random() % 200 / 100.0 + 3.5;
+    //为了避免旋转动画完成后再次回到初始状态。
+    [tranAnimation setFillMode:kCAFillModeForwards];
+    [tranAnimation setRemovedOnCompletion:NO];
+    [self.moveLayer addAnimation:tranAnimation forKey:nil];
+}
+
+
+- (void)endAnimation
+{
+    [self.timer invalidate];
+    
+    for (NSInteger i = 0; i < self.view.layer.sublayers.count ; i ++)
+    {
+        CALayer * layer = self.view.layer.sublayers[i];
+        [layer removeAllAnimations];
+    }
+}
+
+
+- (void)clickRed:(UITapGestureRecognizer *)sender
+{
+    CGPoint point = [sender locationInView:self.view];
+    for (int i = 0 ; i < self.view.layer.sublayers.count ; i ++)
+    {
+        CALayer * layer = self.view.layer.sublayers[i];
+        if ([[layer presentationLayer] hitTest:point] != nil)
+        {
+            NSLog(@"%d",i);
+            
+            BOOL hasRedPacketd = !(i % 3) ;
+            
+            UIImageView * newPacketIV = [UIImageView new];
+            if (hasRedPacketd)
+            {
+                newPacketIV.image = [UIImage imageNamed:@"logo.jpeg"];
+                newPacketIV.frame = CGRectMake(0, 0, 63.5, 74);
+            }
+            else
+            {
+                newPacketIV.image = [UIImage imageNamed:@"logo.jpeg"];
+                newPacketIV.frame = CGRectMake(0, 0, 45.5, 76.5);
+            }
+            
+            layer.contents = (id)newPacketIV.image.CGImage;
+            
+            UIView * alertView = [UIView new];
+            alertView.layer.cornerRadius = 5;
+            alertView.frame = CGRectMake(point.x - 50, point.y, 100, 30);
+            [self.view addSubview:alertView];
+            
+            UILabel * label = [UILabel new];
+            label.font = [UIFont systemFontOfSize:17];
+            
+            if (!hasRedPacketd)
+            {
+                label.text = @"旺旺年！人旺旺";
+                label.textColor = [UIColor whiteColor];
+            }
+            else
+            {
+                NSString * string = [NSString stringWithFormat:@"+%d金币",i];
+                NSString * iString = [NSString stringWithFormat:@"%d",i];
+                NSMutableAttributedString * attributedStr = [[NSMutableAttributedString alloc]initWithString:string];
+                
+                [attributedStr addAttribute:NSFontAttributeName
+                                      value:[UIFont systemFontOfSize:27]
+                                      range:NSMakeRange(0, 1)];
+                [attributedStr addAttribute:NSFontAttributeName
+                                      value:[UIFont fontWithName:@"PingFangTC-Semibold" size:32]
+                                      range:NSMakeRange(1, iString.length)];
+                [attributedStr addAttribute:NSFontAttributeName
+                                      value:[UIFont systemFontOfSize:17]
+                                      range:NSMakeRange(1 + iString.length, 2)];
+                label.attributedText = attributedStr;
+                label.textColor = [UIColor redColor];
+            }
+            
+            [alertView addSubview:label];
+            [label mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerX.equalTo(alertView.mas_centerX);
+                make.centerY.equalTo(alertView.mas_centerY);
+            }];
+            
+            [UIView animateWithDuration:1 animations:^{
+                alertView.alpha = 0;
+                alertView.frame = CGRectMake(point.x- 50, point.y - 100, 100, 30);
+            } completion:^(BOOL finished) {
+                [alertView removeFromSuperview];
+            }];
+        }
+    }
+}
+
+
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    
+}
+
+- (void)rollBackBtnClicked:(UIButton *)sender{
+    [_drawView rollback];
 }
 
 //- (void)method1{
 //
 //}
+
+- (void)loadData{
+    self.bigCaddiePrizeLogArray = [NSMutableArray new];
+    NSArray* familys = [UIFont familyNames];
+    
+    for (int i = 0; i<[familys count]; i++) {
+        
+        NSString* family = [familys objectAtIndex:i];
+        
+        NSLog(@"Fontfamily:%@=====",family);
+        
+        NSArray* fonts = [UIFont fontNamesForFamilyName:family];
+        [self.bigCaddiePrizeLogArray addObjectsFromArray:fonts];
+        
+        for (int j = 0; j<[fonts count]; j++) {
+            
+            NSLog(@"FontName:%@",[fonts objectAtIndex:j]);
+//            [self.bigCaddiePrizeLogArray arrayByAddingObject:[fonts objectAtIndex:j]];
+        }
+    }
+    
+    NSLog(@"self.bigCaddiePrizeLogArray----------:%@",self.bigCaddiePrizeLogArray);
+    [self.tableView reloadData];
+}
 
 
 - (void)test{
@@ -592,6 +971,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 
 - (void)loginBtnClick:(UIButton *)sender{
     
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]]) {
+        NSString *QQ = @"752875355";
+        NSString *url = [NSString stringWithFormat:@"mqq://im/chat?chat_type=wpa&uin=%@&version=1&src_type=web",QQ];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 
@@ -663,14 +1047,21 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //        NSLog(@"-----------------回传数据--------------%@",str);
 //    };
     
-    TimeInViewController *timevc = [[TimeInViewController alloc] init];
-    [self.navigationController pushViewController:timevc animated:YES];
+//    TimeInViewController *timevc = [[TimeInViewController alloc] init];
+//    [self.navigationController pushViewController:timevc animated:YES];
     
     
+//    ShowRainController *svc = [[ShowRainController alloc] init];
+//    [self.navigationController pushViewController:svc animated:YES];
     
+    RedpacketController *svc = [[RedpacketController alloc] init];
+    [self.navigationController pushViewController:svc animated:YES];
+
     
     
 }
+
+
 
 
 
@@ -1017,15 +1408,15 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 
 
 - (void)setUpUI{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,100, self.view.bounds.size.width, 150) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.showsVerticalScrollIndicator = NO;
 //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
-    self.gundong = YES;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timeerStart) userInfo:nil repeats:YES];
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+//    self.gundong = YES;
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timeerStart) userInfo:nil repeats:YES];
+//    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)timeerStart{
@@ -1096,7 +1487,9 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [UITableViewCell new];
+    NSString *str = self.bigCaddiePrizeLogArray[indexPath.row];
     cell.textLabel.text = self.bigCaddiePrizeLogArray[indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:str size:16];
     return cell;
 }
 
