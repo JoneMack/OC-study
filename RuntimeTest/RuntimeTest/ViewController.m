@@ -292,11 +292,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     
     
     
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    btn.frame = CGRectMake(30, 400, 50, 50);
-//    btn.backgroundColor = [UIColor cyanColor];
-//    [btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(30, 400, 50, 50);
+    btn.backgroundColor = [UIColor cyanColor];
+    [btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
     
    
@@ -418,15 +418,22 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     
 //    [self startCycle];
 //    [self initCountdownLabel];
-    [self initCHWButton];
+//    [self initCHWButton];
+//
+//    @try {
+//
+//    } @catch (NSException *exception) {
+//
+//    } @finally {
+//
+//    }
     
-    @try {
-        
-    } @catch (NSException *exception) {
-        
-    } @finally {
-        
-    }
+//    dispatch_group_t group = dispatch_group_create();
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//
+//    dispatch_group_async(group, queue, ^{
+//
+//    });
 }
 
 - (void)initCHWButton{
@@ -456,11 +463,6 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    btn2.layer.cornerRadius = 5
 //    self.view.addSubview(btn2)
 }
-
-
-
-
-
 
 //倒计时动画Swift版本
 - (void)initCountdownLabel{
@@ -1083,10 +1085,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    NSNumber *select = objc_getAssociatedObject(sender, @"protocolBtn");
 //    NSLog(@"____________当前状态___________%d",[select boolValue]);
     
-//    NextViewController *nvc = [[NextViewController alloc] init];
+    NextViewController *nvc = [[NextViewController alloc] init];
 //    nvc.popdate = ^(NSString *str) {
 //        NSLog(@"-----------------回传数据--------------%@",str);
 //    };
+    [self.navigationController pushViewController:nvc animated:YES];
     
 //    TimeInViewController *timevc = [[TimeInViewController alloc] init];
 //    [self.navigationController pushViewController:timevc animated:YES];
@@ -1095,8 +1098,8 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    ShowRainController *svc = [[ShowRainController alloc] init];
 //    [self.navigationController pushViewController:svc animated:YES];
     
-    RedpacketController *svc = [[RedpacketController alloc] init];
-    [self.navigationController pushViewController:svc animated:YES];
+//    RedpacketController *svc = [[RedpacketController alloc] init];
+//    [self.navigationController pushViewController:svc animated:YES];
 
     
     
