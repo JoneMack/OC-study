@@ -11,7 +11,6 @@ import UIKit
     case CHWBtnTypeScale
     case CHWBtnTypeRotate
 }
-
 class CHWButton: UIButton {
     // 正常的颜色
     private var normal_bgColor = UIColor(red: CGFloat(237 / 255.0), green: CGFloat(85 / 255.0), blue: CGFloat(101 / 255.0), alpha: 1)
