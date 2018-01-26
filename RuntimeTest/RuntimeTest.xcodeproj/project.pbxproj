@@ -17,6 +17,7 @@
 		1C3DC0091FBE75FF00FD51BD /* UserModel+cate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DC0081FBE75FF00FD51BD /* UserModel+cate.m */; };
 		1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1C40026C1FC7EC9800576108 /* LottieLogo1.gif */; };
 		1C4002701FC7F81E00576108 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40026F1FC7F81E00576108 /* NextViewController.m */; };
+		1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C493E82201979A900099077 /* NothingToSeeHere.swift */; };
 		1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */; };
 		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
 		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
@@ -75,6 +76,7 @@
 		1C40026C1FC7EC9800576108 /* LottieLogo1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LottieLogo1.gif; sourceTree = "<group>"; };
 		1C40026E1FC7F81E00576108 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		1C40026F1FC7F81E00576108 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		1C493E82201979A900099077 /* NothingToSeeHere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingToSeeHere.swift; sourceTree = "<group>"; };
 		1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mineHeaderBG@2x.png"; sourceTree = "<group>"; };
 		1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		1C5003172016FB6100A244E9 /* ShowRainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRainController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				1C9EF5492015B5E7004F117B /* PaintView.h */,
 				1C9EF54A2015B5E7004F117B /* PaintView.m */,
 				1C92C3A8201822CD00259CDE /* CountDownLabel.swift */,
+				1C493E82201979A900099077 /* NothingToSeeHere.swift */,
 				1C8D2CAA1FCE9DD10088AB75 /* VWWWaterView.h */,
 				1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */,
 				1C5003172016FB6100A244E9 /* ShowRainController.swift */,
@@ -447,9 +450,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -473,6 +483,7 @@
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
 				1C50031D201719E300A244E9 /* RedpacketController.m in Sources */,
 				1C91CAE61FC2D3DE002B5880 /* IQNSArray+Sort.m in Sources */,
+				1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */,
 				1C4002701FC7F81E00576108 /* NextViewController.m in Sources */,
 				1C91CAE21FC2D3DE002B5880 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C91CADE1FC2D3DE002B5880 /* IQTextView.m in Sources */,
