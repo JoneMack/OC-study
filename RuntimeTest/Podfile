@@ -10,4 +10,5 @@ target 'RuntimeTest' do
      pod 'Masonry', '~> 1.1.0'
      pod 'AFNetworking', '~> 3.1.0'
      pod 'GPUImage', '~> 0.1.7'
+     pod 'YYCache', '~> 1.0.4'
 end
