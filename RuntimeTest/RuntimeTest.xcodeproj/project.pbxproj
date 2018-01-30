@@ -18,6 +18,7 @@
 		1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1C40026C1FC7EC9800576108 /* LottieLogo1.gif */; };
 		1C4002701FC7F81E00576108 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40026F1FC7F81E00576108 /* NextViewController.m */; };
 		1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C493E82201979A900099077 /* NothingToSeeHere.swift */; };
+		1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C274B2020046A00271592 /* TestSwiftViewController.swift */; };
 		1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */; };
 		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
 		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
@@ -30,6 +31,16 @@
 		1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CA51FCE7E760088AB75 /* Person.m */; };
 		1C8D2CA91FCE87D50088AB75 /* SingleDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CA81FCE87D50088AB75 /* SingleDog.m */; };
 		1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */; };
+		1C9130EF201ACD3E00C26961 /* GPUImageSoulFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130E7201ACD3D00C26961 /* GPUImageSoulFilter.m */; };
+		1C9130F0201ACD3E00C26961 /* IMG_0019.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130E8201ACD3D00C26961 /* IMG_0019.mp4 */; };
+		1C9130F1201ACD3E00C26961 /* GpUImageScaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130E9201ACD3D00C26961 /* GpUImageScaleFilter.m */; };
+		1C9130F2201ACD3E00C26961 /* ILGLKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130EB201ACD3D00C26961 /* ILGLKImageView.m */; };
+		1C9130F3201ACD3E00C26961 /* CIFilter+LUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130ED201ACD3E00C26961 /* CIFilter+LUT.m */; };
+		1C9130F9201ACD9900C26961 /* oldmovie.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130F5201ACD9900C26961 /* oldmovie.png */; };
+		1C9130FA201ACD9900C26961 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130F6201ACD9900C26961 /* noise.png */; };
+		1C9130FB201ACD9900C26961 /* lookup_glitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130F7201ACD9900C26961 /* lookup_glitch.png */; };
+		1C9130FC201ACD9900C26961 /* lookup_vertigo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130F8201ACD9900C26961 /* lookup_vertigo.png */; };
+		1C9130FF201ACE1100C26961 /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130FE201ACE1100C26961 /* GPUImageViewController.m */; };
 		1C91CADE1FC2D3DE002B5880 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CABB1FC2D3DE002B5880 /* IQTextView.m */; };
 		1C91CADF1FC2D3DE002B5880 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CABF1FC2D3DE002B5880 /* IQToolbar.m */; };
 		1C91CAE01FC2D3DE002B5880 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CAC11FC2D3DE002B5880 /* IQTitleBarButtonItem.m */; };
@@ -77,6 +88,7 @@
 		1C40026E1FC7F81E00576108 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		1C40026F1FC7F81E00576108 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		1C493E82201979A900099077 /* NothingToSeeHere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingToSeeHere.swift; sourceTree = "<group>"; };
+		1C4C274B2020046A00271592 /* TestSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftViewController.swift; sourceTree = "<group>"; };
 		1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mineHeaderBG@2x.png"; sourceTree = "<group>"; };
 		1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		1C5003172016FB6100A244E9 /* ShowRainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRainController.swift; sourceTree = "<group>"; };
@@ -99,6 +111,21 @@
 		1C8D2CA81FCE87D50088AB75 /* SingleDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleDog.m; sourceTree = "<group>"; };
 		1C8D2CAA1FCE9DD10088AB75 /* VWWWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWaterView.h; sourceTree = "<group>"; };
 		1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWaterView.m; sourceTree = "<group>"; };
+		1C9130E6201ACD3C00C26961 /* CIFilter+LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFilter+LUT.h"; sourceTree = "<group>"; };
+		1C9130E7201ACD3D00C26961 /* GPUImageSoulFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageSoulFilter.m; sourceTree = "<group>"; };
+		1C9130E8201ACD3D00C26961 /* IMG_0019.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0019.mp4; sourceTree = "<group>"; };
+		1C9130E9201ACD3D00C26961 /* GpUImageScaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpUImageScaleFilter.m; sourceTree = "<group>"; };
+		1C9130EA201ACD3D00C26961 /* GpUImageScaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpUImageScaleFilter.h; sourceTree = "<group>"; };
+		1C9130EB201ACD3D00C26961 /* ILGLKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGLKImageView.m; sourceTree = "<group>"; };
+		1C9130EC201ACD3D00C26961 /* GPUImageSoulFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSoulFilter.h; sourceTree = "<group>"; };
+		1C9130ED201ACD3E00C26961 /* CIFilter+LUT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+LUT.m"; sourceTree = "<group>"; };
+		1C9130EE201ACD3E00C26961 /* ILGLKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGLKImageView.h; sourceTree = "<group>"; };
+		1C9130F5201ACD9900C26961 /* oldmovie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oldmovie.png; sourceTree = "<group>"; };
+		1C9130F6201ACD9900C26961 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		1C9130F7201ACD9900C26961 /* lookup_glitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_glitch.png; sourceTree = "<group>"; };
+		1C9130F8201ACD9900C26961 /* lookup_vertigo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_vertigo.png; sourceTree = "<group>"; };
+		1C9130FD201ACE1100C26961 /* GPUImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
+		1C9130FE201ACE1100C26961 /* GPUImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
 		1C91CABB1FC2D3DE002B5880 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		1C91CABC1FC2D3DE002B5880 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		1C91CABE1FC2D3DE002B5880 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -179,6 +206,7 @@
 		1C3DBFED1FBE72B400FD51BD /* RuntimeTest */ = {
 			isa = PBXGroup;
 			children = (
+				1C9130F4201ACD9900C26961 /* resources */,
 				1C5536451FFB58C900B87D4E /* RuntimeTest.entitlements */,
 				1C91CAB91FC2D3DE002B5880 /* IQKeyboardManager */,
 				1C3DBFEE1FBE72B400FD51BD /* AppDelegate.h */,
@@ -187,6 +215,15 @@
 				1C8D0EC31FCD32B300D13474 /* logo.jpeg */,
 				1C3DBFF11FBE72B400FD51BD /* ViewController.h */,
 				1C3DBFF21FBE72B400FD51BD /* ViewController.m */,
+				1C9130E6201ACD3C00C26961 /* CIFilter+LUT.h */,
+				1C9130ED201ACD3E00C26961 /* CIFilter+LUT.m */,
+				1C9130EA201ACD3D00C26961 /* GpUImageScaleFilter.h */,
+				1C9130E9201ACD3D00C26961 /* GpUImageScaleFilter.m */,
+				1C9130EC201ACD3D00C26961 /* GPUImageSoulFilter.h */,
+				1C9130E7201ACD3D00C26961 /* GPUImageSoulFilter.m */,
+				1C9130EE201ACD3E00C26961 /* ILGLKImageView.h */,
+				1C9130EB201ACD3D00C26961 /* ILGLKImageView.m */,
+				1C9130E8201ACD3D00C26961 /* IMG_0019.mp4 */,
 				1C5003192016FFC800A244E9 /* x.png */,
 				1C9EF54220158AAE004F117B /* DrawView.h */,
 				1C9EF54320158AAE004F117B /* DrawView.m */,
@@ -197,11 +234,14 @@
 				1C8D2CAA1FCE9DD10088AB75 /* VWWWaterView.h */,
 				1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */,
 				1C5003172016FB6100A244E9 /* ShowRainController.swift */,
+				1C4C274B2020046A00271592 /* TestSwiftViewController.swift */,
 				1C92C3AA201852F800259CDE /* CHWButton.swift */,
 				1C50031B201719E300A244E9 /* RedpacketController.h */,
 				1C50031C201719E300A244E9 /* RedpacketController.m */,
 				1C40026E1FC7F81E00576108 /* NextViewController.h */,
 				1C40026F1FC7F81E00576108 /* NextViewController.m */,
+				1C9130FD201ACE1100C26961 /* GPUImageViewController.h */,
+				1C9130FE201ACE1100C26961 /* GPUImageViewController.m */,
 				1C569E1D1FFCD6AD0011430D /* TimeInViewController.h */,
 				1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */,
 				1C8D2CA71FCE87D50088AB75 /* SingleDog.h */,
@@ -228,6 +268,17 @@
 				1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */,
 			);
 			path = RuntimeTest;
+			sourceTree = "<group>";
+		};
+		1C9130F4201ACD9900C26961 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C9130F5201ACD9900C26961 /* oldmovie.png */,
+				1C9130F6201ACD9900C26961 /* noise.png */,
+				1C9130F7201ACD9900C26961 /* lookup_glitch.png */,
+				1C9130F8201ACD9900C26961 /* lookup_vertigo.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		1C91CAB91FC2D3DE002B5880 /* IQKeyboardManager */ = {
@@ -402,8 +453,13 @@
 				1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */,
 				1C3DBFFB1FBE72B400FD51BD /* LaunchScreen.storyboard in Resources */,
 				1C3DBFF81FBE72B400FD51BD /* Assets.xcassets in Resources */,
+				1C9130FA201ACD9900C26961 /* noise.png in Resources */,
 				1C91CAE41FC2D3DE002B5880 /* IQKeyboardManager.bundle in Resources */,
+				1C9130FC201ACD9900C26961 /* lookup_vertigo.png in Resources */,
 				1C8D0EC41FCD32B400D13474 /* logo.jpeg in Resources */,
+				1C9130FB201ACD9900C26961 /* lookup_glitch.png in Resources */,
+				1C9130F0201ACD3E00C26961 /* IMG_0019.mp4 in Resources */,
+				1C9130F9201ACD9900C26961 /* oldmovie.png in Resources */,
 				1C3DBFF61FBE72B400FD51BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,8 +538,10 @@
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
 				1C50031D201719E300A244E9 /* RedpacketController.m in Sources */,
+				1C9130F1201ACD3E00C26961 /* GpUImageScaleFilter.m in Sources */,
 				1C91CAE61FC2D3DE002B5880 /* IQNSArray+Sort.m in Sources */,
 				1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */,
+				1C9130EF201ACD3E00C26961 /* GPUImageSoulFilter.m in Sources */,
 				1C4002701FC7F81E00576108 /* NextViewController.m in Sources */,
 				1C91CAE21FC2D3DE002B5880 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C91CADE1FC2D3DE002B5880 /* IQTextView.m in Sources */,
@@ -494,16 +552,20 @@
 				1C8D2CA91FCE87D50088AB75 /* SingleDog.m in Sources */,
 				1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */,
 				1C91CAE81FC2D3DE002B5880 /* IQUITextFieldView+Additions.m in Sources */,
+				1C9130F3201ACD3E00C26961 /* CIFilter+LUT.m in Sources */,
 				1C91CAE71FC2D3DE002B5880 /* IQUIWindow+Hierarchy.m in Sources */,
 				1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */,
 				1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */,
+				1C9130F2201ACD3E00C26961 /* ILGLKImageView.m in Sources */,
 				1C91CAEA1FC2D3DE002B5880 /* IQUIView+Hierarchy.m in Sources */,
 				1C91CAE01FC2D3DE002B5880 /* IQTitleBarButtonItem.m in Sources */,
 				1C3DBFF01FBE72B400FD51BD /* AppDelegate.m in Sources */,
 				1C8D2CA31FCE4F870088AB75 /* MovieModel.m in Sources */,
 				1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */,
+				1C9130FF201ACE1100C26961 /* GPUImageViewController.m in Sources */,
 				1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */,
 				1C9EF54420158AAE004F117B /* DrawView.m in Sources */,
+				1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */,
 				1C3DC0091FBE75FF00FD51BD /* UserModel+cate.m in Sources */,
 				1C91CAEB1FC2D3DE002B5880 /* IQUIViewController+Additions.m in Sources */,
 				1C91CAE11FC2D3DE002B5880 /* IQBarButtonItem.m in Sources */,

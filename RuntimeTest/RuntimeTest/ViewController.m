@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <objc/runtime.h>
+#import <objc/objc.h>
+#import <objc/message.h>
 #import "UserModel+cate.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 #import <Lottie/Lottie.h>
@@ -30,6 +32,7 @@
 #include <sys/sysctl.h>
 #include <net/if.h>
 #include <net/if_dl.h>
+#import "GPUImageViewController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -83,6 +86,8 @@
 @property (nonatomic, assign) BOOL gundong;
  @property (strong, nonatomic) UIScrollView *scrollerView;
 @property (nonatomic, strong) UIButton *rollBackBtn;
+@property (nonatomic, strong) UIButton *btn;
+@property (nonatomic, strong) UIButton *performBtn;
 @property (nonatomic, strong)  DrawView *drawView;
 
 @end
@@ -292,14 +297,23 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    BOOL result = [@"x" isEqualToString:@"X"];
 //    NSLog(@"--------result------->%d",result);
     
+//    self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
     
     
+    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.btn.frame = CGRectMake(30, 400, 50, 50);
+    self.btn.backgroundColor = [UIColor cyanColor];
+    [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.btn];
+//    CALayer 不支持点击
+//    [self.view.layer addSublayer:btn.layer];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(30, 400, 50, 50);
-    btn.backgroundColor = [UIColor cyanColor];
-    [btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    
+    self.performBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.performBtn.frame = CGRectMake(30, 500, 50, 50);
+    self.performBtn.backgroundColor = [UIColor cyanColor];
+    [self.performBtn addTarget:self action:@selector(completeClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.performBtn];
     
     
    
@@ -438,9 +452,212 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //
 //    });
     
+//    均失效  不允许获取Mac地址
+//    NSLog(@"---------地址-------%@",[self getMacAddress]);
+//    NSLog(@"---------地址-------%@",[self macaddress]);
+//    NSLog(@"---------地址-------%@",[self getmacAddress]);
     
-    NSLog(@"---------地址-------%@",[self getMacAddress]);
+    
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        NSLog(@"before perform");
+//        [self performSelector:@selector(printLog) withObject:nil  afterDelay:0];
+//        [[NSRunLoop currentRunLoop] run];
+//        NSLog(@"after perform");
+//    });
+    
+    
+    
+    
+    
+    
+    
+    NSString *str = @"字符串objc_msgSend";
+    NSNumber *num = @20;
+    NSArray *arr = @[@"数组值1", @"数组值2"];
+    SEL sel = NSSelectorFromString(@"ObjcMsgSendWithString:withNum:withArray:");
+    
+ ((void (*) (id, SEL, NSString *, NSNumber *, NSArray *))objc_msgSend)(self, sel, str, num, arr);
+
+    
 }
+- (void)printLog {
+    NSLog(@"printLog");
+}
+
+
+- (void)ObjcMsgSendWithString:(NSString *)string withNum:(NSNumber *)number withArray:(NSArray *)array {
+    NSLog(@"%@, %@, %@", string, number, array[0]);
+}
+
+-(void)completeClicked:(UIButton *)sender{
+    NSLog(@"点击");
+    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(buttonClick:) object:sender];
+    [self performSelector:@selector(buttonClick:) withObject:sender afterDelay:0.2f];
+}
+//这种方式是在点击后设为不可被点击的状态，1秒后恢复
+
+-(void)buttonClick:(id)sender{
+    NSLog(@"禁止点击");
+    self.btn.enabled =NO;
+    
+    [self performSelector:@selector(changeButtonStatus) withObject:nil afterDelay:1.0f];//防止重复点击
+    
+}
+
+-(void)changeButtonStatus{
+    NSLog(@"允许点击");
+    self.btn.enabled =YES;
+}
+
+
+
++ (CGFloat)getCurrentBatteryLevel {
+    UIApplication *app = [UIApplication sharedApplication];
+    if (app.applicationState == UIApplicationStateActive||app.applicationState==UIApplicationStateInactive){
+        Ivar ivar=  class_getInstanceVariable([app class],"_statusBar");
+        id status  = object_getIvar(app, ivar);
+        for (id aview in [status subviews]){
+            int batteryLevel = 0;
+            for (id bview in [aview subviews]){
+                if ([NSStringFromClass([bview class]) caseInsensitiveCompare:@"UIStatusBarBatteryItemView"] == NSOrderedSame&&[[[UIDevice currentDevice] systemVersion] floatValue] >=6.0){
+                    Ivar ivar=  class_getInstanceVariable([bview class],"_capacity");
+                    if(ivar){
+                        batteryLevel = ((int (*)(id, Ivar))object_getIvar)(bview, ivar);
+                        if (batteryLevel > 0 && batteryLevel <= 100){
+                            return batteryLevel;
+                        }else{
+                            return 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+- (NSString *) macaddress
+{
+    
+    int                 mib[6];
+    size_t              len;
+    char                *buf;
+    unsigned char       *ptr;
+    struct if_msghdr    *ifm;
+    struct sockaddr_dl  *sdl;
+    
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
+    
+    if ((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error/n");
+        return NULL;
+    }
+    
+    if (sysctl(mib, 6, NULL, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 1/n");
+        return NULL;
+    }
+    
+    if ((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. error!/n");
+        return NULL;
+    }
+    
+    if (sysctl(mib, 6, buf, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 2");
+        return NULL;
+    }
+    
+    ifm = (struct if_msghdr *)buf;
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    ptr = (unsigned char *)LLADDR(sdl);
+    NSString *outstring = [NSString stringWithFormat:@"%02x:%02x:%02x:%02x:%02x:%02x", *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    
+    //    NSString *outstring = [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x", *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    
+    NSLog(@"outString:%@", outstring);
+    
+    free(buf);
+    
+    return [outstring uppercaseString];
+}
+
+- (NSString *)getmacAddress
+{
+    int                 mgmtInfoBase[6];
+    char                *msgBuffer = NULL;
+    size_t              length;
+    unsigned char       macAddress[6];
+    struct if_msghdr    *interfaceMsgStruct;
+    struct sockaddr_dl  *socketStruct;
+    NSString            *errorFlag = NULL;
+    
+    // Setup the management Information Base (mib)
+    mgmtInfoBase[0] = CTL_NET;        // Request network subsystem
+    mgmtInfoBase[1] = AF_ROUTE;       // Routing table info
+    mgmtInfoBase[2] = 0;
+    mgmtInfoBase[3] = AF_LINK;        // Request link layer information
+    mgmtInfoBase[4] = NET_RT_IFLIST;  // Request all configured interfaces
+    
+    // With all configured interfaces requested, get handle index
+    if ((mgmtInfoBase[5] = if_nametoindex("en0")) == 0)
+        errorFlag = @"if_nametoindex failure";
+    else
+    {
+        // Get the size of the data available (store in len)
+        if (sysctl(mgmtInfoBase, 6, NULL, &length, NULL, 0) < 0)
+            errorFlag = @"sysctl mgmtInfoBase failure";
+        else
+        {
+            // Alloc memory based on above call
+            if ((msgBuffer = malloc(length)) == NULL)
+                errorFlag = @"buffer allocation failure";
+            else
+            {
+                // Get system information, store in buffer
+                if (sysctl(mgmtInfoBase, 6, msgBuffer, &length, NULL, 0) < 0)
+                    errorFlag = @"sysctl msgBuffer failure";
+            }
+        }
+    }
+    
+    // Befor going any further...
+    if (errorFlag != NULL)
+    {
+        NSLog(@"Error: %@", errorFlag);
+        return errorFlag;
+    }
+    
+    // Map msgbuffer to interface message structure
+    interfaceMsgStruct = (struct if_msghdr *) msgBuffer;
+    
+    // Map to link-level socket structure
+    socketStruct = (struct sockaddr_dl *) (interfaceMsgStruct + 1);
+    
+    // Copy link layer address data in socket structure to an array
+    memcpy(&macAddress, socketStruct->sdl_data + socketStruct->sdl_nlen, 6);
+    
+    // Read from char array into a string object, into traditional Mac address format
+    NSString *macAddressString = [NSString stringWithFormat:@"%02x:%02x:%02x:%02x:%02x:%02x",
+                                  macAddress[0], macAddress[1], macAddress[2],
+                                  macAddress[3], macAddress[4], macAddress[5]];
+    NSLog(@"Mac Address: %@", macAddressString);
+    
+    // Release the buffer memory
+    free(msgBuffer);
+    
+    return macAddressString;
+}
+
+
+
+
+
+
 
 
 - (NSString *)getMacAddress {
@@ -1144,11 +1361,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    NSNumber *select = objc_getAssociatedObject(sender, @"protocolBtn");
 //    NSLog(@"____________当前状态___________%d",[select boolValue]);
     
-    NextViewController *nvc = [[NextViewController alloc] init];
+//    NextViewController *nvc = [[NextViewController alloc] init];
 //    nvc.popdate = ^(NSString *str) {
 //        NSLog(@"-----------------回传数据--------------%@",str);
 //    };
-    [self.navigationController pushViewController:nvc animated:YES];
+//    [self.navigationController pushViewController:nvc animated:YES];
     
 //    TimeInViewController *timevc = [[TimeInViewController alloc] init];
 //    [self.navigationController pushViewController:timevc animated:YES];
@@ -1160,7 +1377,12 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    RedpacketController *svc = [[RedpacketController alloc] init];
 //    [self.navigationController pushViewController:svc animated:YES];
 
+//    GPUImageViewController *gpuvc = [[GPUImageViewController alloc] init];
+//    [self.navigationController pushViewController:gpuvc animated:YES];
     
+    
+    TestSwiftViewController *testvc = [[TestSwiftViewController alloc] init];
+    [self.navigationController pushViewController:testvc animated:YES];
     
 }
 

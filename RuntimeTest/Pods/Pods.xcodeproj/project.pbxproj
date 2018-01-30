@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -794,7 +794,7 @@
 		31784FBEE39D59255ECFA9FF829BD65B /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		3198C7599299FB3553175409AF444620 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		32152E70810E17AD7ADA5B04D770E420 /* GPUImageHighPassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHighPassFilter.m; path = framework/Source/GPUImageHighPassFilter.m; sourceTree = "<group>"; };
-		32AD80BF1A35130E9EA29431F75A4246 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AD80BF1A35130E9EA29431F75A4246 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C5447689AF164B0AD6C45D620A91D7 /* GPUImageGaussianSelectiveBlurFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageGaussianSelectiveBlurFilter.h; path = framework/Source/GPUImageGaussianSelectiveBlurFilter.h; sourceTree = "<group>"; };
 		33077D6ED6C6445CA33F8A7788D46E99 /* GPUImageMotionDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageMotionDetector.m; path = framework/Source/GPUImageMotionDetector.m; sourceTree = "<group>"; };
 		3369E08C8F78698450B88811E51C552A /* TYAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYAttributedLabel.xcconfig; sourceTree = "<group>"; };
@@ -865,7 +865,7 @@
 		4B68099B4E0C98B0136ED4A536E03697 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		4B699A05494789CF16080A68E8AA5E1D /* LOTMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTMask.m; path = "lottie-ios/Classes/Models/LOTMask.m"; sourceTree = "<group>"; };
 		4B7F5A0DD6E43A507F4DE27567D1CA98 /* GPUImageSubtractBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSubtractBlendFilter.h; path = framework/Source/GPUImageSubtractBlendFilter.h; sourceTree = "<group>"; };
-		4BBB9CEB7FCCF1448837F4814358E5FB /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBB9CEB7FCCF1448837F4814358E5FB /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBEBCFD61DF9FD23A0ECDE5DA4D1F9A /* GPUImageVoronoiConsumerFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageVoronoiConsumerFilter.h; path = framework/Source/GPUImageVoronoiConsumerFilter.h; sourceTree = "<group>"; };
 		4D1CAD9C56B281B6A9A76C80DA0898CF /* GPUImagePerlinNoiseFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImagePerlinNoiseFilter.m; path = framework/Source/GPUImagePerlinNoiseFilter.m; sourceTree = "<group>"; };
 		4D253867FBEAB011A613CB83D05D78C7 /* LOTShapeGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGroup.m; path = "lottie-ios/Classes/Models/LOTShapeGroup.m"; sourceTree = "<group>"; };
@@ -1007,7 +1007,7 @@
 		7A7A6A36D1B45388BEABB3D9B09CE569 /* GPUImageiOSBlurFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageiOSBlurFilter.h; path = framework/Source/GPUImageiOSBlurFilter.h; sourceTree = "<group>"; };
 		7B1602B08E7E80556B6B2A12E0083F56 /* GPUImageContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageContext.m; path = framework/Source/iOS/GPUImageContext.m; sourceTree = "<group>"; };
 		7B31CEA633B34A2A3434242EA808E0B7 /* GPUImageSourceOverBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSourceOverBlendFilter.h; path = framework/Source/GPUImageSourceOverBlendFilter.h; sourceTree = "<group>"; };
-		7B46C840EB87253B1EE29332F1A055C9 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RuntimeTest.a"; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B46C840EB87253B1EE29332F1A055C9 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA4C6DCC4FC88B8399757E67203A674 /* GPUImageHistogramGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHistogramGenerator.m; path = framework/Source/GPUImageHistogramGenerator.m; sourceTree = "<group>"; };
 		7D74BA9099F717950799FCFD01157F16 /* LOTLayerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerContainer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTLayerContainer.h"; sourceTree = "<group>"; };
 		7E7A049F4B159D7A846D874372DDAF42 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -1052,7 +1052,7 @@
 		91B9BB7AEED2BD6339E17B56E794EAC2 /* GPUImageOverlayBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageOverlayBlendFilter.m; path = framework/Source/GPUImageOverlayBlendFilter.m; sourceTree = "<group>"; };
 		930DC9A94A3212E2D39057E096154CFB /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		9313066DC65FB4950C411A70B4D9CE44 /* GPUImageDifferenceBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageDifferenceBlendFilter.h; path = framework/Source/GPUImageDifferenceBlendFilter.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940CC9DD4107F74526EDBED445A7832F /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		940DC67C148C11071AAB09CEB5267B12 /* GPUImageEmbossFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageEmbossFilter.h; path = framework/Source/GPUImageEmbossFilter.h; sourceTree = "<group>"; };
 		9519E5BC1C4C142595FD679BA34D8C46 /* GPUImageColorDodgeBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageColorDodgeBlendFilter.m; path = framework/Source/GPUImageColorDodgeBlendFilter.m; sourceTree = "<group>"; };
@@ -1093,7 +1093,7 @@
 		A7324889BFAC469CBE2E3B7C87935B98 /* GPUImageFramebufferCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageFramebufferCache.m; path = framework/Source/GPUImageFramebufferCache.m; sourceTree = "<group>"; };
 		A7E70BB3B5DEAD4DAAEBF5B7E268D318 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		A7FBA585B30F7950D7EE1B402463E7C4 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		A8250EA8792E787224E660BBD8052A89 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8250EA8792E787224E660BBD8052A89 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8716D04ED638055426CE5E4E9855CF9 /* GPUImageHighlightShadowFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHighlightShadowFilter.m; path = framework/Source/GPUImageHighlightShadowFilter.m; sourceTree = "<group>"; };
 		A8728E7ACC06325E2CAE8AAC7E9514CA /* GPUImageRawDataInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageRawDataInput.m; path = framework/Source/GPUImageRawDataInput.m; sourceTree = "<group>"; };
 		A90F6E34BC1CD5D2B2927546BB44DC36 /* GPUImageHarrisCornerDetectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHarrisCornerDetectionFilter.h; path = framework/Source/GPUImageHarrisCornerDetectionFilter.h; sourceTree = "<group>"; };
@@ -1176,7 +1176,7 @@
 		CAA13E479B2FBDC59734925869F90245 /* LOTShapeTrimPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeTrimPath.m; path = "lottie-ios/Classes/Models/LOTShapeTrimPath.m"; sourceTree = "<group>"; };
 		CB5357B0BF9C9CD40647FBB5103C1C2D /* TYDrawStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYDrawStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYDrawStorage.h; sourceTree = "<group>"; };
 		CB9C9C6D5487FCDDE957023D91A5C47B /* GPUImageFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageFramework.h; path = framework/Source/iOS/Framework/GPUImageFramework.h; sourceTree = "<group>"; };
-		CBB3D1B694DE99E6070B598D59D42CA3 /* libTYAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTYAttributedLabel.a; path = libTYAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3D1B694DE99E6070B598D59D42CA3 /* libTYAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTYAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEC9445E5C853B61D9BA56A242A6F5E /* TYTextStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTextStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextStorage.m; sourceTree = "<group>"; };
 		CBF1B9F5F5CCD140BF56AE836D7BDBCA /* LOTPolystarAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPolystarAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPolystarAnimator.h"; sourceTree = "<group>"; };
 		CC0D4D25931C6E49FEA2BDBAE553B30F /* LOTNumberInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTNumberInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTNumberInterpolator.m"; sourceTree = "<group>"; };
@@ -1190,7 +1190,7 @@
 		CECD0BC2A09B314F6BBAD39DF56B289E /* GPUImageVoronoiConsumerFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageVoronoiConsumerFilter.m; path = framework/Source/GPUImageVoronoiConsumerFilter.m; sourceTree = "<group>"; };
 		CECDFF2638023686823B0A665B4E3FF6 /* GPUImageMultiplyBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageMultiplyBlendFilter.m; path = framework/Source/GPUImageMultiplyBlendFilter.m; sourceTree = "<group>"; };
 		CED5C76A34D08CCDD615F23686E53920 /* LOTRepeaterRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRepeaterRenderer.h; path = "lottie-ios/Classes/RenderSystem/RenderNodes/LOTRepeaterRenderer.h"; sourceTree = "<group>"; };
-		CF1AA8A5C7609BA8E8052E244DFC7A93 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGPUImage.a; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1AA8A5C7609BA8E8052E244DFC7A93 /* libGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGPUImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF43BB320085C99891C05B816C4304BA /* LOTShapeFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeFill.h; path = "lottie-ios/Classes/Models/LOTShapeFill.h"; sourceTree = "<group>"; };
 		CFFEAE2528569C7A19475CC6A8A8E60C /* GPUImageJFAVoronoiFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageJFAVoronoiFilter.h; path = framework/Source/GPUImageJFAVoronoiFilter.h; sourceTree = "<group>"; };
 		D1990874DDCA78C31DAD9433D4317157 /* LOTSizeInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTSizeInterpolator.h; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTSizeInterpolator.h"; sourceTree = "<group>"; };
@@ -1237,7 +1237,7 @@
 		E56F580095D0D94CBC85D94A8AB68A32 /* GPUImageDifferenceBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageDifferenceBlendFilter.m; path = framework/Source/GPUImageDifferenceBlendFilter.m; sourceTree = "<group>"; };
 		E58C9B4A4572894DDF21F32347032782 /* LOTAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimationView.m; path = "lottie-ios/Classes/Private/LOTAnimationView.m"; sourceTree = "<group>"; };
 		E67099D421A85855177CF3D80BEFABBB /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
-		E6E90D67DCBEED9A913FE9F9D6299F4C /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E90D67DCBEED9A913FE9F9D6299F4C /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74D62864F0639093CC655489524587C /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		E78D4EEF2C95BE7C3CB4F545856D7163 /* GPUImageThresholdEdgeDetectionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageThresholdEdgeDetectionFilter.m; path = framework/Source/GPUImageThresholdEdgeDetectionFilter.m; sourceTree = "<group>"; };
 		E7A818528888F28F15F0D57FF03231EB /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
@@ -1255,7 +1255,7 @@
 		EE48D898D5E28A6EFDE39A515FEB37C7 /* GPUImageLanczosResamplingFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLanczosResamplingFilter.h; path = framework/Source/GPUImageLanczosResamplingFilter.h; sourceTree = "<group>"; };
 		EE992C1CE4F600D9F47FB98F32ACE89B /* GPUImageHueBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageHueBlendFilter.m; path = framework/Source/GPUImageHueBlendFilter.m; sourceTree = "<group>"; };
 		EF4E04F668FCF0831C36DA13D0ACF177 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		F03B3D9CED857BAA3762966EA67DA829 /* libJPFPSStatus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJPFPSStatus.a; path = libJPFPSStatus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03B3D9CED857BAA3762966EA67DA829 /* libJPFPSStatus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJPFPSStatus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F071D6A3B63C838B26908D2BE5A76B09 /* GPUImageTwoInputFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageTwoInputFilter.h; path = framework/Source/GPUImageTwoInputFilter.h; sourceTree = "<group>"; };
 		F1424B3FA4015136657A0626DD1F2C75 /* GPUImageThresholdSketchFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageThresholdSketchFilter.h; path = framework/Source/GPUImageThresholdSketchFilter.h; sourceTree = "<group>"; };
 		F1B9C7827FF65807466ACF74C9B30983 /* GPUImageColorMatrixFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageColorMatrixFilter.m; path = framework/Source/GPUImageColorMatrixFilter.m; sourceTree = "<group>"; };
@@ -1390,7 +1390,6 @@
 				FCD4ACE9AC9D9DD571E30E91908BFF3A /* Core */,
 				577A0D38638E667435801E5241355577 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1441,7 +1440,6 @@
 				735DB2B84C92AE86BA3BB3446389CE2B /* TYViewStorage.m */,
 				3F0007B01A64D243492725D7E9AB0B6C /* Support Files */,
 			);
-			name = TYAttributedLabel;
 			path = TYAttributedLabel;
 			sourceTree = "<group>";
 		};
@@ -1617,7 +1615,6 @@
 				0E9E2D4F1FC14EA3BE06B2C2F5A506C2 /* UIColor+Expanded.m */,
 				4C82CE10B2F461AC5194DA15CB79B159 /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -1688,7 +1685,6 @@
 				3198C7599299FB3553175409AF444620 /* ViewController+MASAdditions.m */,
 				6A97243ED11AD1CFC579FCA9CC444A0E /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -2028,7 +2024,6 @@
 				BB3DF4296CFCCB87D9180B4F73ADE5F4 /* Resources */,
 				AF0A13AF0E086FE7EAFD41FF63E7BA04 /* Support Files */,
 			);
-			name = GPUImage;
 			path = GPUImage;
 			sourceTree = "<group>";
 		};
@@ -2152,7 +2147,6 @@
 				442019C2284ED0D86B3E3D291DA0433A /* Support Files */,
 				518BE65F1B51B9432C99FC0D7C23F2C9 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2163,7 +2157,6 @@
 				68FDD3A7DA5E7315B80E13448E08E253 /* JPFPSStatus.m */,
 				5076139F14C174DBAC2FB77183E90164 /* Support Files */,
 			);
-			name = JPFPSStatus;
 			path = JPFPSStatus;
 			sourceTree = "<group>";
 		};
@@ -2740,7 +2733,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3167,7 +3160,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TYAttributedLabel/TYAttributedLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3190,7 +3183,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TYAttributedLabel/TYAttributedLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3212,7 +3205,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/JPFPSStatus/JPFPSStatus-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3311,7 +3304,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/JPFPSStatus/JPFPSStatus-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3333,7 +3326,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3355,7 +3348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/GPUImage/GPUImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3377,7 +3370,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3400,7 +3393,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3422,7 +3415,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/GPUImage/GPUImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3528,7 +3521,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3571,7 +3564,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -3593,7 +3586,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
