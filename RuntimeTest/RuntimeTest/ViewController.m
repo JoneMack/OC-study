@@ -33,6 +33,7 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 #import "GPUImageViewController.h"
+#import <YYCache.h>
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -470,14 +471,32 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     
     
     
+//    objc_msgSend 传值
     
-    NSString *str = @"字符串objc_msgSend";
-    NSNumber *num = @20;
-    NSArray *arr = @[@"数组值1", @"数组值2"];
-    SEL sel = NSSelectorFromString(@"ObjcMsgSendWithString:withNum:withArray:");
+//    NSString *str = @"字符串objc_msgSend";
+//    NSNumber *num = @20;
+//    NSArray *arr = @[@"数组值1", @"数组值2"];
+//    SEL sel = NSSelectorFromString(@"ObjcMsgSendWithString:withNum:withArray:");
+//
+// ((void (*) (id, SEL, NSString *, NSNumber *, NSArray *))objc_msgSend)(self, sel, str, num, arr);
     
- ((void (*) (id, SEL, NSString *, NSNumber *, NSArray *))objc_msgSend)(self, sel, str, num, arr);
+    
+    NSString *userName = @"jack";
+    NSString *key = @"user_name";
+    YYCache *userInfoCache = [YYCache cacheWithName:@"userInfo"];
+    [userInfoCache setObject:userName forKey:key withBlock:^{
+        NSLog(@"缓存成功！！！");
+    }];
 
+    [userInfoCache containsObjectForKey:key withBlock:^(NSString * _Nonnull key, BOOL contains) {
+        if (contains) {
+           NSLog(@"存在！！！");
+        }
+    }];
+    
+    [userInfoCache objectForKey:key withBlock:^(NSString * _Nonnull key, id<NSCoding>  _Nonnull object) {
+        NSLog(@"获取objc--userName----%@",object);
+    }];
     
 }
 - (void)printLog {
