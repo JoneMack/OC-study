@@ -16,12 +16,12 @@ PODS:
     - AFNetworking/NSURLSession
   - GPUImage (0.1.7)
   - JPFPSStatus (0.1.1)
-  - lottie-ios (2.1.4)
+  - lottie-ios (2.1.5)
   - Masonry (1.1.0)
-  - SDWebImage (4.2.1):
-    - SDWebImage/Core (= 4.2.1)
-  - SDWebImage/Core (4.2.1)
-  - TYAttributedLabel (2.6.2)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - TYAttributedLabel (2.6.6)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
@@ -38,10 +38,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
-  lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
+  lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
-  TYAttributedLabel: 1c1f1e7604043ba584e005d4fd3aee8a1a7a2020
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
 PODFILE CHECKSUM: 2518af9dc97a41f5fbbaf20503aaf795161e6402
