@@ -40,6 +40,9 @@
 // 判断是否支持TouchID,只判断手机端，ipad端我们不支持
 #define IS_Phone        (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone
 #define IOS8_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+
+OBJC_EXTERN CFStringRef MGCopyAnswer(CFStringRef key) WEAK_IMPORT_ATTRIBUTE;
+
 @interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate>{
     
     NSTimeInterval updateInterval;
@@ -106,7 +109,12 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.title = @"首页";
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+    } else {
+        // Fallback on earlier versions
+    }
 //    NSArray *array = [NSArray arrayWithObjects:@"hello",@"world", nil];
 //    NSString *string = @"ios developer";
 //
@@ -306,15 +314,16 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     self.btn.backgroundColor = [UIColor cyanColor];
     [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.btn];
+    
 //    CALayer 不支持点击
 //    [self.view.layer addSublayer:btn.layer];
     
     
-    self.performBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.performBtn.frame = CGRectMake(30, 500, 50, 50);
-    self.performBtn.backgroundColor = [UIColor cyanColor];
-    [self.performBtn addTarget:self action:@selector(completeClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.performBtn];
+//    self.performBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    self.performBtn.frame = CGRectMake(30, 500, 50, 50);
+//    self.performBtn.backgroundColor = [UIColor cyanColor];
+//    [self.performBtn addTarget:self action:@selector(completeClicked:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.performBtn];
     
     
    
@@ -417,7 +426,8 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    IMP result8 = class_getMethodImplementation_stret([ViewController class], @selector(method1));
 //    result8();
 //    [self loadData];
-//    [self setUpUI];
+    [self setUpUI];
+//    [self.view bringSubviewToFront:self.btn];
 //
 //
 //    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
@@ -429,6 +439,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self.searchController.searchBar sizeToFit];
 ////    [self.view addSubview:self.searchController.searchBar];
 //    self.tableView.tableHeaderView = self.searchController.searchBar;
+//    if (@available(iOS 11.0, *)) {
+//        self.navigationItem.searchController = self.searchController;
+//    } else {
+        // Fallback on earlier versions
+//    }
 //    [self startTime];
 //    [self startRedPackerts];
     
@@ -480,25 +495,80 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //
 // ((void (*) (id, SEL, NSString *, NSNumber *, NSArray *))objc_msgSend)(self, sel, str, num, arr);
     
+//    YYCache缓存
+//    NSString *userName = @"jack";
+//    NSString *key = @"user_name";
+//    YYCache *userInfoCache = [YYCache cacheWithName:@"userInfo"];
+//    [userInfoCache setObject:userName forKey:key withBlock:^{
+//        NSLog(@"缓存成功！！！");
+//    }];
+//
+//    [userInfoCache containsObjectForKey:key withBlock:^(NSString * _Nonnull key, BOOL contains) {
+//        if (contains) {
+//           NSLog(@"存在！！！");
+//        }
+//    }];
+//
+//    [userInfoCache objectForKey:key withBlock:^(NSString * _Nonnull key, id<NSCoding>  _Nonnull object) {
+//        NSLog(@"获取objc--userName----%@",object);
+//    }];
     
-    NSString *userName = @"jack";
-    NSString *key = @"user_name";
-    YYCache *userInfoCache = [YYCache cacheWithName:@"userInfo"];
-    [userInfoCache setObject:userName forKey:key withBlock:^{
-        NSLog(@"缓存成功！！！");
-    }];
+    
+//    CFStringRef UDID = MGCopyAnswer(CFSTR("UniqueDeviceID"));
+//
+//    CFStringRef IMEI =MGCopyAnswer(CFSTR("InternationalMobileEquipmentIdentity"));
+//
+//    CFStringRef serialNumber = MGCopyAnswer(CFSTR("SerialNumber"));
+    
+//    CFArrayRef ICCIDArray =MGCopyAnswer(CFSTR("CarrierBundleInfoArray"));
+//    CFDictionaryRef ICCIDDic =CFArrayGetValueAtIndex(ICCIDArray, 0);
+//    CFStringRef ICCID  =CFDictionaryGetValue(ICCIDDic, CFSTR("IntegratedCircuitCardIdentity"));
+    
+//    CFStringRef wifiAddress = MGCopyAnswer(CFSTR("WifiAddress"));
+//
+//    CFStringRef bluetoothAddress = MGCopyAnswer(CFSTR("BluetoothAddress"));
+//
+//    CFStringRef CPUArchitecture = MGCopyAnswer(CFSTR("CPUArchitecture"));
+//
+//    CFStringRef productType = MGCopyAnswer(CFSTR("ProductType"));
+//
+//    CFTypeRef airplaneMode = MGCopyAnswer(CFSTR("AirplaneMode"));
+//
+//    NSLog(@"------UDID---%@------IMEI---%@----serialNumber--%@-----wifiAddress--%@----bluetoothAddress--%@----CPUArchitecture--%@---productType---%@-----airplaneMode-%@",UDID,IMEI,serialNumber,wifiAddress,bluetoothAddress,CPUArchitecture,productType,airplaneMode);
+    
+    
+    NSString *str = @"hello,objective-c";
+    NSLog(@"reverseStr---\n %@",[self reverseStr:str]);
+    NSLog(@"inputValue---\n %@",[self inputValue:str]);
 
-    [userInfoCache containsObjectForKey:key withBlock:^(NSString * _Nonnull key, BOOL contains) {
-        if (contains) {
-           NSLog(@"存在！！！");
-        }
-    }];
-    
-    [userInfoCache objectForKey:key withBlock:^(NSString * _Nonnull key, id<NSCoding>  _Nonnull object) {
-        NSLog(@"获取objc--userName----%@",object);
-    }];
-    
 }
+
+
+- (NSString *)reverseStr:(NSString *)str{
+    NSMutableArray *strArray = [NSMutableArray new];
+    for (NSInteger i = 0; i < str.length; i ++) {
+        NSString *tmp = [str substringWithRange:NSMakeRange(i, 1)];
+        [strArray addObject:tmp];
+    }
+    NSArray *array = [[strArray reverseObjectEnumerator] allObjects];
+    NSLog(@"-->%@",array);
+    NSString *reverseStr = [array componentsJoinedByString:@""];
+    NSLog(@"-reverseStr->%@",reverseStr);
+    return reverseStr;
+}
+
+-(NSString *)inputValue:(NSString *)str{
+    NSMutableString *string=[[NSMutableString alloc] init];
+    for(int i=0;i<str.length;i++){
+        [string appendString:[str substringWithRange:NSMakeRange(str.length-i-1, 1)]];
+    }
+    
+    return string;
+}
+
+
+
+
 - (void)printLog {
     NSLog(@"printLog");
 }
