@@ -34,6 +34,8 @@
 #include <net/if_dl.h>
 #import "GPUImageViewController.h"
 #import <YYCache.h>
+#import <AVFoundation/AVFoundation.h>
+#import "CaptivePortalCheck.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -43,7 +45,7 @@
 
 OBJC_EXTERN CFStringRef MGCopyAnswer(CFStringRef key) WEAK_IMPORT_ATTRIBUTE;
 
-@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate>{
+@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate>{
     
     NSTimeInterval updateInterval;
     CGFloat  setx;//scroll的动态偏移量
@@ -71,6 +73,11 @@ OBJC_EXTERN CFStringRef MGCopyAnswer(CFStringRef key) WEAK_IMPORT_ATTRIBUTE;
 @property (nonatomic, strong) CAShapeLayer *shapeLayer;
 @property (nonatomic, strong) CALayer *moveLayer;
 
+//WiFi认证
+@property (strong, nonatomic)  UILabel *checkResultLabel;
+
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (nonatomic, strong) AVCaptureSession *session;
 
 @property (nonatomic, strong) NSTimer *timer;
 
@@ -110,11 +117,12 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"首页";
-    if (@available(iOS 11.0, *)) {
-        self.navigationController.navigationBar.prefersLargeTitles = YES;
-    } else {
-        // Fallback on earlier versions
-    }
+//    if (@available(iOS 11.0, *)) {
+//        self.navigationController.navigationBar.prefersLargeTitles = YES;
+//    } else {
+//        // Fallback on earlier versions
+//    }
+    
 //    NSArray *array = [NSArray arrayWithObjects:@"hello",@"world", nil];
 //    NSString *string = @"ios developer";
 //
@@ -309,11 +317,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
     
     
-    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btn.frame = CGRectMake(30, 400, 50, 50);
-    self.btn.backgroundColor = [UIColor cyanColor];
-    [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.btn];
+//    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    self.btn.frame = CGRectMake(30, 400, 50, 50);
+//    self.btn.backgroundColor = [UIColor cyanColor];
+//    [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.btn];
     
 //    CALayer 不支持点击
 //    [self.view.layer addSublayer:btn.layer];
@@ -426,7 +434,7 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    IMP result8 = class_getMethodImplementation_stret([ViewController class], @selector(method1));
 //    result8();
 //    [self loadData];
-    [self setUpUI];
+//    [self setUpUI];
 //    [self.view bringSubviewToFront:self.btn];
 //
 //
@@ -537,10 +545,89 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    NSLog(@"------UDID---%@------IMEI---%@----serialNumber--%@-----wifiAddress--%@----bluetoothAddress--%@----CPUArchitecture--%@---productType---%@-----airplaneMode-%@",UDID,IMEI,serialNumber,wifiAddress,bluetoothAddress,CPUArchitecture,productType,airplaneMode);
     
     
-    NSString *str = @"hello,objective-c";
-    NSLog(@"reverseStr---\n %@",[self reverseStr:str]);
-    NSLog(@"inputValue---\n %@",[self inputValue:str]);
+//    NSString *str = @"hello,objective-c";
+//    NSLog(@"reverseStr---\n %@",[self reverseStr:str]);
+//    NSLog(@"inputValue---\n %@",[self inputValue:str]);
+    
+    
+    
+    //获取摄像机
+//    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+//    //创建会话对象
+//    self.session = [[AVCaptureSession alloc] init];
+//    //设置会话采集率
+//    self.session.sessionPreset = AVCaptureSessionPresetHigh;
+//    //创建设备输入流
+//    AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
+//    //    AVCaptureScreenInput
+//    //创建数据输出流
+//    AVCaptureMetadataOutput *metadataOuput = [[AVCaptureMetadataOutput alloc] init];
+//    //    AVCaptureStillImageOutput
+//    //    AVCaptureVideoDataOutput
+//    //    AVCaptureAudioDataOutput
+//    //    AVCaptureMetadataOutput
+//    //    AVCaptureFileOutput
+//    //    AVCapturePhotoOutput
+//    [metadataOuput setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+//    //创建设备输出流
+//    //    AVCaptureVideoDataOutput *videoDataOutput = [[AVCaptureVideoDataOutput alloc] init];
+//    //    [videoDataOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
+//    //设置扫描范围（每一个取值0～1，以屏幕右上角为坐标原点）
+//    metadataOuput.rectOfInterest = CGRectMake(0.05, 0.2, 0.7, 0.6);
+//    //添加设备输入流到会话对象
+//    if ([self.session canAddInput:deviceInput]) {
+//        [self.session addInput:deviceInput];
+//    }
+//    //添加设备输出流到会话对象
+//    if ([self.session canAddOutput:metadataOuput]) {
+//        [self.session addOutput:metadataOuput];
+//    }
+//    //    [self.session addOutput:videoDataOutput];
+//    //设置设备输出类型
+//    metadataOuput.metadataObjectTypes = @[AVMetadataObjectTypeQRCode];
+//    //实例化预览图层, 传递_session是为了告诉图层将来显示什么内容
+//    self.videoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
+//    // 保持纵横比；填充层边界
+//    self.videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+//    self.videoPreviewLayer.frame = CGRectMake(0, 0, screen_width, screen_height);
+//    [self.view.layer insertSublayer:self.videoPreviewLayer atIndex:0];
+//
+//    // 启动会话
+//    [self.session startRunning];
+    
+    UISwitch *switchBtn = [[UISwitch alloc] initWithFrame:CGRectMake(20, 100, 100, 40)];
+    [switchBtn addTarget:self action:@selector(testModeSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:switchBtn];
+    
+    
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn1.frame = CGRectMake(30, 400, 50, 50);
+    btn1.backgroundColor = [UIColor cyanColor];
+    [btn1 addTarget:self action:@selector(checkWifiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn1];
+    
+}
 
+
+- (void)testModeSwitchValueChanged:(UISwitch *)sender {
+    [CaptivePortalCheck sharedInstance].openTestMode = sender.isOn;
+}
+
+- (void)checkWifiBtnClick:(UIButton *)sender {
+    self.checkResultLabel.text = @"认证中...";
+    // TODO 如果当前网络状态不是WIFI，则无需检查
+    [[CaptivePortalCheck sharedInstance] checkIsWifiNeedAuthPasswordWithComplection:^(BOOL needAuthPassword) {
+        self.checkResultLabel.text = needAuthPassword ? @"验证结果：需要认证" : @"验证结果：无需认证";
+    } needAlert:YES];
+}
+
+
+
+
+
+//此代理方法为扫码之后获取的二维码信息,在这里可以请求登录
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    NSLog(@"---------metadataObjects--------%@", metadataObjects);
 }
 
 
@@ -1470,8 +1557,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self.navigationController pushViewController:gpuvc animated:YES];
     
     
-    TestSwiftViewController *testvc = [[TestSwiftViewController alloc] init];
-    [self.navigationController pushViewController:testvc animated:YES];
+//    TestSwiftViewController *testvc = [[TestSwiftViewController alloc] init];
+//    [self.navigationController pushViewController:testvc animated:YES];
+    
+//    控制状态栏菊花加载状态
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = ![UIApplication sharedApplication].isNetworkActivityIndicatorVisible;
     
 }
 

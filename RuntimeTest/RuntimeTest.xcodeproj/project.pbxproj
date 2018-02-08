@@ -23,6 +23,7 @@
 		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
 		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
 		1C50031D201719E300A244E9 /* RedpacketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50031C201719E300A244E9 /* RedpacketController.m */; };
+		1C50ED67202A9A5900773C37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4002681FC7E9C000576108 /* AVFoundation.framework */; };
 		1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5536411FF5DE1B00B87D4E /* Plane.m */; };
 		1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */; };
 		1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8055C61FD788EA00A6CCE0 /* XBCoreTextView.m */; };
@@ -33,6 +34,7 @@
 		1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CA51FCE7E760088AB75 /* Person.m */; };
 		1C8D2CA91FCE87D50088AB75 /* SingleDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CA81FCE87D50088AB75 /* SingleDog.m */; };
 		1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */; };
+		1C90E3A5202C209F000391A6 /* CaptivePortalCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C90E3A4202C209F000391A6 /* CaptivePortalCheck.m */; };
 		1C9130EF201ACD3E00C26961 /* GPUImageSoulFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130E7201ACD3D00C26961 /* GPUImageSoulFilter.m */; };
 		1C9130F0201ACD3E00C26961 /* IMG_0019.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1C9130E8201ACD3D00C26961 /* IMG_0019.mp4 */; };
 		1C9130F1201ACD3E00C26961 /* GpUImageScaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9130E9201ACD3D00C26961 /* GpUImageScaleFilter.m */; };
@@ -64,7 +66,7 @@
 		1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94FCA21FDFD5F200B70D50 /* PastTextField.m */; };
 		1C9EF54420158AAE004F117B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54320158AAE004F117B /* DrawView.m */; };
 		1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54A2015B5E7004F117B /* PaintView.m */; };
-		534DDAFF064EC23599C03710 /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD0B3F23D5E089EBA3D2D02 /* libPods-RuntimeTest.a */; };
+		F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +117,8 @@
 		1C8D2CA81FCE87D50088AB75 /* SingleDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleDog.m; sourceTree = "<group>"; };
 		1C8D2CAA1FCE9DD10088AB75 /* VWWWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWaterView.h; sourceTree = "<group>"; };
 		1C8D2CAB1FCE9DD10088AB75 /* VWWWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWaterView.m; sourceTree = "<group>"; };
+		1C90E3A3202C209F000391A6 /* CaptivePortalCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptivePortalCheck.h; sourceTree = "<group>"; };
+		1C90E3A4202C209F000391A6 /* CaptivePortalCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptivePortalCheck.m; sourceTree = "<group>"; };
 		1C9130E6201ACD3C00C26961 /* CIFilter+LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFilter+LUT.h"; sourceTree = "<group>"; };
 		1C9130E7201ACD3D00C26961 /* GPUImageSoulFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageSoulFilter.m; sourceTree = "<group>"; };
 		1C9130E8201ACD3D00C26961 /* IMG_0019.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0019.mp4; sourceTree = "<group>"; };
@@ -171,7 +175,7 @@
 		1C9EF5492015B5E7004F117B /* PaintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
 		1C9EF54A2015B5E7004F117B /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
-		3AD0B3F23D5E089EBA3D2D02 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,10 +184,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C50ED67202A9A5900773C37 /* AVFoundation.framework in Frameworks */,
 				1C81015D2022F441009EF1A7 /* libMobileGestaltExtensions.tbd in Frameworks */,
 				1C81015B2022F43B009EF1A7 /* libMobileGestalt.tbd in Frameworks */,
 				1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */,
-				534DDAFF064EC23599C03710 /* libPods-RuntimeTest.a in Frameworks */,
+				F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +217,7 @@
 		1C3DBFED1FBE72B400FD51BD /* RuntimeTest */ = {
 			isa = PBXGroup;
 			children = (
+				1C90E3A2202C209F000391A6 /* CaptivePortalCheck */,
 				1C9130F4201ACD9900C26961 /* resources */,
 				1C5536451FFB58C900B87D4E /* RuntimeTest.entitlements */,
 				1C91CAB91FC2D3DE002B5880 /* IQKeyboardManager */,
@@ -274,6 +280,15 @@
 				1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */,
 			);
 			path = RuntimeTest;
+			sourceTree = "<group>";
+		};
+		1C90E3A2202C209F000391A6 /* CaptivePortalCheck */ = {
+			isa = PBXGroup;
+			children = (
+				1C90E3A3202C209F000391A6 /* CaptivePortalCheck.h */,
+				1C90E3A4202C209F000391A6 /* CaptivePortalCheck.m */,
+			);
+			path = CaptivePortalCheck;
 			sourceTree = "<group>";
 		};
 		1C9130F4201ACD9900C26961 /* resources */ = {
@@ -384,7 +399,7 @@
 				1C40026A1FC7E9EA00576108 /* CoreGraphics.framework */,
 				1C4002691FC7E9D100576108 /* UIKit.framework */,
 				1C4002681FC7E9C000576108 /* AVFoundation.framework */,
-				3AD0B3F23D5E089EBA3D2D02 /* libPods-RuntimeTest.a */,
+				6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,9 +496,28 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FJAlertView/FJAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/JPFPSStatus/JPFPSStatus.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TYAttributedLabel/TYAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FJAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPFPSStatus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -538,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */,
+				1C90E3A5202C209F000391A6 /* CaptivePortalCheck.m in Sources */,
 				1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */,
 				1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */,
 				1C91CAE51FC2D3DE002B5880 /* IQKeyboardManager.m in Sources */,

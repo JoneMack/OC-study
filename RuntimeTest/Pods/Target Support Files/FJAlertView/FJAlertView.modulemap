@@ -1,0 +1,6 @@
+framework module FJAlertView {
+  umbrella header "FJAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}
