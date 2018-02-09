@@ -36,6 +36,7 @@
 #import <YYCache.h>
 #import <AVFoundation/AVFoundation.h>
 #import "CaptivePortalCheck.h"
+#import "FaceIDViewController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -317,11 +318,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
     
     
-//    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    self.btn.frame = CGRectMake(30, 400, 50, 50);
-//    self.btn.backgroundColor = [UIColor cyanColor];
-//    [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:self.btn];
+    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.btn.frame = CGRectMake(30, 400, 50, 50);
+    self.btn.backgroundColor = [UIColor cyanColor];
+    [self.btn addTarget:self action:@selector(protocolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.btn];
     
 //    CALayer 不支持点击
 //    [self.view.layer addSublayer:btn.layer];
@@ -595,16 +596,16 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    // 启动会话
 //    [self.session startRunning];
     
-    UISwitch *switchBtn = [[UISwitch alloc] initWithFrame:CGRectMake(20, 100, 100, 40)];
-    [switchBtn addTarget:self action:@selector(testModeSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:switchBtn];
-    
-    
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn1.frame = CGRectMake(30, 400, 50, 50);
-    btn1.backgroundColor = [UIColor cyanColor];
-    [btn1 addTarget:self action:@selector(checkWifiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn1];
+//    UISwitch *switchBtn = [[UISwitch alloc] initWithFrame:CGRectMake(20, 100, 100, 40)];
+//    [switchBtn addTarget:self action:@selector(testModeSwitchValueChanged:) forControlEvents:UIControlEventValueChanged];
+//    [self.view addSubview:switchBtn];
+//
+//
+//    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn1.frame = CGRectMake(30, 400, 50, 50);
+//    btn1.backgroundColor = [UIColor cyanColor];
+//    [btn1 addTarget:self action:@selector(checkWifiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn1];
     
 }
 
@@ -1561,8 +1562,11 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self.navigationController pushViewController:testvc animated:YES];
     
 //    控制状态栏菊花加载状态
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = ![UIApplication sharedApplication].isNetworkActivityIndicatorVisible;
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = ![UIApplication sharedApplication].isNetworkActivityIndicatorVisible;
     
+    FaceIDViewController *testvc = [[FaceIDViewController alloc] init];
+    [self.navigationController pushViewController:testvc animated:YES];
+
 }
 
 

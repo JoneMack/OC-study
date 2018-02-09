@@ -18,6 +18,7 @@
 		1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1C40026C1FC7EC9800576108 /* LottieLogo1.gif */; };
 		1C4002701FC7F81E00576108 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40026F1FC7F81E00576108 /* NextViewController.m */; };
 		1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C493E82201979A900099077 /* NothingToSeeHere.swift */; };
+		1C4A8213202D6549006B0DA9 /* FaceIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A8212202D6549006B0DA9 /* FaceIDViewController.m */; };
 		1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C274B2020046A00271592 /* TestSwiftViewController.swift */; };
 		1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */; };
 		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
@@ -92,6 +93,8 @@
 		1C40026E1FC7F81E00576108 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		1C40026F1FC7F81E00576108 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		1C493E82201979A900099077 /* NothingToSeeHere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingToSeeHere.swift; sourceTree = "<group>"; };
+		1C4A8211202D6549006B0DA9 /* FaceIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceIDViewController.h; sourceTree = "<group>"; };
+		1C4A8212202D6549006B0DA9 /* FaceIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceIDViewController.m; sourceTree = "<group>"; };
 		1C4C274B2020046A00271592 /* TestSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftViewController.swift; sourceTree = "<group>"; };
 		1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mineHeaderBG@2x.png"; sourceTree = "<group>"; };
 		1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				1C8D0EC31FCD32B300D13474 /* logo.jpeg */,
 				1C3DBFF11FBE72B400FD51BD /* ViewController.h */,
 				1C3DBFF21FBE72B400FD51BD /* ViewController.m */,
+				1C4A8211202D6549006B0DA9 /* FaceIDViewController.h */,
+				1C4A8212202D6549006B0DA9 /* FaceIDViewController.m */,
 				1C9130E6201ACD3C00C26961 /* CIFilter+LUT.h */,
 				1C9130ED201ACD3E00C26961 /* CIFilter+LUT.m */,
 				1C9130EA201ACD3D00C26961 /* GpUImageScaleFilter.h */,
@@ -595,6 +600,7 @@
 				1C8D2CA91FCE87D50088AB75 /* SingleDog.m in Sources */,
 				1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */,
 				1C91CAE81FC2D3DE002B5880 /* IQUITextFieldView+Additions.m in Sources */,
+				1C4A8213202D6549006B0DA9 /* FaceIDViewController.m in Sources */,
 				1C9130F3201ACD3E00C26961 /* CIFilter+LUT.m in Sources */,
 				1C91CAE71FC2D3DE002B5880 /* IQUIWindow+Hierarchy.m in Sources */,
 				1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */,
