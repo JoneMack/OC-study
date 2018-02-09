@@ -37,6 +37,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "CaptivePortalCheck.h"
 #import "FaceIDViewController.h"
+#import "LaunchImageController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -1564,9 +1565,13 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    控制状态栏菊花加载状态
 //    [UIApplication sharedApplication].networkActivityIndicatorVisible = ![UIApplication sharedApplication].isNetworkActivityIndicatorVisible;
     
-    FaceIDViewController *testvc = [[FaceIDViewController alloc] init];
-    [self.navigationController pushViewController:testvc animated:YES];
+//    FaceIDViewController *testvc = [[FaceIDViewController alloc] init];
+//    [self.navigationController pushViewController:testvc animated:YES];
 
+    
+    LaunchImageController *testvc = [[LaunchImageController alloc] init];
+    testvc.showLaunchAnimation = YES;
+    [self.navigationController pushViewController:testvc animated:YES];
 }
 
 
