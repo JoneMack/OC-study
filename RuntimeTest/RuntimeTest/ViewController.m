@@ -484,14 +484,19 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    NSLog(@"---------地址-------%@",[self getmacAddress]);
     
     
+//    加一行代码使得printLog能正常打印。
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //        NSLog(@"before perform");
 //        [self performSelector:@selector(printLog) withObject:nil  afterDelay:0];
 //        [[NSRunLoop currentRunLoop] run];
 //        NSLog(@"after perform");
 //    });
-    
-    
+//或者
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"before perform");
+        [self performSelector:@selector(printLog) withObject:nil  afterDelay:0];
+        NSLog(@"after perform");
+    });
     
     
     
@@ -654,9 +659,6 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     
     return string;
 }
-
-
-
 
 - (void)printLog {
     NSLog(@"printLog");
