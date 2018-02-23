@@ -92,6 +92,10 @@
 		1C9EF54420158AAE004F117B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54320158AAE004F117B /* DrawView.m */; };
 		1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54A2015B5E7004F117B /* PaintView.m */; };
 		1CA19F5C203FAFE3005068A7 /* UIView+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA19F5B203FAFE3005068A7 /* UIView+ZJExtension.m */; };
+		1CA19F66203FC278005068A7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1CA19F60203FC278005068A7 /* .gitkeep */; };
+		1CA19F67203FC278005068A7 /* AISphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA19F63203FC278005068A7 /* AISphereView.m */; };
+		1CA19F68203FC278005068A7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1CA19F65203FC278005068A7 /* .gitkeep */; };
+		1CA19F6B203FC2CD005068A7 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA19F6A203FC2CD005068A7 /* AIViewController.m */; };
 		F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +235,14 @@
 		1C9EF54A2015B5E7004F117B /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		1CA19F5A203FAFE2005068A7 /* UIView+ZJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJExtension.h"; sourceTree = "<group>"; };
 		1CA19F5B203FAFE3005068A7 /* UIView+ZJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJExtension.m"; sourceTree = "<group>"; };
+		1CA19F5F203FC278005068A7 /* AIMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMatrix.h; sourceTree = "<group>"; };
+		1CA19F60203FC278005068A7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		1CA19F61203FC278005068A7 /* AISphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISphereView.h; sourceTree = "<group>"; };
+		1CA19F62203FC278005068A7 /* AIPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPoint.h; sourceTree = "<group>"; };
+		1CA19F63203FC278005068A7 /* AISphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISphereView.m; sourceTree = "<group>"; };
+		1CA19F65203FC278005068A7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		1CA19F69203FC2CD005068A7 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
+		1CA19F6A203FC2CD005068A7 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
 		23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +286,7 @@
 		1C3DBFED1FBE72B400FD51BD /* RuntimeTest */ = {
 			isa = PBXGroup;
 			children = (
+				1CA19F5D203FC278005068A7 /* AISphereView */,
 				1C4A8220202D7C6C006B0DA9 /* Animation */,
 				1C90E3A2202C209F000391A6 /* CaptivePortalCheck */,
 				1C9130F4201ACD9900C26961 /* resources */,
@@ -289,6 +302,8 @@
 				1C3DBFF21FBE72B400FD51BD /* ViewController.m */,
 				1C4A821A202D77F9006B0DA9 /* LaunchImageController.h */,
 				1C4A821B202D77F9006B0DA9 /* LaunchImageController.m */,
+				1CA19F69203FC2CD005068A7 /* AIViewController.h */,
+				1CA19F6A203FC2CD005068A7 /* AIViewController.m */,
 				1C4A821E202D7A74006B0DA9 /* NSObject+ZJUIExtension.h */,
 				1C4A821D202D7A74006B0DA9 /* NSObject+ZJUIExtension.m */,
 				1C4A8211202D6549006B0DA9 /* FaceIDViewController.h */,
@@ -508,6 +523,35 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		1CA19F5D203FC278005068A7 /* AISphereView */ = {
+			isa = PBXGroup;
+			children = (
+				1CA19F5E203FC278005068A7 /* Classes */,
+				1CA19F64203FC278005068A7 /* Assets */,
+			);
+			path = AISphereView;
+			sourceTree = "<group>";
+		};
+		1CA19F5E203FC278005068A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1CA19F5F203FC278005068A7 /* AIMatrix.h */,
+				1CA19F60203FC278005068A7 /* .gitkeep */,
+				1CA19F61203FC278005068A7 /* AISphereView.h */,
+				1CA19F62203FC278005068A7 /* AIPoint.h */,
+				1CA19F63203FC278005068A7 /* AISphereView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1CA19F64203FC278005068A7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1CA19F65203FC278005068A7 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		5309781D241565816E415222 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +646,7 @@
 				1C4A823E202D7C6C006B0DA9 /* loadingImg_1.png in Resources */,
 				1C50031A2016FFC800A244E9 /* x.png in Resources */,
 				1C40026D1FC7EC9800576108 /* LottieLogo1.gif in Resources */,
+				1CA19F68203FC278005068A7 /* .gitkeep in Resources */,
 				1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */,
 				1C4A823D202D7C6C006B0DA9 /* loadingImg_3.png in Resources */,
 				1C3DBFFB1FBE72B400FD51BD /* LaunchScreen.storyboard in Resources */,
@@ -626,6 +671,7 @@
 				1C4A824A202D7C6C006B0DA9 /* launchingImg_2.png in Resources */,
 				1C4A824D202D7C6C006B0DA9 /* launchingImg_0.png in Resources */,
 				1C4A8248202D7C6C006B0DA9 /* launchingImg_7.png in Resources */,
+				1CA19F66203FC278005068A7 /* .gitkeep in Resources */,
 				1C4A824B202D7C6C006B0DA9 /* launchingImg_3.png in Resources */,
 				1C9130F9201ACD9900C26961 /* oldmovie.png in Resources */,
 				1C3DBFF61FBE72B400FD51BD /* Main.storyboard in Resources */,
@@ -725,6 +771,7 @@
 				1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */,
 				1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */,
 				1C91CAE51FC2D3DE002B5880 /* IQKeyboardManager.m in Sources */,
+				1CA19F67203FC278005068A7 /* AISphereView.m in Sources */,
 				1C91CAE91FC2D3DE002B5880 /* IQUIScrollView+Additions.m in Sources */,
 				1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */,
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
@@ -732,6 +779,7 @@
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
 				1C50031D201719E300A244E9 /* RedpacketController.m in Sources */,
 				1C9130F1201ACD3E00C26961 /* GpUImageScaleFilter.m in Sources */,
+				1CA19F6B203FC2CD005068A7 /* AIViewController.m in Sources */,
 				1C91CAE61FC2D3DE002B5880 /* IQNSArray+Sort.m in Sources */,
 				1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */,
 				1CA19F5C203FAFE3005068A7 /* UIView+ZJExtension.m in Sources */,

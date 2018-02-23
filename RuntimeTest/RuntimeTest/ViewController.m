@@ -38,6 +38,7 @@
 #import "CaptivePortalCheck.h"
 #import "FaceIDViewController.h"
 #import "LaunchImageController.h"
+#import "AIViewController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -1571,14 +1572,13 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [self.navigationController pushViewController:testvc animated:YES];
 
     
-    LaunchImageController *testvc = [[LaunchImageController alloc] init];
-    testvc.showLaunchAnimation = YES;
-    [self.navigationController pushViewController:testvc animated:YES];
+//    LaunchImageController *testvc = [[LaunchImageController alloc] init];
+//    testvc.showLaunchAnimation = YES;
+//    [self.navigationController pushViewController:testvc animated:YES];
+    
+    AIViewController *aivc = [[AIViewController alloc] init];
+    [self.navigationController pushViewController:aivc animated:YES];
 }
-
-
-
-
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
 //    BOOL check = [self validateIDCardNumber:field.text];
