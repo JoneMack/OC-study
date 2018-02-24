@@ -41,12 +41,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    _renderQueue = dispatch_queue_create("com.renderQueue", DISPATCH_QUEUE_SERIAL);
-//    [self setUpUI];
+    _renderQueue = dispatch_queue_create("com.renderQueue", DISPATCH_QUEUE_SERIAL);
+    [self setUpUI];
     
-    //    self.disPlayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
-    //    self.disPlayLink.frameInterval = 2;
-    //    [self.disPlayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+//        self.disPlayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
+//        self.disPlayLink.frameInterval = 2;
+//        [self.disPlayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     //
     //    GPUImageView *imageView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
     //    [self.view addSubview:imageView];
@@ -57,7 +57,7 @@
     
     //    self.picture = picture;
     //    self.filter = filter;
-//    _scaleCount = 1.1;
+    _scaleCount = 1.1;
     
     
 //    stillCamera = [[GPUImageStillCamera alloc] init];

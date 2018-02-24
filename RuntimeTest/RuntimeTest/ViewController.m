@@ -39,6 +39,7 @@
 #import "FaceIDViewController.h"
 #import "LaunchImageController.h"
 #import "AIViewController.h"
+#import "IOSLockViewController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -614,6 +615,36 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [btn1 addTarget:self action:@selector(checkWifiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:btn1];
     
+    NSLog(@"明天---\n %@",[self currentCycleEndTimeStrWithType:EndTimeTypeMonth]);
+    
+}
+
+typedef NS_ENUM(NSUInteger, EndTimeType) {
+    EndTimeTypeDay,
+    EndTimeTypeWeek,
+    EndTimeTypeMonth,
+};
+- (NSString *)currentCycleEndTimeStrWithType:(EndTimeType)type {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitWeekday | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[NSDate date]];
+    switch (type) {
+        case EndTimeTypeDay:
+            [components setDay:([components day]+1)];
+            break;
+        case EndTimeTypeWeek:
+            [components setDay:([components day]+7)];
+            break;
+        case EndTimeTypeMonth:
+            [components setMonth:([components month]+1)];
+            break;
+        default:
+            break;
+    }
+    
+    NSDate *beginningOfWeek = [gregorian dateFromComponents:components];
+    NSDateFormatter *dateday = [[NSDateFormatter alloc] init];
+    [dateday setDateFormat:@"yyy-MM-dd"];
+    return [dateday stringFromDate:beginningOfWeek];
 }
 
 
@@ -628,10 +659,6 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
         self.checkResultLabel.text = needAuthPassword ? @"验证结果：需要认证" : @"验证结果：无需认证";
     } needAlert:YES];
 }
-
-
-
-
 
 //此代理方法为扫码之后获取的二维码信息,在这里可以请求登录
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
@@ -1576,8 +1603,13 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    testvc.showLaunchAnimation = YES;
 //    [self.navigationController pushViewController:testvc animated:YES];
     
-    AIViewController *aivc = [[AIViewController alloc] init];
-    [self.navigationController pushViewController:aivc animated:YES];
+//    AIViewController *aivc = [[AIViewController alloc] init];
+//    [self.navigationController pushViewController:aivc animated:YES];
+    
+    
+    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
+    [self.navigationController pushViewController:lockvc animated:YES];
+    
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{

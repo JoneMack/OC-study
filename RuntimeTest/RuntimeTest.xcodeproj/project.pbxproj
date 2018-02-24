@@ -49,6 +49,7 @@
 		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
 		1C50031D201719E300A244E9 /* RedpacketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50031C201719E300A244E9 /* RedpacketController.m */; };
 		1C50ED67202A9A5900773C37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4002681FC7E9C000576108 /* AVFoundation.framework */; };
+		1C51D39D204110A100539BD3 /* IOSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C51D39C204110A100539BD3 /* IOSLockViewController.m */; };
 		1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5536411FF5DE1B00B87D4E /* Plane.m */; };
 		1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */; };
 		1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8055C61FD788EA00A6CCE0 /* XBCoreTextView.m */; };
@@ -158,6 +159,8 @@
 		1C5003192016FFC800A244E9 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		1C50031B201719E300A244E9 /* RedpacketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedpacketController.h; sourceTree = "<group>"; };
 		1C50031C201719E300A244E9 /* RedpacketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedpacketController.m; sourceTree = "<group>"; };
+		1C51D39B204110A100539BD3 /* IOSLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSLockViewController.h; sourceTree = "<group>"; };
+		1C51D39C204110A100539BD3 /* IOSLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSLockViewController.m; sourceTree = "<group>"; };
 		1C5536401FF5DE1B00B87D4E /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		1C5536411FF5DE1B00B87D4E /* Plane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
 		1C5536451FFB58C900B87D4E /* RuntimeTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RuntimeTest.entitlements; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				1C3DBFF21FBE72B400FD51BD /* ViewController.m */,
 				1C4A821A202D77F9006B0DA9 /* LaunchImageController.h */,
 				1C4A821B202D77F9006B0DA9 /* LaunchImageController.m */,
+				1C51D39B204110A100539BD3 /* IOSLockViewController.h */,
+				1C51D39C204110A100539BD3 /* IOSLockViewController.m */,
 				1CA19F69203FC2CD005068A7 /* AIViewController.h */,
 				1CA19F6A203FC2CD005068A7 /* AIViewController.m */,
 				1C4A821E202D7A74006B0DA9 /* NSObject+ZJUIExtension.h */,
@@ -811,6 +816,7 @@
 				1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */,
 				1C9EF54420158AAE004F117B /* DrawView.m in Sources */,
 				1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */,
+				1C51D39D204110A100539BD3 /* IOSLockViewController.m in Sources */,
 				1C3DC0091FBE75FF00FD51BD /* UserModel+cate.m in Sources */,
 				1C91CAEB1FC2D3DE002B5880 /* IQUIViewController+Additions.m in Sources */,
 				1C91CAE11FC2D3DE002B5880 /* IQBarButtonItem.m in Sources */,
