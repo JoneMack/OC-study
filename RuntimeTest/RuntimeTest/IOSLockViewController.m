@@ -9,6 +9,7 @@
 #import "IOSLockViewController.h"
 #import <libkern/OSAtomic.h>
 #import <os/lock.h>
+#import <pthread.h>
 @interface IOSLockViewController ()
 
 @end
@@ -20,7 +21,9 @@
     // Do any additional setup after loading the view.
 //    [self OSSPinLockTest];
 //    信号量锁
-    [self dispatch_semaphore_test];
+//    [self dispatch_semaphore_test];
+//    互斥锁
+    [self pthread_mutex_test];
 }
 //OSSPinLock
 
@@ -91,6 +94,30 @@
         NSLog(@"线程发送信号2");
         NSLog(@"----------2--------------------------");
     });
+}
+
+
+//pthread_mutex 互斥锁
+- (void)pthread_mutex_test{
+    static pthread_mutex_t pLock;
+    pthread_mutex_init(&pLock, NULL);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程1 准备上锁");
+        pthread_mutex_lock(&pLock);
+        sleep(3);
+        NSLog(@"线程1");
+        pthread_mutex_unlock(&pLock);
+        NSLog(@"线程1 解锁成功");
+        NSLog(@"----------------------");
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程2 准备上锁");
+        pthread_mutex_lock(&pLock);
+        NSLog(@"线程2");
+        pthread_mutex_unlock(&pLock);
+    });
+    
 }
 
 
