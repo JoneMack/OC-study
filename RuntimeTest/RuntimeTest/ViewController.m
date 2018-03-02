@@ -615,9 +615,59 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    [btn1 addTarget:self action:@selector(checkWifiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:btn1];
     
-    NSLog(@"明天---\n %@",[self currentCycleEndTimeStrWithType:EndTimeTypeMonth]);
+//    NSLog(@"明天---\n %@",[self currentCycleEndTimeStrWithType:EndTimeTypeMonth]);
     
+    NSArray *colorArr = @[@"黑",@"红",@"梅",@"方"];
+    NSArray *numArr   = @[@"2",@"A",@"K",@"Q",@"J",@"10",@"9",@"8",@"7",@"6",@"5",@"4",@"3"];
+    //组合54张牌，先是大小王
+    NSMutableArray *allPokerArr = [NSMutableArray arrayWithArray:@[@"大王",@"小王"]];
+    for (NSString *numStr in numArr) {//组合不同花色不同数字的牌
+        for (NSString *colorStr in colorArr) {
+            NSString *newStr = [colorStr stringByAppendingString:numStr];
+            [allPokerArr addObject:newStr];
+        }
+    }
+    //随机打乱这54张牌
+    NSArray *mixArr = [allPokerArr sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        int seed = arc4random_uniform(2);
+        if (seed) {
+            return [obj1 compare:obj2];
+        } else {
+            return [obj2 compare:obj1];
+        }
+    }];
+    //去除其中的17张牌
+    NSRange range = NSMakeRange(10, 17);
+    NSArray *newArr = [mixArr subarrayWithRange:range];
+    //排序这17张牌
+    NSMutableArray *resultArr = [NSMutableArray arrayWithArray:allPokerArr];
+    for (NSString *str in allPokerArr) {
+        if (![newArr containsObject:str]) {//不包含则删除
+            [resultArr removeObject:str];
+        }
+    }
+    [resultArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"---------遍历所有牌-------%@",obj);
+    }];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 typedef NS_ENUM(NSUInteger, EndTimeType) {
     EndTimeTypeDay,
