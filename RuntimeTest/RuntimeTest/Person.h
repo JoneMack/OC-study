@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Address.h"
 @interface Person : NSObject
 
-
+@property (nonatomic) Address *address;
 
 @end

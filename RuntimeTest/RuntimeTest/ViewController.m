@@ -40,6 +40,7 @@
 #import "LaunchImageController.h"
 #import "AIViewController.h"
 #import "IOSLockViewController.h"
+#import "KVCViewController.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -1657,9 +1658,11 @@ typedef NS_ENUM(NSUInteger, EndTimeType) {
 //    [self.navigationController pushViewController:aivc animated:YES];
     
     
-    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
-    [self.navigationController pushViewController:lockvc animated:YES];
+//    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
+//    [self.navigationController pushViewController:lockvc animated:YES];
     
+    KVCViewController *kvcvc = [[KVCViewController alloc] init];
+    [self.navigationController pushViewController:kvcvc animated:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{

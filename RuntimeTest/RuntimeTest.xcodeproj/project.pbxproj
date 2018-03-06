@@ -97,6 +97,11 @@
 		1CA19F67203FC278005068A7 /* AISphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA19F63203FC278005068A7 /* AISphereView.m */; };
 		1CA19F68203FC278005068A7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1CA19F65203FC278005068A7 /* .gitkeep */; };
 		1CA19F6B203FC2CD005068A7 /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA19F6A203FC2CD005068A7 /* AIViewController.m */; };
+		1CA650B1204D2C74006E8AE0 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA650B0204D2C74006E8AE0 /* KVCViewController.m */; };
+		1CA650B4204D2ED3006E8AE0 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA650B3204D2ED3006E8AE0 /* BankAccount.m */; };
+		1CA650B7204D2F4B006E8AE0 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA650B6204D2F4B006E8AE0 /* Transaction.m */; };
+		1CAC5265204E2B0C00715A0F /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC5264204E2B0C00715A0F /* Address.m */; };
+		1CAC5268204E34E000715A0F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC5267204E34E000715A0F /* User.m */; };
 		F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -246,6 +251,16 @@
 		1CA19F65203FC278005068A7 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		1CA19F69203FC2CD005068A7 /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
 		1CA19F6A203FC2CD005068A7 /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
+		1CA650AF204D2C74006E8AE0 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		1CA650B0204D2C74006E8AE0 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		1CA650B2204D2ED3006E8AE0 /* BankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		1CA650B3204D2ED3006E8AE0 /* BankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		1CA650B5204D2F4B006E8AE0 /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		1CA650B6204D2F4B006E8AE0 /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		1CAC5263204E2B0C00715A0F /* Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		1CAC5264204E2B0C00715A0F /* Address.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		1CAC5266204E34E000715A0F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1CAC5267204E34E000715A0F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -307,6 +322,12 @@
 				1C4A821B202D77F9006B0DA9 /* LaunchImageController.m */,
 				1C51D39B204110A100539BD3 /* IOSLockViewController.h */,
 				1C51D39C204110A100539BD3 /* IOSLockViewController.m */,
+				1CA650AF204D2C74006E8AE0 /* KVCViewController.h */,
+				1CA650B0204D2C74006E8AE0 /* KVCViewController.m */,
+				1CA650B2204D2ED3006E8AE0 /* BankAccount.h */,
+				1CA650B3204D2ED3006E8AE0 /* BankAccount.m */,
+				1CA650B5204D2F4B006E8AE0 /* Transaction.h */,
+				1CA650B6204D2F4B006E8AE0 /* Transaction.m */,
 				1CA19F69203FC2CD005068A7 /* AIViewController.h */,
 				1CA19F6A203FC2CD005068A7 /* AIViewController.m */,
 				1C4A821E202D7A74006B0DA9 /* NSObject+ZJUIExtension.h */,
@@ -350,8 +371,12 @@
 				1C8055C61FD788EA00A6CCE0 /* XBCoreTextView.m */,
 				1C94FCA11FDFD5F200B70D50 /* PastTextField.h */,
 				1C94FCA21FDFD5F200B70D50 /* PastTextField.m */,
+				1CAC5266204E34E000715A0F /* User.h */,
+				1CAC5267204E34E000715A0F /* User.m */,
 				1C8D2CA41FCE7E760088AB75 /* Person.h */,
 				1C8D2CA51FCE7E760088AB75 /* Person.m */,
+				1CAC5263204E2B0C00715A0F /* Address.h */,
+				1CAC5264204E2B0C00715A0F /* Address.m */,
 				1C5536401FF5DE1B00B87D4E /* Plane.h */,
 				1C5536411FF5DE1B00B87D4E /* Plane.m */,
 				1C3DC0041FBE759200FD51BD /* UserModel.h */,
@@ -618,7 +643,13 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -780,6 +811,7 @@
 				1C91CAE91FC2D3DE002B5880 /* IQUIScrollView+Additions.m in Sources */,
 				1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */,
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
+				1CA650B1204D2C74006E8AE0 /* KVCViewController.m in Sources */,
 				1C4A8219202D6F75006B0DA9 /* MusicViewController.m in Sources */,
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
 				1C50031D201719E300A244E9 /* RedpacketController.m in Sources */,
@@ -803,8 +835,10 @@
 				1C4A8213202D6549006B0DA9 /* FaceIDViewController.m in Sources */,
 				1C9130F3201ACD3E00C26961 /* CIFilter+LUT.m in Sources */,
 				1C91CAE71FC2D3DE002B5880 /* IQUIWindow+Hierarchy.m in Sources */,
+				1CA650B4204D2ED3006E8AE0 /* BankAccount.m in Sources */,
 				1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */,
 				1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */,
+				1CAC5265204E2B0C00715A0F /* Address.m in Sources */,
 				1C9130F2201ACD3E00C26961 /* ILGLKImageView.m in Sources */,
 				1C91CAEA1FC2D3DE002B5880 /* IQUIView+Hierarchy.m in Sources */,
 				1C91CAE01FC2D3DE002B5880 /* IQTitleBarButtonItem.m in Sources */,
@@ -812,11 +846,13 @@
 				1C4A821C202D77F9006B0DA9 /* LaunchImageController.m in Sources */,
 				1C8D2CA31FCE4F870088AB75 /* MovieModel.m in Sources */,
 				1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */,
+				1CA650B7204D2F4B006E8AE0 /* Transaction.m in Sources */,
 				1C9130FF201ACE1100C26961 /* GPUImageViewController.m in Sources */,
 				1C8D2CAC1FCE9DD10088AB75 /* VWWWaterView.m in Sources */,
 				1C9EF54420158AAE004F117B /* DrawView.m in Sources */,
 				1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */,
 				1C51D39D204110A100539BD3 /* IOSLockViewController.m in Sources */,
+				1CAC5268204E34E000715A0F /* User.m in Sources */,
 				1C3DC0091FBE75FF00FD51BD /* UserModel+cate.m in Sources */,
 				1C91CAEB1FC2D3DE002B5880 /* IQUIViewController+Additions.m in Sources */,
 				1C91CAE11FC2D3DE002B5880 /* IQBarButtonItem.m in Sources */,
@@ -960,9 +996,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = RuntimeTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.RuntimeTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -981,9 +1017,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = RuntimeTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.RuntimeTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

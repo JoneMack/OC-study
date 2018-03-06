@@ -17,7 +17,10 @@ PODS:
   - FJAlertView (0.0.4):
     - Masonry (~> 1.1.0)
   - GPUImage (0.1.7)
+  - JCore (1.1.7)
   - JPFPSStatus (0.1.1)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
   - lottie-ios (2.1.5)
   - Masonry (1.1.0)
   - SDWebImage (4.2.3):
@@ -31,6 +34,7 @@ DEPENDENCIES:
   - FJAlertView (~> 0.0.4)
   - GPUImage (~> 0.1.7)
   - JPFPSStatus (~> 0.1.1)
+  - JPush (~> 3.0.8)
   - lottie-ios (~> 2.1.4)
   - SDWebImage (~> 4.2.1)
   - TYAttributedLabel (~> 2.6.2)
@@ -40,13 +44,15 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FJAlertView: 818469dcad6406f894f6acd1b98bed5a45a4a44c
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  JCore: f7459c81c135281a874a6beafdd321666adcc834
   JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
   lottie-ios: 836cdbba92f62f3c6a00e37a4ce485321fe317cf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a3e314f524fd57ea0ff59fc1dec5e309b186aa74
+PODFILE CHECKSUM: 71e1c8e13389541265257abef644f7b8db695ce3
 
 COCOAPODS: 1.3.1
