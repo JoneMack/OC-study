@@ -30,7 +30,8 @@
 //    [self nslock_test];
     
 //    [self condition_test];
-    [self NSConditionLock_test];
+//    [self NSConditionLock_test];
+    [self synchronized_test];
 }
 //OSSPinLock
 
@@ -77,6 +78,18 @@
         NSLog(@"线程2 解锁成功 %zd",pinLock);
     });
     
+}
+
+
+- (void)synchronized_test{
+    @synchronized (self){
+        NSLog(@"线程1 上锁");
+        sleep(5);
+    }
+    
+    @synchronized (self){
+        NSLog(@"线程2 上锁");
+    }
 }
 
 

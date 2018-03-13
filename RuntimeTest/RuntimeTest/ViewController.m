@@ -41,6 +41,8 @@
 #import "AIViewController.h"
 #import "IOSLockViewController.h"
 #import "KVCViewController.h"
+#import "KVOViewController.h"
+#import "HelloClass.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -127,6 +129,15 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
 //    } else {
 //        // Fallback on earlier versions
 //    }
+    
+    HelloClass *test = [HelloClass new];
+    BOOL flag = [test respondsToSelector:@selector(hello)];
+    NSLog(@"flag is %d", flag);
+    [test hello];
+    
+    
+    
+    
     
 //    NSArray *array = [NSArray arrayWithObjects:@"hello",@"world", nil];
 //    NSString *string = @"ios developer";
@@ -1658,11 +1669,11 @@ typedef NS_ENUM(NSUInteger, EndTimeType) {
 //    [self.navigationController pushViewController:aivc animated:YES];
     
     
-//    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
-//    [self.navigationController pushViewController:lockvc animated:YES];
+    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
+    [self.navigationController pushViewController:lockvc animated:YES];
     
-    KVCViewController *kvcvc = [[KVCViewController alloc] init];
-    [self.navigationController pushViewController:kvcvc animated:YES];
+//    KVOViewController *kvcvc = [[KVOViewController alloc] init];
+//    [self.navigationController pushViewController:kvcvc animated:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{

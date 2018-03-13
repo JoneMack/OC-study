@@ -45,6 +45,9 @@
 		1C4A824E202D7C6C006B0DA9 /* launchAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A8239202D7C6C006B0DA9 /* launchAnimation.json */; };
 		1C4C274C2020046A00271592 /* TestSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C274B2020046A00271592 /* TestSwiftViewController.swift */; };
 		1C4C9ECE1FF2487600091916 /* mineHeaderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */; };
+		1C4D552D204F905100ABF4BB /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D552C204F905100ABF4BB /* KVOViewController.m */; };
+		1C4D9A832050D8AD00082259 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D9A822050D8AD00082259 /* People.m */; };
+		1C4D9A862050D8D600082259 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D9A852050D8D600082259 /* Student.m */; };
 		1C5003182016FB6100A244E9 /* ShowRainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5003172016FB6100A244E9 /* ShowRainController.swift */; };
 		1C50031A2016FFC800A244E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5003192016FFC800A244E9 /* x.png */; };
 		1C50031D201719E300A244E9 /* RedpacketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C50031C201719E300A244E9 /* RedpacketController.m */; };
@@ -89,6 +92,8 @@
 		1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92C3A8201822CD00259CDE /* CountDownLabel.swift */; };
 		1C92C3AB201852F800259CDE /* CHWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92C3AA201852F800259CDE /* CHWButton.swift */; };
 		1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C92C3AC2018695700259CDE /* SystemConfiguration.framework */; };
+		1C94268C2057AFB000B6A698 /* HelloClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94268B2057AFB000B6A698 /* HelloClass.m */; };
+		1C94268F2057BA5200B6A698 /* RuntimeMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94268E2057BA5200B6A698 /* RuntimeMethodHelper.m */; };
 		1C94FCA31FDFD5F200B70D50 /* PastTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94FCA21FDFD5F200B70D50 /* PastTextField.m */; };
 		1C9EF54420158AAE004F117B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54320158AAE004F117B /* DrawView.m */; };
 		1C9EF54B2015B5E7004F117B /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EF54A2015B5E7004F117B /* PaintView.m */; };
@@ -159,6 +164,12 @@
 		1C4A8239202D7C6C006B0DA9 /* launchAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchAnimation.json; sourceTree = "<group>"; };
 		1C4C274B2020046A00271592 /* TestSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftViewController.swift; sourceTree = "<group>"; };
 		1C4C9ECD1FF2487600091916 /* mineHeaderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mineHeaderBG@2x.png"; sourceTree = "<group>"; };
+		1C4D552B204F905100ABF4BB /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		1C4D552C204F905100ABF4BB /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		1C4D9A812050D8AD00082259 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		1C4D9A822050D8AD00082259 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		1C4D9A842050D8D500082259 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Student.h; path = "/Users/xubojoy/Documents/归档/OC-study/RuntimeTest/RuntimeTest/Student.h"; sourceTree = "<absolute>"; };
+		1C4D9A852050D8D600082259 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = "/Users/xubojoy/Documents/归档/OC-study/RuntimeTest/RuntimeTest/Student.m"; sourceTree = "<absolute>"; };
 		1C5003162016FB6000A244E9 /* RuntimeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		1C5003172016FB6100A244E9 /* ShowRainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRainController.swift; sourceTree = "<group>"; };
 		1C5003192016FFC800A244E9 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
@@ -235,6 +246,10 @@
 		1C92C3A8201822CD00259CDE /* CountDownLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownLabel.swift; sourceTree = "<group>"; };
 		1C92C3AA201852F800259CDE /* CHWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHWButton.swift; sourceTree = "<group>"; };
 		1C92C3AC2018695700259CDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1C94268A2057AFB000B6A698 /* HelloClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloClass.h; sourceTree = "<group>"; };
+		1C94268B2057AFB000B6A698 /* HelloClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloClass.m; sourceTree = "<group>"; };
+		1C94268D2057BA5200B6A698 /* RuntimeMethodHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMethodHelper.h; sourceTree = "<group>"; };
+		1C94268E2057BA5200B6A698 /* RuntimeMethodHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMethodHelper.m; sourceTree = "<group>"; };
 		1C94FCA11FDFD5F200B70D50 /* PastTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastTextField.h; sourceTree = "<group>"; };
 		1C94FCA21FDFD5F200B70D50 /* PastTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastTextField.m; sourceTree = "<group>"; };
 		1C9EF54220158AAE004F117B /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
@@ -324,6 +339,16 @@
 				1C51D39C204110A100539BD3 /* IOSLockViewController.m */,
 				1CA650AF204D2C74006E8AE0 /* KVCViewController.h */,
 				1CA650B0204D2C74006E8AE0 /* KVCViewController.m */,
+				1C4D552B204F905100ABF4BB /* KVOViewController.h */,
+				1C4D552C204F905100ABF4BB /* KVOViewController.m */,
+				1C4D9A812050D8AD00082259 /* People.h */,
+				1C4D9A822050D8AD00082259 /* People.m */,
+				1C94268A2057AFB000B6A698 /* HelloClass.h */,
+				1C94268B2057AFB000B6A698 /* HelloClass.m */,
+				1C94268D2057BA5200B6A698 /* RuntimeMethodHelper.h */,
+				1C94268E2057BA5200B6A698 /* RuntimeMethodHelper.m */,
+				1C4D9A842050D8D500082259 /* Student.h */,
+				1C4D9A852050D8D600082259 /* Student.m */,
 				1CA650B2204D2ED3006E8AE0 /* BankAccount.h */,
 				1CA650B3204D2ED3006E8AE0 /* BankAccount.m */,
 				1CA650B5204D2F4B006E8AE0 /* Transaction.h */,
@@ -807,9 +832,13 @@
 				1C92C3A9201822CD00259CDE /* CountDownLabel.swift in Sources */,
 				1C5536421FF5DE1B00B87D4E /* Plane.m in Sources */,
 				1C91CAE51FC2D3DE002B5880 /* IQKeyboardManager.m in Sources */,
+				1C4D552D204F905100ABF4BB /* KVOViewController.m in Sources */,
 				1CA19F67203FC278005068A7 /* AISphereView.m in Sources */,
+				1C94268C2057AFB000B6A698 /* HelloClass.m in Sources */,
 				1C91CAE91FC2D3DE002B5880 /* IQUIScrollView+Additions.m in Sources */,
+				1C94268F2057BA5200B6A698 /* RuntimeMethodHelper.m in Sources */,
 				1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */,
+				1C4D9A832050D8AD00082259 /* People.m in Sources */,
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
 				1CA650B1204D2C74006E8AE0 /* KVCViewController.m in Sources */,
 				1C4A8219202D6F75006B0DA9 /* MusicViewController.m in Sources */,
@@ -825,6 +854,7 @@
 				1C91CAE21FC2D3DE002B5880 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C91CADE1FC2D3DE002B5880 /* IQTextView.m in Sources */,
 				1C91CADF1FC2D3DE002B5880 /* IQToolbar.m in Sources */,
+				1C4D9A862050D8D600082259 /* Student.m in Sources */,
 				1C3DBFFE1FBE72B400FD51BD /* main.m in Sources */,
 				1C3DC0061FBE759200FD51BD /* UserModel.m in Sources */,
 				1C92C3AB201852F800259CDE /* CHWButton.swift in Sources */,
@@ -998,7 +1028,7 @@
 				INFOPLIST_FILE = RuntimeTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepayx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1019,7 +1049,7 @@
 				INFOPLIST_FILE = RuntimeTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yibao.mobilepayx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RuntimeTest/RuntimeTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -11,5 +11,7 @@
 @interface Person : NSObject
 
 @property (nonatomic) Address *address;
+@property (nonatomic, assign) int sex;
+@property (nonatomic, assign) int gender;
 
 @end

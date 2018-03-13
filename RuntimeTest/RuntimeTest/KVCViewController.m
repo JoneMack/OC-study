@@ -10,6 +10,7 @@
 #import "BankAccount.h"
 #import "Person.h"
 #import "User.h"
+#import "Address.h"
 @interface KVCViewController ()
 
 @end
@@ -19,7 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    BankAccount *myAccount1 = [[BankAccount alloc] init];
+    BankAccount *myAccount1 = [BankAccount new];
+    Person *person = [Person new];
+    Address *address = [Address new];
+    myAccount1.owner = person;
+    myAccount1.owner.address = address;
 //   通过kvc 直接将属性当做key，来对属性进行赋值
     [myAccount1 setValue:@(100.0) forKeyPath:@"currentBalance"];
     
