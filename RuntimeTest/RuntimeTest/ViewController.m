@@ -13,8 +13,8 @@
 #import "UserModel+cate.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 #import <Lottie/Lottie.h>
-#import <TYAttributedLabel.h>
-#import <UIImageView+WebCache.h>
+#import "TYAttributedLabel.h"
+#import "UIImageView+WebCache.h"
 #import <CoreMotion/CoreMotion.h>
 #import "MovieModel.h"
 #import "Person.h"
@@ -26,14 +26,14 @@
 #import "NextViewController.h"
 #import "TimeInViewController.h"
 #import "DrawView.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import "RuntimeTest-Swift.h"
 #import "RedpacketController.h"
 #include <sys/sysctl.h>
 #include <net/if.h>
 #include <net/if_dl.h>
 #import "GPUImageViewController.h"
-#import <YYCache.h>
+//#import "YYCache.h"
 #import <AVFoundation/AVFoundation.h>
 #import "CaptivePortalCheck.h"
 #import "FaceIDViewController.h"

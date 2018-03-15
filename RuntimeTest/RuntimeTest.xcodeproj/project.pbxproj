@@ -107,7 +107,7 @@
 		1CA650B7204D2F4B006E8AE0 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA650B6204D2F4B006E8AE0 /* Transaction.m */; };
 		1CAC5265204E2B0C00715A0F /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC5264204E2B0C00715A0F /* Address.m */; };
 		1CAC5268204E34E000715A0F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC5267204E34E000715A0F /* User.m */; };
-		F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */; };
+		FAC932F41B4AA9ABB488CA1C /* Pods_RuntimeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBBF7E0BFDD316D9A685429 /* Pods_RuntimeTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -277,7 +277,7 @@
 		1CAC5266204E34E000715A0F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		1CAC5267204E34E000715A0F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		23B89A25B638B5E92AE0A2D0 /* Pods-RuntimeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.debug.xcconfig"; sourceTree = "<group>"; };
-		6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RuntimeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBBF7E0BFDD316D9A685429 /* Pods_RuntimeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RuntimeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B0FECA4F37E129D4D90B90 /* Pods-RuntimeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuntimeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuntimeTest/Pods-RuntimeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,7 +290,7 @@
 				1C81015D2022F441009EF1A7 /* libMobileGestaltExtensions.tbd in Frameworks */,
 				1C81015B2022F43B009EF1A7 /* libMobileGestalt.tbd in Frameworks */,
 				1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */,
-				F1FF04A3F2E6C56DF4E8310C /* libPods-RuntimeTest.a in Frameworks */,
+				FAC932F41B4AA9ABB488CA1C /* Pods_RuntimeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +626,7 @@
 				1C40026A1FC7E9EA00576108 /* CoreGraphics.framework */,
 				1C4002691FC7E9D100576108 /* UIKit.framework */,
 				1C4002681FC7E9C000576108 /* AVFoundation.framework */,
-				6290A6BF60F51FAB28D575F6 /* libPods-RuntimeTest.a */,
+				4DBBF7E0BFDD316D9A685429 /* Pods_RuntimeTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -760,7 +760,6 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TYAttributedLabel/TYAttributedLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -772,7 +771,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYAttributedLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

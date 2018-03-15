@@ -7,9 +7,10 @@
 //
 
 #import "LaunchImageController.h"
-#import <lottie-ios/Lottie/Lottie.h>
+//#import <lottie-ios/Lottie/Lottie.h>
 #import "NSObject+ZJUIExtension.h"
 #import "UIView+ZJExtension.h"
+#import <Lottie/Lottie.h>
 //防止循环引用
 #define WeakObj(obj) __weak typeof(obj) obj##Weak = obj
 
