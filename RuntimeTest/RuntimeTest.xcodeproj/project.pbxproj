@@ -57,13 +57,6 @@
 		1C562207205FA4CA00B18F1C /* Message.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C562206205FA4CA00B18F1C /* Message.mm */; };
 		1C56220A205FA69900B18F1C /* Message+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C562209205FA69900B18F1C /* Message+WCTTableCoding.mm */; };
 		1C569E1F1FFCD6AD0011430D /* TimeInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */; };
-		1C5C145E20688B000024DB52 /* UIImage+YBBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C144F20688B000024DB52 /* UIImage+YBBundleImage.m */; };
-		1C5C145F20688B000024DB52 /* UIButton+YBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C145120688B000024DB52 /* UIButton+YBCategory.m */; };
-		1C5C146020688B000024DB52 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C145420688B000024DB52 /* UIColor+Expanded.m */; };
-		1C5C146120688B000024DB52 /* YBPayPasswordAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C145620688B000024DB52 /* YBPayPasswordAlertView.m */; };
-		1C5C146220688B000024DB52 /* PassGuardCtrlBundle副本.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C145820688B000024DB52 /* PassGuardCtrlBundle副本.bundle */; };
-		1C5C146320688B000024DB52 /* libPassGuardCtrl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5C145B20688B000024DB52 /* libPassGuardCtrl.a */; };
-		1C5C146420688B000024DB52 /* PassGuardCtrlBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C145C20688B000024DB52 /* PassGuardCtrlBundle.bundle */; };
 		1C5C146620688B390024DB52 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5C146520688B390024DB52 /* libstdc++.6.0.9.tbd */; };
 		1C5C146820688B410024DB52 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5C146720688B410024DB52 /* AudioToolbox.framework */; };
 		1C8055C71FD788EA00A6CCE0 /* XBCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8055C61FD788EA00A6CCE0 /* XBCoreTextView.m */; };
@@ -197,20 +190,6 @@
 		1C562209205FA69900B18F1C /* Message+WCTTableCoding.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "Message+WCTTableCoding.mm"; sourceTree = "<group>"; };
 		1C569E1D1FFCD6AD0011430D /* TimeInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeInViewController.h; sourceTree = "<group>"; };
 		1C569E1E1FFCD6AD0011430D /* TimeInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeInViewController.m; sourceTree = "<group>"; };
-		1C5C144F20688B000024DB52 /* UIImage+YBBundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YBBundleImage.m"; sourceTree = "<group>"; };
-		1C5C145020688B000024DB52 /* YBPayPasswordAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPayPasswordAlertView.h; sourceTree = "<group>"; };
-		1C5C145120688B000024DB52 /* UIButton+YBCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YBCategory.m"; sourceTree = "<group>"; };
-		1C5C145220688B000024DB52 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
-		1C5C145320688B000024DB52 /* UIImage+YBBundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YBBundleImage.h"; sourceTree = "<group>"; };
-		1C5C145420688B000024DB52 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
-		1C5C145520688B000024DB52 /* UIButton+YBCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YBCategory.h"; sourceTree = "<group>"; };
-		1C5C145620688B000024DB52 /* YBPayPasswordAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPayPasswordAlertView.m; sourceTree = "<group>"; };
-		1C5C145820688B000024DB52 /* PassGuardCtrlBundle副本.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "PassGuardCtrlBundle副本.bundle"; sourceTree = "<group>"; };
-		1C5C145920688B000024DB52 /* PassGuardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassGuardViewController.h; sourceTree = "<group>"; };
-		1C5C145A20688B000024DB52 /* PassGuardCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassGuardCtrl.h; sourceTree = "<group>"; };
-		1C5C145B20688B000024DB52 /* libPassGuardCtrl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPassGuardCtrl.a; sourceTree = "<group>"; };
-		1C5C145C20688B000024DB52 /* PassGuardCtrlBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PassGuardCtrlBundle.bundle; sourceTree = "<group>"; };
-		1C5C145D20688B000024DB52 /* KeyBoardViewPassGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyBoardViewPassGuard.h; sourceTree = "<group>"; };
 		1C5C146520688B390024DB52 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		1C5C146720688B410024DB52 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1C8055C51FD788EA00A6CCE0 /* XBCoreTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCoreTextView.h; sourceTree = "<group>"; };
@@ -322,7 +301,6 @@
 				1C50ED67202A9A5900773C37 /* AVFoundation.framework in Frameworks */,
 				1C81015D2022F441009EF1A7 /* libMobileGestaltExtensions.tbd in Frameworks */,
 				1C81015B2022F43B009EF1A7 /* libMobileGestalt.tbd in Frameworks */,
-				1C5C146320688B000024DB52 /* libPassGuardCtrl.a in Frameworks */,
 				1C92C3AD2018695800259CDE /* SystemConfiguration.framework in Frameworks */,
 				FAC932F41B4AA9ABB488CA1C /* Pods_RuntimeTest.framework in Frameworks */,
 			);
@@ -353,8 +331,6 @@
 		1C3DBFED1FBE72B400FD51BD /* RuntimeTest */ = {
 			isa = PBXGroup;
 			children = (
-				1C5C145720688B000024DB52 /* header */,
-				1C5C144E20688B000024DB52 /* passctl */,
 				1CA19F5D203FC278005068A7 /* AISphereView */,
 				1C4A8220202D7C6C006B0DA9 /* Animation */,
 				1C90E3A2202C209F000391A6 /* CaptivePortalCheck */,
@@ -518,34 +494,6 @@
 				1C4A8238202D7C6C006B0DA9 /* launchingImg_0.png */,
 			);
 			path = launchingImages;
-			sourceTree = "<group>";
-		};
-		1C5C144E20688B000024DB52 /* passctl */ = {
-			isa = PBXGroup;
-			children = (
-				1C5C144F20688B000024DB52 /* UIImage+YBBundleImage.m */,
-				1C5C145020688B000024DB52 /* YBPayPasswordAlertView.h */,
-				1C5C145120688B000024DB52 /* UIButton+YBCategory.m */,
-				1C5C145220688B000024DB52 /* UIColor+Expanded.h */,
-				1C5C145320688B000024DB52 /* UIImage+YBBundleImage.h */,
-				1C5C145420688B000024DB52 /* UIColor+Expanded.m */,
-				1C5C145520688B000024DB52 /* UIButton+YBCategory.h */,
-				1C5C145620688B000024DB52 /* YBPayPasswordAlertView.m */,
-			);
-			path = passctl;
-			sourceTree = "<group>";
-		};
-		1C5C145720688B000024DB52 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				1C5C145820688B000024DB52 /* PassGuardCtrlBundle副本.bundle */,
-				1C5C145920688B000024DB52 /* PassGuardViewController.h */,
-				1C5C145A20688B000024DB52 /* PassGuardCtrl.h */,
-				1C5C145B20688B000024DB52 /* libPassGuardCtrl.a */,
-				1C5C145C20688B000024DB52 /* PassGuardCtrlBundle.bundle */,
-				1C5C145D20688B000024DB52 /* KeyBoardViewPassGuard.h */,
-			);
-			path = header;
 			sourceTree = "<group>";
 		};
 		1C90E3A2202C209F000391A6 /* CaptivePortalCheck */ = {
@@ -795,7 +743,6 @@
 				1C4A823F202D7C6C006B0DA9 /* loadingImg_0.png in Resources */,
 				1C4A823A202D7C6C006B0DA9 /* empty_status.json in Resources */,
 				1C4A824E202D7C6C006B0DA9 /* launchAnimation.json in Resources */,
-				1C5C146220688B000024DB52 /* PassGuardCtrlBundle副本.bundle in Resources */,
 				1C9130FB201ACD9900C26961 /* lookup_glitch.png in Resources */,
 				1C4A8242202D7C6C006B0DA9 /* loadingImg_7.png in Resources */,
 				1C9130F0201ACD3E00C26961 /* IMG_0019.mp4 in Resources */,
@@ -805,7 +752,6 @@
 				1C4A8248202D7C6C006B0DA9 /* launchingImg_7.png in Resources */,
 				1CA19F66203FC278005068A7 /* .gitkeep in Resources */,
 				1C4A824B202D7C6C006B0DA9 /* launchingImg_3.png in Resources */,
-				1C5C146420688B000024DB52 /* PassGuardCtrlBundle.bundle in Resources */,
 				1C9130F9201ACD9900C26961 /* oldmovie.png in Resources */,
 				1C3DBFF61FBE72B400FD51BD /* Main.storyboard in Resources */,
 				1C4A8246202D7C6C006B0DA9 /* launchingImg_4.png in Resources */,
@@ -907,15 +853,12 @@
 				1C56220A205FA69900B18F1C /* Message+WCTTableCoding.mm in Sources */,
 				1C4D552D204F905100ABF4BB /* KVOViewController.m in Sources */,
 				1CA19F67203FC278005068A7 /* AISphereView.m in Sources */,
-				1C5C146120688B000024DB52 /* YBPayPasswordAlertView.m in Sources */,
 				1C94268C2057AFB000B6A698 /* HelloClass.m in Sources */,
 				1C91CAE91FC2D3DE002B5880 /* IQUIScrollView+Additions.m in Sources */,
 				1C94268F2057BA5200B6A698 /* RuntimeMethodHelper.m in Sources */,
 				1C8D2CA61FCE7E760088AB75 /* Person.m in Sources */,
 				1C4D9A832050D8AD00082259 /* People.m in Sources */,
 				1C3DBFF31FBE72B400FD51BD /* ViewController.m in Sources */,
-				1C5C146020688B000024DB52 /* UIColor+Expanded.m in Sources */,
-				1C5C145F20688B000024DB52 /* UIButton+YBCategory.m in Sources */,
 				1CA650B1204D2C74006E8AE0 /* KVCViewController.m in Sources */,
 				1C4A8219202D6F75006B0DA9 /* MusicViewController.m in Sources */,
 				1C91CAE31FC2D3DE002B5880 /* IQPreviousNextView.m in Sources */,
@@ -923,7 +866,6 @@
 				1C9130F1201ACD3E00C26961 /* GpUImageScaleFilter.m in Sources */,
 				1CA19F6B203FC2CD005068A7 /* AIViewController.m in Sources */,
 				1C91CAE61FC2D3DE002B5880 /* IQNSArray+Sort.m in Sources */,
-				1C5C145E20688B000024DB52 /* UIImage+YBBundleImage.m in Sources */,
 				1C493E83201979A900099077 /* NothingToSeeHere.swift in Sources */,
 				1CA19F5C203FAFE3005068A7 /* UIView+ZJExtension.m in Sources */,
 				1C9130EF201ACD3E00C26961 /* GPUImageSoulFilter.m in Sources */,

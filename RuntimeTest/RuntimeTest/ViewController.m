@@ -43,7 +43,6 @@
 #import "KVCViewController.h"
 #import "KVOViewController.h"
 #import "HelloClass.h"
-#import "YBPayPasswordAlertView.h"
 #import "Student.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
@@ -54,7 +53,7 @@
 
 OBJC_EXTERN CFStringRef MGCopyAnswer(CFStringRef key) WEAK_IMPORT_ATTRIBUTE;
 
-@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate,payPasswordAlertDelegate>{
+@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate>{
     
     NSTimeInterval updateInterval;
     CGFloat  setx;//scroll的动态偏移量
@@ -1681,21 +1680,6 @@ typedef NS_ENUM(NSUInteger, EndTimeType) {
 //    KVOViewController *kvcvc = [[KVOViewController alloc] init];
 //    [self.navigationController pushViewController:kvcvc animated:YES];
     
-    
-        YBPayPasswordAlertView *payAlert=[[YBPayPasswordAlertView alloc]initWithFrame:self.view.bounds];
-        payAlert.tag=300;
-        payAlert.delegate_pay = self;
-        [payAlert initWithView];
-        [payAlert showInView:self.navigationController.view];
-    //    __weak YBPayPasswordAlertView *payClosePay=payAlert;
-    //    __weak ViewController *rect=self;
-        payAlert.payPSWBlock=^(NSString *payPsw)
-        {
-    
-            //businessCode 业务模块：1：充值、2：提现
-    //        [payClosePay close];
-    
-        };
 }
 
 
