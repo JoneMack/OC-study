@@ -43,6 +43,8 @@
 #import "KVCViewController.h"
 #import "KVOViewController.h"
 #import "HelloClass.h"
+#import "YBPayPasswordAlertView.h"
+#import "Student.h"
 //#import "PastTextField.h"
 #define screen_width          [UIScreen mainScreen].bounds.size.width
 #define screen_height          [UIScreen mainScreen].bounds.size.height
@@ -52,7 +54,7 @@
 
 OBJC_EXTERN CFStringRef MGCopyAnswer(CFStringRef key) WEAK_IMPORT_ATTRIBUTE;
 
-@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate>{
+@interface ViewController ()<UIScrollViewDelegate,CAAnimationDelegate,UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate,payPasswordAlertDelegate>{
     
     NSTimeInterval updateInterval;
     CGFloat  setx;//scroll的动态偏移量
@@ -135,6 +137,10 @@ NSString *const accessItem = @"2QC668LVNU.com.yibao.runtimetest";
     NSLog(@"flag is %d", flag);
     [test hello];
     
+    
+    Student *stu = [[Student alloc] init];
+    
+    NSLog(@"=====%@",stu);
     
     
     
@@ -1622,7 +1628,7 @@ typedef NS_ENUM(NSUInteger, EndTimeType) {
 #pragma mark 同意按钮----------------
 - (void)protocolBtnClick:(UIButton *)sender{
 //    sender.selected = !sender.selected;
-//    NSLog(@">>>>>>>>>>>>>选中状态>>>>____________%d",sender.selected);
+    NSLog(@">>>>>>>>>>>>>选中状态>>>>____________");
 //    NSNumber *num = [NSNumber numberWithBool:sender.selected];
 //    NSLog(@">>>>>>>>>>>>>选中状态num>>>>____________%@",num);
 //    objc_setAssociatedObject(sender, @"protocolBtn", num, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -1669,11 +1675,32 @@ typedef NS_ENUM(NSUInteger, EndTimeType) {
 //    [self.navigationController pushViewController:aivc animated:YES];
     
     
-    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
-    [self.navigationController pushViewController:lockvc animated:YES];
+//    IOSLockViewController *lockvc = [[IOSLockViewController alloc] init];
+//    [self.navigationController pushViewController:lockvc animated:YES];
     
 //    KVOViewController *kvcvc = [[KVOViewController alloc] init];
 //    [self.navigationController pushViewController:kvcvc animated:YES];
+    
+    
+        YBPayPasswordAlertView *payAlert=[[YBPayPasswordAlertView alloc]initWithFrame:self.view.bounds];
+        payAlert.tag=300;
+        payAlert.delegate_pay = self;
+        [payAlert initWithView];
+        [payAlert showInView:self.navigationController.view];
+    //    __weak YBPayPasswordAlertView *payClosePay=payAlert;
+    //    __weak ViewController *rect=self;
+        payAlert.payPSWBlock=^(NSString *payPsw)
+        {
+    
+            //businessCode 业务模块：1：充值、2：提现
+    //        [payClosePay close];
+    
+        };
+}
+
+
+-(void)forgetPayPassword{
+    
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{

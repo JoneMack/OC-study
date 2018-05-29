@@ -15,4 +15,5 @@ target 'RuntimeTest' do
     #     pod 'FTLinearActivityIndicator', '~> 1.0.4'
     pod 'JPush', '~> 3.0.8'
 #    pod 'Moya', '~> 11.0.1'
+    pod 'WCDB', '~> 1.0.6'
 end
